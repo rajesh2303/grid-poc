@@ -1,0 +1,39 @@
+@import url('../theme/tokens.css');
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+html, body, #root {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: var(--font-sans);
+	background: var(--color-bg);
+	color: var(--color-text);
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 16px 20px;
+}
+
+.card {
+	background: var(--color-surface);
+	border-radius: var(--radius-md);
+	box-shadow: var(--shadow-sm);
+	overflow: hidden;
+}
+
+.row {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+.spacer { flex: 1; }
+
+/* Utility */
+.muted { color: var(--color-text-secondary); }
+
+
