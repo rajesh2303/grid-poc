@@ -83,7 +83,14 @@ export default function TicketsPage() {
       enableColumnReorder
       infiniteScroll
       hasMore={visibleCount < allRows.length}
-      // onLoadMore={() => new Promise<void>((resolve) => { setTimeout(() => { setVisibleCount(c => Math.min(allRows.length, c + 100)); resolve(); }, 400); })}
+      onLoadMore={() =>
+        new Promise<void>((resolve) => {
+          setTimeout(() => {
+            setVisibleCount((c) => Math.min(allRows.length, c + 100));
+            resolve();
+          }, 400);
+        })
+      }
       onSelectionChange={(s) => console.log('selection', s)}
     />
   );

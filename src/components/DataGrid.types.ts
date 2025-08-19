@@ -15,6 +15,8 @@ export interface FilterModel {
   extra?: string | number | boolean | Date | null; // for between operator
 }
 
+export type InternalColumn<T = any> = ColumnDef<T> & { computedWidth: number };
+
 export interface ColumnDef<T = any> {
   key: string; // unique id for the column
   headerName: string;

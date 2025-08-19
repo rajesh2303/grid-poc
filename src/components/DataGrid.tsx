@@ -10,120 +10,19 @@ import './DataGrid.css';
 import type {
   ColumnDef,
   DataGridProps,
-  SortDirection,
   FilterModel,
+  InternalColumn,
 } from './DataGrid.types';
-
-type InternalColumn<T = any> = ColumnDef<T> & { computedWidth: number };
-
-function defaultGetRowId(row: any): string | number {
-  if (row == null) return Math.random().toString(36).slice(2);
-  if (typeof row === 'object') {
-    if ('id' in row) return (row as any).id;
-    if ('_id' in row) return (row as any)._id;
-  }
-  return JSON.stringify(row);
-}
-
-function getValue<T>(row: T, col: ColumnDef<T>) {
-  const raw = col.valueGetter
-    ? col.valueGetter(row)
-    : col.field
-      ? (row as any)[col.field]
-      : undefined;
-  return raw;
-}
-
-function formatValue<T>(row: T, col: ColumnDef<T>) {
-  const v = getValue(row, col);
-  if (col.valueFormatter) return col.valueFormatter(v, row);
-  if (v == null) return '';
-  return String(v);
-}
-
-function useGridColumns<T>(
-  columns: ColumnDef<T>[],
-  containerWidth: number | null,
-): InternalColumn<T>[] {
-  return useMemo(() => {
-    const totalFlex = columns.reduce((sum, c) => sum + (c.flex || 0), 0);
-    return columns.map((c) => {
-      let width = c.width ?? 160;
-      if (containerWidth && totalFlex > 0 && c.flex) {
-        const remaining =
-          containerWidth - columns.reduce((s, x) => s + (x.width ?? 0), 0);
-        const share = Math.max(remaining, 0) * (c.flex / totalFlex);
-        width = Math.max(
-          c.minWidth ?? 80,
-          Math.min(c.maxWidth ?? 800, Math.floor((c.width || 0) + share)),
-        );
-      }
-      return { ...c, computedWidth: width } as InternalColumn<T>;
-    });
-  }, [columns, containerWidth]);
-}
-
-function sortRows<T>(
-  rows: T[],
-  sort: { key: string; direction: Exclude<SortDirection, null> } | null,
-  columns: ColumnDef<T>[],
-): T[] {
-  if (!sort) return rows;
-  const col = columns.find((c) => c.key === sort.key);
-  if (!col) return rows;
-  const dir = sort.direction === 'asc' ? 1 : -1;
-  const comparator =
-    col.comparator || ((a: any, b: any) => (a > b ? 1 : a < b ? -1 : 0));
-  return [...rows].sort(
-    (ra, rb) => comparator(getValue(ra, col), getValue(rb, col), ra, rb) * dir,
-  );
-}
-
-function quickFilterRows<T>(
-  rows: T[],
-  columns: ColumnDef<T>[],
-  text: string | undefined,
-): T[] {
-  if (!text) return rows;
-  const q = text.toLowerCase();
-  return rows.filter((r) =>
-    columns.some((c) =>
-      String(getValue(r, c) ?? '')
-        .toLowerCase()
-        .includes(q),
-    ),
-  );
-}
-
-function useContainerWidth<T extends HTMLElement>(
-  ref: React.RefObject<T | null>,
-) {
-  const [width, setWidth] = useState<number | null>(null);
-  useEffect(() => {
-    function update() {
-      if (ref.current) setWidth(ref.current.clientWidth);
-    }
-    update();
-    const ro = new ResizeObserver(update);
-    if (ref.current) ro.observe(ref.current);
-    return () => ro.disconnect();
-  }, [ref]);
-  return width;
-}
-
-function getColumnMapper<T>(
-  columns: ColumnDef<T>[],
-  containerWidth: number | null,
-) {
-  const totalWidth = columns.reduce((sum, c) => sum + (c.width || 0), 0);
-  const width = containerWidth
-    ? Math.floor((containerWidth - totalWidth) / columns.length)
-    : 0;
-  return columns.map((col) => ({
-    ...col,
-    width: col.width ?? width - 5,
-  }));
-}
+import {
+  defaultGetRowId,
+  formatValue,
+  getColumnMapper,
+  getValue,
+  quickFilterRows,
+  sortRows,
+} from './utils/column.utils';
+import { useGridColumns } from './hooks/useGridColumns';
+import { useContainerWidth } from './hooks/useContainerWidth';
 
 export default function DataGrid<T>(props: DataGridProps<T>) {
   const {
@@ -132,7 +31,7 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
     height = 520,
     rowHeight = 44,
     pageSize: pageSizeProp = 25,
-    checkboxSelection = true,
+    checkboxSelection = false,
     initialSort = null,
     className,
     style,
@@ -319,10 +218,10 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
   };
 
   const gridTemplateColumns = useMemo(() => {
-    const arr = [
-      checkboxSelection ? 44 : 0,
-      ...internalColumns.map((c) => c.computedWidth),
-    ];
+    const arr = [...internalColumns.map((c) => c.computedWidth)];
+    if (checkboxSelection) {
+      arr.unshift(44);
+    }
     return arr.map((v) => `${v}px`).join(' ');
   }, [internalColumns, checkboxSelection]);
 
@@ -619,229 +518,242 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
           </span>
         )}
       </div>
-      <Header
-        internalColumns={internalColumns}
-        gridTemplateColumns={gridTemplateColumns}
-        checkboxSelection={checkboxSelection}
-        pagedRows={pagedRows}
-        selected={selected}
-        getRowId={getRowId}
-        onToggleAll={onToggleAll}
-        sort={sort}
-        setSort={setSort}
-        enableColumnReorder={enableColumnReorder}
-        resizingColKey={resizingColKey}
-        setDragColKey={setDragColKey}
-        dragColKey={dragColKey}
-        setColumnOrder={setColumnOrder}
-        onColumnsReorder={onColumnsReorder}
-        onColumnResizeStart={onColumnResizeStart}
-      />
-      {groupKeys.length === 0 ? filterRow : null}
-      <div
-        ref={bodyRef}
-        className="datagrid__body"
-        style={{ height: height - 110, overflow: 'auto' }}
-        onScroll={(e) => setScrollTop((e.target as HTMLDivElement).scrollTop)}
-      >
-        {grouped ? (
-          <div>
-            {grouped.map((g) => {
-              const open = expandedGroups[g.key] ?? true;
-              return (
-                <React.Fragment key={g.key}>
-                  <div
-                    className="datagrid__row datagrid__group-row"
-                    style={{ gridTemplateColumns }}
-                    onClick={() =>
-                      setExpandedGroups((prev) => ({ ...prev, [g.key]: !open }))
-                    }
-                  >
-                    {checkboxSelection && <div className="datagrid__cell" />}
+      <div style={{ overflowX: 'auto' }}>
+        <Header
+          internalColumns={internalColumns}
+          gridTemplateColumns={gridTemplateColumns}
+          checkboxSelection={checkboxSelection}
+          pagedRows={pagedRows}
+          selected={selected}
+          getRowId={getRowId}
+          onToggleAll={onToggleAll}
+          sort={sort}
+          setSort={setSort}
+          enableColumnReorder={enableColumnReorder}
+          resizingColKey={resizingColKey}
+          setDragColKey={setDragColKey}
+          dragColKey={dragColKey}
+          setColumnOrder={setColumnOrder}
+          onColumnsReorder={onColumnsReorder}
+          onColumnResizeStart={onColumnResizeStart}
+        />
+        {groupKeys.length === 0 ? filterRow : null}
+        <div
+          ref={bodyRef}
+          className="datagrid__body"
+          style={{ height: height - 110 }}
+          onScroll={(e) => setScrollTop((e.target as HTMLDivElement).scrollTop)}
+        >
+          {grouped ? (
+            <div>
+              {grouped.map((g) => {
+                const open = expandedGroups[g.key] ?? true;
+                return (
+                  <React.Fragment key={g.key}>
                     <div
-                      className="datagrid__cell"
-                      style={{ gridColumn: `span ${internalColumns.length}` }}
+                      className="datagrid__row datagrid__group-row"
+                      style={{ gridTemplateColumns }}
+                      onClick={() =>
+                        setExpandedGroups((prev) => ({
+                          ...prev,
+                          [g.key]: !open,
+                        }))
+                      }
                     >
-                      {open ? '▼' : '▶'} Group: {g.key} ({g.rows.length})
+                      {checkboxSelection && <div className="datagrid__cell" />}
+                      <div
+                        className="datagrid__cell"
+                        style={{ gridColumn: `span ${internalColumns.length}` }}
+                      >
+                        {open ? '▼' : '▶'} Group: {g.key} ({g.rows.length})
+                      </div>
                     </div>
-                  </div>
-                  {open &&
-                    g.rows.map((row) => {
-                      const rowId = getRowId(row);
-                      const isSelected = selected.has(rowId);
-                      return (
-                        <div
-                          key={String(rowId)}
-                          className="datagrid__row"
-                          style={{ gridTemplateColumns, height: rowHeight }}
-                        >
-                          {checkboxSelection && (
-                            <div className="datagrid__cell">
-                              <input
-                                className="datagrid__checkbox"
-                                type="checkbox"
-                                checked={isSelected}
-                                onChange={(e) => {
-                                  const checked = e.target.checked;
-                                  setSelected((prev) => {
-                                    const copy = new Set(prev);
-                                    if (checked) copy.add(rowId);
-                                    else copy.delete(rowId);
-                                    return copy;
-                                  });
-                                }}
-                              />
-                            </div>
-                          )}
-                          {internalColumns.map((col) => {
-                            const isEditing =
-                              editing &&
-                              editing.rowId === getRowId(row) &&
-                              editing.colKey === col.key;
-                            const raw = getValue(row, col);
-                            if (isEditing) {
+                    {open &&
+                      g.rows.map((row) => {
+                        const rowId = getRowId(row);
+                        const isSelected = selected.has(rowId);
+                        return (
+                          <div
+                            key={String(rowId)}
+                            className="datagrid__row"
+                            style={{ gridTemplateColumns, height: rowHeight }}
+                          >
+                            {checkboxSelection && (
+                              <div className="datagrid__cell datagrid__checkbox">
+                                <input
+                                  className="datagrid__checkbox"
+                                  type="checkbox"
+                                  checked={isSelected}
+                                  onChange={(e) => {
+                                    const checked = e.target.checked;
+                                    setSelected((prev) => {
+                                      const copy = new Set(prev);
+                                      if (checked) copy.add(rowId);
+                                      else copy.delete(rowId);
+                                      return copy;
+                                    });
+                                  }}
+                                />
+                              </div>
+                            )}
+                            {internalColumns.map((col) => {
+                              const isEditing =
+                                editing &&
+                                editing.rowId === getRowId(row) &&
+                                editing.colKey === col.key;
+                              const raw = getValue(row, col);
+                              if (isEditing) {
+                                return (
+                                  <div key={col.key} className="datagrid__cell">
+                                    <DefaultEditor
+                                      type={col.dataType || 'text'}
+                                      value={editing.value}
+                                      onChange={(v) =>
+                                        setEditing((prev) =>
+                                          prev ? { ...prev, value: v } : prev,
+                                        )
+                                      }
+                                      onKeyDown={(e) => {
+                                        if (e.key === 'Enter') commitEdit(true);
+                                        if (e.key === 'Escape')
+                                          commitEdit(false);
+                                      }}
+                                      onBlur={() => commitEdit(true)}
+                                    />
+                                  </div>
+                                );
+                              }
                               return (
-                                <div key={col.key} className="datagrid__cell">
-                                  <DefaultEditor
-                                    type={col.dataType || 'text'}
-                                    value={editing.value}
-                                    onChange={(v) =>
-                                      setEditing((prev) =>
-                                        prev ? { ...prev, value: v } : prev,
-                                      )
-                                    }
-                                    onKeyDown={(e) => {
-                                      if (e.key === 'Enter') commitEdit(true);
-                                      if (e.key === 'Escape') commitEdit(false);
-                                    }}
-                                    onBlur={() => commitEdit(true)}
-                                  />
+                                <div
+                                  key={col.key}
+                                  className="datagrid__cell"
+                                  title={String(raw)}
+                                  onDoubleClick={() => beginEdit(row, col)}
+                                >
+                                  {col.cellRenderer
+                                    ? col.cellRenderer(raw, row)
+                                    : formatValue(row, col)}
                                 </div>
                               );
-                            }
-                            return (
-                              <div
-                                key={col.key}
-                                className="datagrid__cell"
-                                title={String(raw)}
-                                onDoubleClick={() => beginEdit(row, col)}
-                              >
-                                {col.cellRenderer
-                                  ? col.cellRenderer(raw, row)
-                                  : formatValue(row, col)}
-                              </div>
-                            );
-                          })}
-                        </div>
-                      );
-                    })}
-                </React.Fragment>
-              );
-            })}
-          </div>
-        ) : (
-          <div
-            style={{
-              height: pagedRows.length * rowHeight,
-              position: 'relative',
-            }}
-          >
-            <div
-              style={{ position: 'absolute', top: offsetY, left: 0, right: 0 }}
-            >
-              {pagedRows.slice(startIndex, endIndex).map((row, idx) => {
-                const rowId = getRowId(row);
-                const isSelected = selected.has(rowId);
-                return (
-                  <div
-                    key={String(rowId)}
-                    className="datagrid__row"
-                    style={{ gridTemplateColumns, height: rowHeight }}
-                    role="row"
-                    aria-rowindex={startIndex + idx + 1}
-                    draggable
-                    onDragStart={() => setDragRowId(rowId)}
-                    onDragOver={(e) => e.preventDefault()}
-                    onDrop={() => {
-                      if (dragRowId == null || dragRowId === rowId) return;
-                      setInternalRows((prev) => {
-                        const copy = prev.slice();
-                        const from = copy.findIndex(
-                          (r) => getRowId(r) === dragRowId,
-                        );
-                        const to = copy.findIndex((r) => getRowId(r) === rowId);
-                        if (from === -1 || to === -1) return prev;
-                        const [moved] = copy.splice(from, 1);
-                        copy.splice(to, 0, moved);
-                        return copy;
-                      });
-                      setDragRowId(null);
-                    }}
-                  >
-                    {checkboxSelection && (
-                      <div className="datagrid__cell">
-                        <input
-                          className="datagrid__checkbox"
-                          type="checkbox"
-                          checked={isSelected}
-                          onChange={(e) => {
-                            const checked = e.target.checked;
-                            setSelected((prev) => {
-                              const copy = new Set(prev);
-                              if (checked) copy.add(rowId);
-                              else copy.delete(rowId);
-                              return copy;
-                            });
-                          }}
-                          aria-label="Select row"
-                        />
-                      </div>
-                    )}
-                    {internalColumns.map((col) => {
-                      const isEditing =
-                        editing &&
-                        editing.rowId === getRowId(row) &&
-                        editing.colKey === col.key;
-                      const raw = getValue(row, col);
-                      if (isEditing) {
-                        return (
-                          <div key={col.key} className="datagrid__cell">
-                            <DefaultEditor
-                              type={col.dataType || 'text'}
-                              value={editing.value}
-                              onChange={(v) =>
-                                setEditing((prev) =>
-                                  prev ? { ...prev, value: v } : prev,
-                                )
-                              }
-                              onKeyDown={(e) => {
-                                if (e.key === 'Enter') commitEdit(true);
-                                if (e.key === 'Escape') commitEdit(false);
-                              }}
-                              onBlur={() => commitEdit(true)}
-                            />
+                            })}
                           </div>
                         );
-                      }
-                      return (
-                        <div
-                          key={col.key}
-                          className="datagrid__cell"
-                          title={String(raw)}
-                          onDoubleClick={() => beginEdit(row, col)}
-                        >
-                          {col.cellRenderer
-                            ? col.cellRenderer(raw, row)
-                            : formatValue(row, col)}
-                        </div>
-                      );
-                    })}
-                  </div>
+                      })}
+                  </React.Fragment>
                 );
               })}
             </div>
-          </div>
-        )}
+          ) : (
+            <div
+              style={{
+                height: pagedRows.length * rowHeight,
+                position: 'relative',
+              }}
+            >
+              <div
+                style={{
+                  position: 'absolute',
+                  top: offsetY,
+                  left: 0,
+                  right: 0,
+                }}
+              >
+                {pagedRows.slice(startIndex, endIndex).map((row, idx) => {
+                  const rowId = getRowId(row);
+                  const isSelected = selected.has(rowId);
+                  return (
+                    <div
+                      key={String(rowId)}
+                      className="datagrid__row"
+                      style={{ gridTemplateColumns, height: rowHeight }}
+                      role="row"
+                      aria-rowindex={startIndex + idx + 1}
+                      draggable
+                      onDragStart={() => setDragRowId(rowId)}
+                      onDragOver={(e) => e.preventDefault()}
+                      onDrop={() => {
+                        if (dragRowId == null || dragRowId === rowId) return;
+                        setInternalRows((prev) => {
+                          const copy = prev.slice();
+                          const from = copy.findIndex(
+                            (r) => getRowId(r) === dragRowId,
+                          );
+                          const to = copy.findIndex(
+                            (r) => getRowId(r) === rowId,
+                          );
+                          if (from === -1 || to === -1) return prev;
+                          const [moved] = copy.splice(from, 1);
+                          copy.splice(to, 0, moved);
+                          return copy;
+                        });
+                        setDragRowId(null);
+                      }}
+                    >
+                      {checkboxSelection && (
+                        <div className="datagrid__cell">
+                          <input
+                            className="datagrid__checkbox"
+                            type="checkbox"
+                            checked={isSelected}
+                            onChange={(e) => {
+                              const checked = e.target.checked;
+                              setSelected((prev) => {
+                                const copy = new Set(prev);
+                                if (checked) copy.add(rowId);
+                                else copy.delete(rowId);
+                                return copy;
+                              });
+                            }}
+                            aria-label="Select row"
+                          />
+                        </div>
+                      )}
+                      {internalColumns.map((col) => {
+                        const isEditing =
+                          editing &&
+                          editing.rowId === getRowId(row) &&
+                          editing.colKey === col.key;
+                        const raw = getValue(row, col);
+                        if (isEditing) {
+                          return (
+                            <div key={col.key} className="datagrid__cell">
+                              <DefaultEditor
+                                type={col.dataType || 'text'}
+                                value={editing.value}
+                                onChange={(v) =>
+                                  setEditing((prev) =>
+                                    prev ? { ...prev, value: v } : prev,
+                                  )
+                                }
+                                onKeyDown={(e) => {
+                                  if (e.key === 'Enter') commitEdit(true);
+                                  if (e.key === 'Escape') commitEdit(false);
+                                }}
+                                onBlur={() => commitEdit(true)}
+                              />
+                            </div>
+                          );
+                        }
+                        return (
+                          <div
+                            key={col.key}
+                            className="datagrid__cell"
+                            title={String(raw)}
+                            onDoubleClick={() => beginEdit(row, col)}
+                          >
+                            {col.cellRenderer
+                              ? col.cellRenderer(raw, row)
+                              : formatValue(row, col)}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
