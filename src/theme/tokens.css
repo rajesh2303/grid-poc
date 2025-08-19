@@ -1,3 +1,32 @@
+@font-face {
+	font-family: 'Inter';
+	src: url('../assets/fonts/Inter_18pt-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Inter';
+	src: url('../assets/fonts/Inter_18pt-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Inter';
+	src: url('../assets/fonts/Inter_18pt-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Inter';
+	src: url('../assets/fonts/Inter_24pt-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
 :root {
 	/* Brand */
 	--brand-25: #f4f7ff;
@@ -18,18 +47,18 @@
 	--danger-500: #ef4444;
 
 	/* Base */
-	--color-bg: #f3f5fa;
-	--color-surface: #ffffff;
+	--color-bg-header: #F9F9FB;
+	--color-surface: #F9F9FB;
 	--color-surface-2: #f8faff;
-	--color-border: #e5e7eb;
-	--color-text: #0f172a;
+	--color-border: #E2E2E2;
+	--color-text: #3C3B4C;
 	--color-text-secondary: #475569;
 	--shadow-sm: 0 1px 2px rgba(0,0,0,.06);
 	--shadow-md: 0 2px 8px rgba(0,0,0,.08);
 	--radius-sm: 6px;
 	--radius-md: 10px;
 	--radius-lg: 14px;
-	--font-sans: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+	--font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
 }
 
 /* Topbar gradient reminiscent of the reference */
