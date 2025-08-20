@@ -18,6 +18,8 @@ const columns: ColumnDef<Broker>[] = [
     hozAlign: 'left',
     sortable: true,
     resizable: true,
+    search: true,
+    searchPlaceholder: 'Search by broker name',
   },
   {
     key: 'brokerCode',
@@ -25,6 +27,8 @@ const columns: ColumnDef<Broker>[] = [
     field: 'brokerCode',
     sortable: true,
     resizable: true,
+    search: true,
+    searchPlaceholder: 'Search by broker code',
   },
   {
     key: 'brokerStatus',
@@ -32,6 +36,8 @@ const columns: ColumnDef<Broker>[] = [
     field: 'brokerStatus',
     sortable: true,
     resizable: true,
+    search: true,
+    searchPlaceholder: 'Search by broker status',
   },
   {
     key: 'lastModified',
@@ -39,6 +45,8 @@ const columns: ColumnDef<Broker>[] = [
     field: 'lastModified',
     sortable: true,
     resizable: true,
+    search: true,
+    searchPlaceholder: 'Search by last modified',
     valueFormatter: (v) => new Date(v).toLocaleString(),
   },
 ];

@@ -23,6 +23,7 @@ import {
 } from './utils/column.utils';
 import { useGridColumns } from './hooks/useGridColumns';
 import { useContainerWidth } from './hooks/useContainerWidth';
+import type { SearchType } from './types';
 
 export default function DataGrid<T>(props: DataGridProps<T>) {
   const {
@@ -83,7 +84,7 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
     value: any;
   } | null>(null);
   const [isLoadingMore, setIsLoadingMore] = useState(false);
-  // removed duplicate internalGroupBy
+  const [search, setSearch] = useState<SearchType | null>(null);
 
   useEffect(() => {
     setInternalRows(rows);
@@ -104,6 +105,21 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
     })),
     width,
   );
+
+  // columns search
+  useEffect(() => {
+    if (!search) {
+      return;
+    }
+    const filteredData = rows.filter((row) =>
+      Object.entries(search).every(([key, value]) =>
+        String(getValue(row, internalColumns.find((c) => c.key === key)!))
+          .toLowerCase()
+          .includes(String(value).toLowerCase()),
+      ),
+    );
+    setInternalRows(filteredData);
+  }, [search, internalColumns, rows]);
 
   const applyColumnFilters = useCallback(
     (inputRows: T[]): T[] => {
@@ -167,6 +183,7 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
 
   const totalPages = Math.max(1, Math.ceil(processedRows.length / pageSize));
   const currentPage = Math.min(page, totalPages - 1);
+
   const pagedRows = useMemo(() => {
     if (infiniteScroll) return processedRows;
     const start = currentPage * pageSize;
@@ -203,7 +220,7 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
     const onMove = (e: MouseEvent) => {
       const delta = e.clientX - startX;
       const newWidth = Math.max(
-        col.minWidth ?? 80,
+        col.minWidth ?? 140,
         Math.min(col.maxWidth ?? 800, startWidth + delta),
       );
       setColumnWidths((prev) => ({ ...prev, [key]: newWidth }));
@@ -536,8 +553,10 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
           setColumnOrder={setColumnOrder}
           onColumnsReorder={onColumnsReorder}
           onColumnResizeStart={onColumnResizeStart}
+          search={search}
+          setSearch={setSearch}
         />
-        {groupKeys.length === 0 ? filterRow : null}
+        {/* {groupKeys.length === 0 ? filterRow : null} */}
         <div
           ref={bodyRef}
           className="datagrid__body"

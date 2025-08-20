@@ -29,6 +29,8 @@ export interface ColumnDef<T = any> {
   sortable?: boolean;
   filterable?: boolean;
   search?: boolean;
+  searchValue?: string;
+  searchPlaceholder?: string;
   resizable?: boolean;
   editable?: boolean;
   hozAlign?: 'left' | 'center' | 'end';
