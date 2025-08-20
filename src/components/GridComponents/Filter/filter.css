@@ -1,0 +1,147 @@
+.filter-dropdown {
+  .select-container {
+    padding: 8px 8px 4px 8px;
+  }
+
+  .search-container {
+    padding: 4px 8px;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 4px 8px;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .text-item {
+      color: #2a4899;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .text-item.selected {
+      text-decoration: underline;
+      text-decoration-color: #2a4899;
+      text-underline-offset: 8px;
+      text-decoration-thickness: 3px;
+    }
+  }
+
+  hr {
+    color: #d2d8ee;
+    margin: 0px;
+    opacity: 1;
+  }
+
+  .select-container-and {
+    padding: 8px 8px 4px 8px;
+  }
+
+  .search-container-or {
+    padding: 4px 8px 4px 8px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px 8px 8px;
+
+    button {
+      width: 82px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .btn-primary {
+      background-color: #2a4899;
+      border-color: #2a4899;
+    }
+
+    .btn-outline-primary {
+      background-color: #fff;
+      border-color: #2a4899;
+      color: #2a4899;
+
+      &:hover {
+        background-color: #2a4899;
+        color: white;
+      }
+    }
+  }
+
+  .form-control {
+    height: 40px;
+    border-radius: 10px;
+    background-color: #d2daf1;
+    border: 1px solid #d2daf1;
+    color: #3c3b4c;
+    font-size: 14px;
+    opacity: 0.5;
+  }
+
+  .dropdown-toggle {
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #d2daf1;
+    border: 1px solid #d2daf1;
+    color: #3c3b4c;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  ul {
+    padding: 0;
+    width: 100%;
+
+    .dropdown-menu {
+      background-color: #fff;
+      border: 1px solid #d2daf1;
+      border-radius: 10px;
+    }
+
+    .dropdown-item {
+      color: #525065;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    li {
+        border-bottom: 1px solid #D2D8EE;
+
+        &:hover {
+            background-color: #EEF2FF;
+        }
+    }
+
+    li:first-child {
+
+        &:hover {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            background-color: #EEF2FF;
+        }
+    }
+
+    li:last-child {
+        border-bottom: none;
+
+        &:hover {
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: #EEF2FF;
+        }
+    }
+  }
+}

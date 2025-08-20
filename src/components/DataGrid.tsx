@@ -513,27 +513,23 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
           setDragColKey(null);
         }}
       >
-        {groupKeys.length === 0 ? (
-          <span className="group-text">
-            Drag and drop columns here to group…
-          </span>
-        ) : (
-          <span>
-            {groupKeys.map((k) => (
-              <span key={k} className="datagrid__group-chip">
+        <span>
+          {groupKeys.map((k) => (
+            <span key={k}>
+              <button
+                type="button"
+                className="btn btn-primary btn-badge"
+                onClick={() =>
+                  setInternalGroupBy((prev) => prev.filter((x) => x !== k))
+                }
+              >
+                <span className="badge text-bg-primary">X</span>
                 {i18nHeaderName(k, internalColumns)}
-                <button
-                  className="datagrid__btn"
-                  onClick={() =>
-                    setInternalGroupBy((prev) => prev.filter((x) => x !== k))
-                  }
-                >
-                  ×
-                </button>
-              </span>
-            ))}
-          </span>
-        )}
+              </button>
+            </span>
+          ))}
+        </span>
+        <span className="group-text">Drag and drop columns here to group…</span>
       </div>
       <div style={{ overflowX: 'auto' }}>
         <Header

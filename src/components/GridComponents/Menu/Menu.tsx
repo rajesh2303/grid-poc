@@ -22,6 +22,7 @@ const Menu = () => {
     <div
       ref={menuRef}
       style={{ display: 'inline-block', position: 'relative' }}
+      className="filter-menu"
     >
       <i
         className="bi bi-three-dots-vertical"

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import type { ColumnDef, SortDirection } from '../DataGrid.types';
-import Search from './Search';
+import { Search } from './Search';
 import type { SearchType } from '../types';
 import Menu from './Menu/Menu';
 import { Filter } from './Filter';

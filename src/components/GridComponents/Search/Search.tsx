@@ -1,6 +1,7 @@
 import { useCallback, useState } from 'react';
 
 import { useEffect, useRef } from 'react';
+import './search.css';
 
 type SearchProps = {
   value?: string;
@@ -60,7 +61,7 @@ const Search = ({
       <div className="datagrid__search shadow-sm">
         <input
           type="text"
-          className="datagrid__search-input"
+          className="datagrid__search-input search-input"
           placeholder={placeholder}
           value={search}
           onChange={handleSearchChange}

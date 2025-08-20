@@ -7,8 +7,12 @@
 	padding: 0px;
 }
 
-.menu-list {
+.filter-menu ul li {
 	border-bottom: 1px solid #D2D8EE;
+}
+
+.filter-menu ul li:last-child {
+	border-bottom: none;
 }
 
 .dropdown-item {
