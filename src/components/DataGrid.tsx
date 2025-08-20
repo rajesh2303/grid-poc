@@ -10,7 +10,6 @@ import './DataGrid.css';
 import type {
   ColumnDef,
   DataGridProps,
-  FilterModel,
   InternalColumn,
 } from './DataGrid.types';
 import {
@@ -21,9 +20,8 @@ import {
   quickFilterRows,
   sortRows,
 } from './utils/column.utils';
-import { useGridColumns } from './hooks/useGridColumns';
-import { useContainerWidth } from './hooks/useContainerWidth';
 import type { SearchType } from './types';
+import { useDataGrid, useGridColumns, useContainerWidth } from './hooks';
 
 export default function DataGrid<T>(props: DataGridProps<T>) {
   const {
@@ -38,13 +36,9 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
     style,
     quickFilter,
     onSelectionChange,
-    onCellEdit,
     enableColumnReorder = true,
     onColumnsReorder,
-    initialFilters,
-    onFiltersChange,
     groupBy,
-    // onGroupByChange,
     infiniteScroll = false,
     hasMore = false,
     onLoadMore,
@@ -60,7 +54,15 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
     );
   }, [props?.columns, width, checkboxSelection]);
 
-  const [sort, setSort] = useState<typeof initialSort>(initialSort);
+  const {
+    sort,
+    filter,
+    onClickMenu,
+    onSortChange,
+    onFilterClear,
+    onFilterChange,
+  } = useDataGrid<T>({ initialSort });
+
   const [page, setPage] = useState(0);
   const [pageSize, setPageSize] = useState(pageSizeProp);
   const [columnWidths, setColumnWidths] = useState<Record<string, number>>({});
@@ -68,9 +70,6 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
   const [columnOrder, setColumnOrder] = useState<string[]>(() =>
     columns.map((c) => c.key),
   );
-  const [filters, setFilters] = useState<
-    Record<string, FilterModel | undefined>
-  >(initialFilters || {});
   const [dragColKey, setDragColKey] = useState<string | null>(null);
   const [resizingColKey, setResizingColKey] = useState<string | null>(null);
   const [dragRowId, setDragRowId] = useState<string | number | null>(null);
@@ -78,11 +77,6 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
   const [internalGroupBy, setInternalGroupBy] = useState<string[]>(
     groupBy || [],
   );
-  const [editing, setEditing] = useState<{
-    rowId: string | number;
-    colKey: string;
-    value: any;
-  } | null>(null);
   const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [search, setSearch] = useState<SearchType | null>(null);
 
@@ -121,65 +115,12 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
     setInternalRows(filteredData);
   }, [search, internalColumns, rows]);
 
-  const applyColumnFilters = useCallback(
-    (inputRows: T[]): T[] => {
-      const entries = Object.entries(filters).filter(([, f]) => !!f) as [
-        string,
-        FilterModel,
-      ][];
-      if (entries.length === 0) return inputRows;
-      return inputRows.filter((r) => {
-        return entries.every(([key, f]) => {
-          const col = internalColumns.find((c) => c.key === key);
-          if (!col) return true;
-          const raw = getValue(r, col);
-          const op = f.operator;
-          const val = f.value as any;
-          const extra = f.extra as any;
-          if (col.dataType === 'number') {
-            const num = Number(raw);
-            if (Number.isNaN(num)) return false;
-            if (op === 'equals') return num === Number(val);
-            if (op === 'gt') return num > Number(val);
-            if (op === 'gte') return num >= Number(val);
-            if (op === 'lt') return num < Number(val);
-            if (op === 'lte') return num <= Number(val);
-            if (op === 'between')
-              return num >= Number(val) && num <= Number(extra);
-          }
-          if (col.dataType === 'date') {
-            const ts = raw ? new Date(raw as any).getTime() : NaN;
-            if (Number.isNaN(ts)) return false;
-            if (op === 'equals') return ts === new Date(String(val)).getTime();
-            if (op === 'before') return ts < new Date(String(val)).getTime();
-            if (op === 'after') return ts > new Date(String(val)).getTime();
-            if (op === 'between')
-              return (
-                ts >= new Date(String(val)).getTime() &&
-                ts <= new Date(String(extra)).getTime()
-              );
-          }
-          // default text
-          const str = String(raw ?? '').toLowerCase();
-          const needle = String(val ?? '').toLowerCase();
-          if (op === 'equals') return str === needle;
-          if (op === 'startsWith') return str.startsWith(needle);
-          if (op === 'endsWith') return str.endsWith(needle);
-          // contains
-          return str.includes(needle);
-        });
-      });
-    },
-    [filters, internalColumns],
-  );
-
   const processedRows = useMemo(() => {
     let out = internalRows;
-    out = applyColumnFilters(out);
     out = quickFilterRows(out, internalColumns, quickFilter);
     out = sortRows(out, sort, internalColumns);
     return out;
-  }, [internalRows, internalColumns, sort, quickFilter, applyColumnFilters]);
+  }, [internalRows, internalColumns, sort, quickFilter]);
 
   const totalPages = Math.max(1, Math.ceil(processedRows.length / pageSize));
   const currentPage = Math.min(page, totalPages - 1);
@@ -242,155 +183,6 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
     return arr.map((v) => `${v}px`).join(' ');
   }, [internalColumns, checkboxSelection]);
 
-  const filterRow = (
-    <div className="datagrid__header" style={{ gridTemplateColumns }}>
-      {checkboxSelection && <div className="datagrid__header-cell" />}
-      {internalColumns.map((col) => {
-        if (col.filterable === false)
-          return <div key={col.key} className="datagrid__header-cell" />;
-        const f = filters[col.key];
-        const set = (next: FilterModel | undefined) => {
-          setFilters((prev) => {
-            const merged = { ...prev, [col.key]: next };
-            onFiltersChange && onFiltersChange(merged);
-            return merged;
-          });
-        };
-        const commonStyle: React.CSSProperties = { width: '100%' };
-        if (col.dataType === 'number') {
-          return (
-            <div
-              key={col.key}
-              className="datagrid__header-cell"
-              style={{ gap: '.25rem' }}
-            >
-              <select
-                value={(f?.operator as string) || 'equals'}
-                onChange={(e) =>
-                  set({
-                    operator: e.target.value as any,
-                    value: f?.value ?? '',
-                  })
-                }
-              >
-                <option value="equals">=</option>
-                <option value="gt">&gt;</option>
-                <option value="gte">≥</option>
-                <option value="lt">&lt;</option>
-                <option value="lte">≤</option>
-                <option value="between">between</option>
-              </select>
-              <input
-                style={commonStyle}
-                type="number"
-                value={(f?.value as any) ?? ''}
-                onChange={(e) =>
-                  set({
-                    operator: (f?.operator as any) || 'equals',
-                    value: e.target.value,
-                  })
-                }
-              />
-              {f?.operator === 'between' && (
-                <input
-                  style={commonStyle}
-                  type="number"
-                  value={(f?.extra as any) ?? ''}
-                  onChange={(e) =>
-                    set({
-                      operator: 'between',
-                      value: f?.value ?? '',
-                      extra: e.target.value,
-                    })
-                  }
-                />
-              )}
-            </div>
-          );
-        }
-        if (col.dataType === 'date') {
-          return (
-            <div
-              key={col.key}
-              className="datagrid__header-cell"
-              style={{ gap: '.25rem' }}
-            >
-              <select
-                value={(f?.operator as string) || 'equals'}
-                onChange={(e) =>
-                  set({
-                    operator: e.target.value as any,
-                    value: f?.value ?? '',
-                  })
-                }
-              >
-                <option value="equals">on</option>
-                <option value="before">before</option>
-                <option value="after">after</option>
-                <option value="between">between</option>
-              </select>
-              <input
-                style={commonStyle}
-                type="date"
-                value={(f?.value as any) ?? ''}
-                onChange={(e) =>
-                  set({
-                    operator: (f?.operator as any) || 'equals',
-                    value: e.target.value,
-                  })
-                }
-              />
-              {f?.operator === 'between' && (
-                <input
-                  style={commonStyle}
-                  type="date"
-                  value={(f?.extra as any) ?? ''}
-                  onChange={(e) =>
-                    set({
-                      operator: 'between',
-                      value: f?.value ?? '',
-                      extra: e.target.value,
-                    })
-                  }
-                />
-              )}
-            </div>
-          );
-        }
-        // text
-        return (
-          <div
-            key={col.key}
-            className="datagrid__header-cell"
-            style={{ gap: '.25rem' }}
-          >
-            <select
-              value={(f?.operator as string) || 'contains'}
-              onChange={(e) =>
-                set({ operator: e.target.value as any, value: f?.value ?? '' })
-              }
-            >
-              <option value="contains">contains</option>
-              <option value="equals">equals</option>
-              <option value="startsWith">starts with</option>
-              <option value="endsWith">ends with</option>
-            </select>
-            <input
-              style={commonStyle}
-              value={(f?.value as any) ?? ''}
-              onChange={(e) =>
-                set({
-                  operator: (f?.operator as any) || 'contains',
-                  value: e.target.value,
-                })
-              }
-            />
-          </div>
-        );
-      })}
-    </div>
-  );
-
   // Simple virtualization for the current page (disabled when grouped to keep logic straightforward)
   const bodyRef = useRef<HTMLDivElement>(null);
   const [scrollTop, setScrollTop] = useState(0);
@@ -398,44 +190,6 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
   const startIndex = Math.max(0, Math.floor(scrollTop / rowHeight) - 2);
   const endIndex = Math.min(pagedRows.length, startIndex + visibleRowCount);
   const offsetY = startIndex * rowHeight;
-
-  // Editing helpers
-  const beginEdit = useCallback(
-    (row: T, col: ColumnDef<T>) => {
-      if (col.editable === false) return;
-      const rowId = getRowId(row);
-      setEditing({ rowId, colKey: col.key, value: getValue(row, col) });
-    },
-    [getRowId],
-  );
-
-  const commitEdit = useCallback(
-    (commit: boolean) => {
-      setEditing((ed) => {
-        if (!ed) return null;
-        if (commit) {
-          const col = internalColumns.find((c) => c.key === ed.colKey);
-          if (col && col.field) {
-            setInternalRows((prev) =>
-              prev.map((r) => {
-                if (getRowId(r) !== ed.rowId) return r;
-                return { ...(r as any), [col.field!]: ed.value } as T;
-              }),
-            );
-          }
-          onCellEdit &&
-            onCellEdit({
-              rowId: ed.rowId,
-              columnKey: ed.colKey,
-              value: ed.value,
-              row: internalRows.find((r) => getRowId(r) === ed.rowId)!,
-            });
-        }
-        return null;
-      });
-    },
-    [internalColumns, onCellEdit, internalRows, getRowId],
-  );
 
   // Grouping
   const groupKeys = groupBy && groupBy.length > 0 ? groupBy : internalGroupBy;
@@ -541,7 +295,7 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
           getRowId={getRowId}
           onToggleAll={onToggleAll}
           sort={sort}
-          setSort={setSort}
+          onSortChange={onSortChange}
           enableColumnReorder={enableColumnReorder}
           resizingColKey={resizingColKey}
           setDragColKey={setDragColKey}
@@ -551,6 +305,10 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
           onColumnResizeStart={onColumnResizeStart}
           search={search}
           setSearch={setSearch}
+          onClickMenu={onClickMenu}
+          filter={filter}
+          onFilterClear={onFilterClear}
+          onFilterChange={onFilterChange}
         />
         {/* {groupKeys.length === 0 ? filterRow : null} */}
         <div
@@ -612,38 +370,12 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
                               </div>
                             )}
                             {internalColumns.map((col) => {
-                              const isEditing =
-                                editing &&
-                                editing.rowId === getRowId(row) &&
-                                editing.colKey === col.key;
                               const raw = getValue(row, col);
-                              if (isEditing) {
-                                return (
-                                  <div key={col.key} className="datagrid__cell">
-                                    <DefaultEditor
-                                      type={col.dataType || 'text'}
-                                      value={editing.value}
-                                      onChange={(v) =>
-                                        setEditing((prev) =>
-                                          prev ? { ...prev, value: v } : prev,
-                                        )
-                                      }
-                                      onKeyDown={(e) => {
-                                        if (e.key === 'Enter') commitEdit(true);
-                                        if (e.key === 'Escape')
-                                          commitEdit(false);
-                                      }}
-                                      onBlur={() => commitEdit(true)}
-                                    />
-                                  </div>
-                                );
-                              }
                               return (
                                 <div
                                   key={col.key}
                                   className="datagrid__cell"
                                   title={String(raw)}
-                                  onDoubleClick={() => beginEdit(row, col)}
                                 >
                                   {col.cellRenderer
                                     ? col.cellRenderer(raw, row)
@@ -724,37 +456,12 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
                         </div>
                       )}
                       {internalColumns.map((col) => {
-                        const isEditing =
-                          editing &&
-                          editing.rowId === getRowId(row) &&
-                          editing.colKey === col.key;
                         const raw = getValue(row, col);
-                        if (isEditing) {
-                          return (
-                            <div key={col.key} className="datagrid__cell">
-                              <DefaultEditor
-                                type={col.dataType || 'text'}
-                                value={editing.value}
-                                onChange={(v) =>
-                                  setEditing((prev) =>
-                                    prev ? { ...prev, value: v } : prev,
-                                  )
-                                }
-                                onKeyDown={(e) => {
-                                  if (e.key === 'Enter') commitEdit(true);
-                                  if (e.key === 'Escape') commitEdit(false);
-                                }}
-                                onBlur={() => commitEdit(true)}
-                              />
-                            </div>
-                          );
-                        }
                         return (
                           <div
                             key={col.key}
                             className="datagrid__cell"
                             title={String(raw)}
-                            onDoubleClick={() => beginEdit(row, col)}
                           >
                             {col.cellRenderer
                               ? col.cellRenderer(raw, row)
@@ -773,49 +480,3 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
     </div>
   );
 }
-
-const DefaultEditor = ({
-  type,
-  value,
-  onChange,
-  onKeyDown,
-  onBlur,
-}: {
-  type: string;
-  value: any;
-  onChange: (v: any) => void;
-  onKeyDown: (e: React.KeyboardEvent) => void;
-  onBlur?: () => void;
-}) => {
-  if (type === 'number')
-    return (
-      <input
-        autoFocus
-        type="number"
-        value={value ?? ''}
-        onChange={(e) => onChange((e.target as HTMLInputElement).value)}
-        onKeyDown={onKeyDown}
-        onBlur={onBlur}
-      />
-    );
-  if (type === 'date')
-    return (
-      <input
-        autoFocus
-        type="date"
-        value={value ?? ''}
-        onChange={(e) => onChange((e.target as HTMLInputElement).value)}
-        onKeyDown={onKeyDown}
-        onBlur={onBlur}
-      />
-    );
-  return (
-    <input
-      autoFocus
-      value={value ?? ''}
-      onChange={(e) => onChange((e.target as HTMLInputElement).value)}
-      onKeyDown={onKeyDown}
-      onBlur={onBlur}
-    />
-  );
-};

@@ -52,6 +52,11 @@ export interface RowSelectionChange<T = any> {
   selectedRows: T[];
 }
 
+export type SortType = {
+  key: string;
+  direction: Exclude<SortDirection, null>;
+};
+
 export interface DataGridProps<T = any> {
   columns: ColumnDef<T>[];
   rows: T[];
@@ -61,7 +66,7 @@ export interface DataGridProps<T = any> {
   pageSize?: number;
   pageSizeOptions?: number[];
   checkboxSelection?: boolean;
-  initialSort?: { key: string; direction: Exclude<SortDirection, null> } | null;
+  initialSort?: SortType | null;
   className?: string;
   style?: React.CSSProperties;
   quickFilter?: string; // external quick filter text
@@ -91,3 +96,13 @@ export interface DataGridProps<T = any> {
   hasMore?: boolean;
   onLoadMore?: () => void;
 }
+
+export type FilterValue<T> = {
+  text: string[];
+  operator: string[];
+  column?: ColumnDef<T> | null;
+} | null;
+
+export type FilterType<T> = {
+  [key: string]: FilterValue<T>;
+};

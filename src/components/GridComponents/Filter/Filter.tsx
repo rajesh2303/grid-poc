@@ -1,23 +1,58 @@
-import { useRef, useState, useEffect } from 'react';
+import { useCallback } from 'react';
 import './filter.css';
+import FilterInput from './FilterInput';
+import useFilter from './useFilter';
+import type { ColumnDef, FilterValue } from '../../DataGrid.types';
+import { FilterText } from './Filter.utils';
 
-const Filter = () => {
-  const [open, setOpen] = useState(false);
-  const filterRef = useRef<HTMLDivElement>(null);
+type FilterProps<T> = {
+  filter: FilterValue<T>;
+  onClick?: (column?: ColumnDef<T> | null) => void;
+  column?: ColumnDef<T> | null;
+  onChange: (filter: FilterValue<T>) => void;
+  onClear?: (column?: ColumnDef<T> | null) => void;
+};
 
-  useEffect(() => {
-    if (!open) return;
-    function handleClick(event: MouseEvent) {
-      if (
-        filterRef.current &&
-        !filterRef.current.contains(event.target as Node)
-      ) {
-        setOpen(false);
-      }
-    }
-    document.addEventListener('mousedown', handleClick);
-    return () => document.removeEventListener('mousedown', handleClick);
-  }, [open]);
+const Filter = <T,>({ filter, column, onChange }: FilterProps<T>) => {
+  const { open, filterRef, onClickFilter } = useFilter();
+
+  const handleFilterChange = useCallback(
+    (text: string, index: number) => {
+      const fallback = {
+        text: ['', ''],
+        operator: [FilterText[0], FilterText[0]],
+        column: column,
+      };
+      const current = filter ?? fallback;
+      const updatedFilter = {
+        ...current,
+        text: current.text.map((t, i) => (i === index ? text : t)),
+        operator: current.operator,
+        column: column ?? current.column,
+      };
+      onChange(updatedFilter);
+    },
+    [onChange, filter, column],
+  );
+
+  const handleOptionSelect = useCallback(
+    (option: string, index: number) => {
+      const fallback = {
+        text: ['', ''],
+        operator: [FilterText[0], FilterText[0]],
+        column: column,
+      };
+      const current = filter ?? fallback;
+      const updatedFilter = {
+        ...current,
+        text: current.text,
+        operator: current.operator.map((o, i) => (i === index ? option : o)),
+        column: column ?? current.column,
+      };
+      onChange(updatedFilter);
+    },
+    [onChange, filter, column],
+  );
 
   return (
     <div
@@ -31,94 +66,44 @@ const Filter = () => {
           fontSize: '14px',
           cursor: 'pointer',
         }}
-        onClick={() => setOpen((prev) => !prev)}
+        onClick={onClickFilter}
       />
       {open && (
         <div className="dropdown-menu show menu-dropdown filter-dropdown">
-          <div className="select-container">
-            <div className="dropdown">
-              <button
-                className="btn btn-secondary dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Contains
-              </button>
-              <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    One
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Two
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Three
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="search-container">
-            <input
-              type="text"
-              className="form-control form-control-sm"
-              placeholder="Type to filter"
-            />
-          </div>
+          <FilterInput
+            index={0}
+            filterText={filter?.text[0] ?? ''}
+            selectedOption={filter?.operator[0] ?? FilterText[0]}
+            onFilterTextChange={handleFilterChange}
+            onOptionSelect={handleOptionSelect}
+          />
           <div className="text-container">
             <p className="text-item selected">AND</p>
             <p className="text-item">OR</p>
           </div>
           <hr />
-          <div className="select-container-and">
-            <div className="dropdown">
-              <button
-                className="btn btn-secondary dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Contains
-              </button>
-              <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    One
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Two
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Three
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="search-container-or">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Type to filter"
-            />
-          </div>
+          <FilterInput
+            index={1}
+            filterText={filter?.text[1] ?? ''}
+            selectedOption={filter?.operator[1] ?? FilterText[0]}
+            onFilterTextChange={handleFilterChange}
+            onOptionSelect={handleOptionSelect}
+          />
           <div className="button-container">
-            <button type="button" className="btn btn-outline-primary btn-sm">
+            {/*  <button
+              type="button"
+              className="btn btn-outline-primary btn-sm"
+              // onClick={handleClear}
+            >
               Clear
             </button>
-            <button type="button" className="btn btn-primary btn-sm">
+            <button
+              type="button"
+              className="btn btn-primary btn-sm"
+              // onClick={handleSubmit}
+            >
               Filter
-            </button>
+            </button> */}
           </div>
         </div>
       )}

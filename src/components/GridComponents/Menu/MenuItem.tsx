@@ -1,11 +1,12 @@
 import React, { useState, useRef, useCallback } from 'react';
-import type { MenuItem as MenuItemType } from './Menu.utils';
+import type { MenuItemType } from './Menu.utils';
 
 type MenuItemProps = {
   item: MenuItemType;
+  onClick: (item: MenuItemType) => void;
 };
 
-const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
+const MenuItem: React.FC<MenuItemProps> = ({ item, onClick }) => {
   const [subOpen, setSubOpen] = useState(false);
   const timeoutRef = useRef<number | null>(null);
 
@@ -18,6 +19,10 @@ const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
     timeoutRef.current = window.setTimeout(() => setSubOpen(false), 100);
   }, []);
 
+  const handleClick = useCallback(() => {
+    onClick(item);
+  }, [item]);
+
   return (
     <li
       className="menu-list"
@@ -25,7 +30,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
       onMouseLeave={item.isSubmenu ? handleMouseLeave : undefined}
       style={{ position: 'relative' }}
     >
-      <button className="dropdown-item menu-item">
+      <button className="dropdown-item menu-item" onClick={handleClick}>
         <span>
           {item.icon && (
             <i

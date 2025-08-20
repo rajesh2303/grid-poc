@@ -1,9 +1,16 @@
 import { useRef, useState, useEffect } from 'react';
-import { MenuData } from './Menu.utils';
+import { MenuData, type MenuItemType } from './Menu.utils';
 import MenuItem from './MenuItem';
 import './menu.css';
+import type { ColumnDef } from '../../DataGrid.types';
+import { getMenuValidate } from './MenuValidate';
 
-const Menu = () => {
+type MenuProps<T> = {
+  column: ColumnDef<T>;
+  onClickMenu: (item: MenuItemType) => void;
+};
+
+const Menu = <T,>({ column, onClickMenu }: MenuProps<T>) => {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -34,9 +41,17 @@ const Menu = () => {
           className="dropdown-menu show menu-dropdown"
           style={{ position: 'absolute', zIndex: 1000, right: 0 }}
         >
-          {MenuData.map((item, index) => (
-            <MenuItem item={item} key={index} />
-          ))}
+          {MenuData.map((item, index) => {
+            if (getMenuValidate(column, item))
+              return (
+                <MenuItem
+                  key={index}
+                  item={{ ...item, isSubmenu: item.isSubmenu || false }}
+                  onClick={onClickMenu}
+                />
+              );
+            return null;
+          })}
         </ul>
       )}
     </div>

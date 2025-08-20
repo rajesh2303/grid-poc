@@ -43,7 +43,7 @@ const columns: ColumnDef<Broker>[] = [
     key: 'lastModified',
     headerName: 'Last Modified',
     field: 'lastModified',
-    sortable: true,
+    sortable: false,
     resizable: true,
     search: true,
     searchPlaceholder: 'Search by last modified',
@@ -89,7 +89,7 @@ export default function TicketsPage() {
       checkboxSelection
       quickFilter={quick}
       enableColumnReorder
-      infiniteScroll
+      infiniteScroll={false}
       hasMore={visibleCount < allRows.length}
       onLoadMore={() =>
         new Promise<void>((resolve) => {

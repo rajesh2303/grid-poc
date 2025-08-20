@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
-import type { ColumnDef, SortDirection } from '../DataGrid.types';
+import type {
+  ColumnDef,
+  FilterType,
+  FilterValue,
+  SortDirection,
+} from '../DataGrid.types';
 import { Search } from './Search';
 import type { SearchType } from '../types';
 import Menu from './Menu/Menu';
 import { Filter } from './Filter';
+import type { MenuItemType } from './Menu/Menu.utils';
 interface HeaderProps<T> {
   internalColumns: ColumnDef<T>[];
   gridTemplateColumns: string;
@@ -13,12 +19,7 @@ interface HeaderProps<T> {
   getRowId: (row: T) => string | number;
   onToggleAll: (checked: boolean) => void;
   sort: { key: string; direction: Exclude<SortDirection, null> } | null;
-  setSort: React.Dispatch<
-    React.SetStateAction<{
-      key: string;
-      direction: Exclude<SortDirection, null>;
-    } | null>
-  >;
+  onSortChange: (col: ColumnDef<T>) => void;
   search: SearchType | null;
   enableColumnReorder: boolean;
   resizingColKey: string | null;
@@ -28,28 +29,39 @@ interface HeaderProps<T> {
   onColumnsReorder?: (arr: string[]) => void;
   onColumnResizeStart: (key: string, startX: number) => void;
   setSearch: React.Dispatch<React.SetStateAction<SearchType | null>>;
+  onClickMenu: (col: ColumnDef<T>, item: MenuItemType) => void;
+  onFilterChange: (filter: FilterValue<T> | null) => void;
+  filter: FilterType<T> | null;
+  onFilterClear?: () => void;
+  onFilterSubmit?: () => void;
 }
 
-function Header<T>({
-  internalColumns,
-  gridTemplateColumns,
-  checkboxSelection,
-  pagedRows,
-  selected,
-  getRowId,
-  onToggleAll,
-  sort,
-  setSort,
-  enableColumnReorder,
-  resizingColKey,
-  setDragColKey,
-  dragColKey,
-  setColumnOrder,
-  onColumnsReorder,
-  onColumnResizeStart,
-  search,
-  setSearch,
-}: HeaderProps<T>) {
+function Header<T>(props: HeaderProps<T>) {
+  const {
+    internalColumns,
+    gridTemplateColumns,
+    checkboxSelection,
+    pagedRows,
+    selected,
+    getRowId,
+    onToggleAll,
+    sort,
+    onSortChange,
+    enableColumnReorder,
+    resizingColKey,
+    setDragColKey,
+    dragColKey,
+    setColumnOrder,
+    onColumnsReorder,
+    onColumnResizeStart,
+    search,
+    setSearch,
+    onClickMenu,
+    filter,
+    onFilterChange,
+    onFilterClear,
+    onFilterSubmit,
+  } = props;
   const [openSearch, setOpenSearch] = useState<string | null>(null);
 
   return (
@@ -125,14 +137,7 @@ function Header<T>({
                     cursor: col.sortable === false ? 'default' : 'pointer',
                   }}
                   onClick={() => {
-                    if (col.sortable === false) return;
-                    setSort((prev) => {
-                      if (!prev || prev.key !== col.key)
-                        return { key: col.key, direction: 'asc' } as const;
-                      if (prev.direction === 'asc')
-                        return { key: col.key, direction: 'desc' } as const;
-                      return null;
-                    });
+                    onSortChange(col);
                   }}
                   aria-label={`Sort by ${col.headerName}`}
                 >
@@ -167,8 +172,21 @@ function Header<T>({
                       onClick={() => setOpenSearch(col.key)}
                     />
                   ) : null}
-                  {col.filterable !== false && <Filter />}
-                  <Menu />
+                  {col.filterable !== false && (
+                    <Filter
+                      filter={filter?.[col.key] ?? null}
+                      onChange={onFilterChange}
+                      onClick={onFilterSubmit}
+                      onClear={onFilterClear}
+                      column={col}
+                    />
+                  )}
+                  <Menu
+                    column={col}
+                    onClickMenu={(item) => {
+                      onClickMenu(col, item);
+                    }}
+                  />
                 </span>
               </div>
             )}
