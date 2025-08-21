@@ -41,13 +41,15 @@ const FilterInput = ({
         </div>
       </div>
       <div className="search-container">
-        <input
-          type="text"
-          className="form-control form-control-sm"
-          placeholder="Type to filter"
-          value={filterText}
-          onChange={(e) => onFilterTextChange(e.target.value, index)}
-        />
+        {selectedOption !== 'Blank' && selectedOption !== 'Not blank' && (
+          <input
+            type="text"
+            className="form-control form-control-sm"
+            placeholder="Type to filter"
+            value={filterText}
+            onChange={(e) => onFilterTextChange(e.target.value, index)}
+          />
+        )}
       </div>
     </>
   );

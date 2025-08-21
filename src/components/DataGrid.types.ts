@@ -100,6 +100,7 @@ export interface DataGridProps<T = any> {
 export type FilterValue<T> = {
   text: string[];
   operator: string[];
+  method: 'AND' | 'OR';
   column?: ColumnDef<T> | null;
 } | null;
 

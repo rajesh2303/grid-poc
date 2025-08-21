@@ -1,4 +1,5 @@
-import type { ColumnDef, SortDirection } from '../DataGrid.types';
+import type { ColumnDef, FilterType, SortDirection } from '../DataGrid.types';
+import { FilterTextKey } from '../GridComponents/Filter';
 
 export function getColumnMapper<T>(
   columns: ColumnDef<T>[],
@@ -69,4 +70,67 @@ export function quickFilterRows<T>(
         .includes(q),
     ),
   );
+}
+
+export function deepFilterRows<T>(
+  rows: T[],
+  columns: ColumnDef<T>[],
+  filter: FilterType<T> | null,
+): T[] {
+  if (!filter) return rows;
+
+  return rows.filter((row) => {
+    return Object.entries(filter).every(([key, filterValue]) => {
+      if (!filterValue) return true;
+
+      const { operator, text, method } = filterValue;
+      const col = columns.find((c) => c.key === key);
+      if (!col || !col.filterable) return true;
+
+      const cellValue = getValue(row, col);
+      const normalizedCellValue = String(cellValue ?? '').toLowerCase();
+
+      const results: boolean[] = [];
+
+      for (let i = 0; i < operator.length; i++) {
+        const op = operator[i];
+        const val = (text[i] ?? '').toLowerCase();
+
+        switch (op) {
+          case FilterTextKey.CONTAINS:
+            results.push(normalizedCellValue.includes(val));
+            break;
+          case FilterTextKey.DOES_NOT_CONTAIN:
+            results.push(!normalizedCellValue.includes(val));
+            break;
+          case FilterTextKey.EQUALS:
+            results.push(cellValue === text[i]);
+            break;
+          case FilterTextKey.DOES_NOT_EQUAL:
+            results.push(cellValue !== text[i]);
+            break;
+          case FilterTextKey.STARTS_WITH:
+            results.push(normalizedCellValue.startsWith(val));
+            break;
+          case FilterTextKey.ENDS_WITH:
+            results.push(normalizedCellValue.endsWith(val));
+            break;
+          case FilterTextKey.BLANK:
+            results.push(!cellValue);
+            break;
+          case FilterTextKey.NOT_BLANK:
+            results.push(!!cellValue);
+            break;
+          default:
+            results.push(true);
+        }
+      }
+
+      if (method === 'AND') {
+        return results.every(Boolean);
+      } else {
+        return results.some(Boolean);
+      }
+    });
+  });
 }

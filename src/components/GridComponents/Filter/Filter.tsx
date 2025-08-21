@@ -1,58 +1,27 @@
-import { useCallback } from 'react';
 import './filter.css';
 import FilterInput from './FilterInput';
 import useFilter from './useFilter';
-import type { ColumnDef, FilterValue } from '../../DataGrid.types';
+import type { ColumnDef, FilterType, FilterValue } from '../../DataGrid.types';
 import { FilterText } from './Filter.utils';
 
 type FilterProps<T> = {
-  filter: FilterValue<T>;
-  onClick?: (column?: ColumnDef<T> | null) => void;
-  column?: ColumnDef<T> | null;
-  onChange: (filter: FilterValue<T>) => void;
-  onClear?: (column?: ColumnDef<T> | null) => void;
+  filter: FilterType<T> | null;
+  onClick?: (filter: FilterValue<T>, column?: ColumnDef<T> | null) => void;
+  column: ColumnDef<T>;
 };
 
-const Filter = <T,>({ filter, column, onChange }: FilterProps<T>) => {
-  const { open, filterRef, onClickFilter } = useFilter();
-
-  const handleFilterChange = useCallback(
-    (text: string, index: number) => {
-      const fallback = {
-        text: ['', ''],
-        operator: [FilterText[0], FilterText[0]],
-        column: column,
-      };
-      const current = filter ?? fallback;
-      const updatedFilter = {
-        ...current,
-        text: current.text.map((t, i) => (i === index ? text : t)),
-        operator: current.operator,
-        column: column ?? current.column,
-      };
-      onChange(updatedFilter);
-    },
-    [onChange, filter, column],
-  );
-
-  const handleOptionSelect = useCallback(
-    (option: string, index: number) => {
-      const fallback = {
-        text: ['', ''],
-        operator: [FilterText[0], FilterText[0]],
-        column: column,
-      };
-      const current = filter ?? fallback;
-      const updatedFilter = {
-        ...current,
-        text: current.text,
-        operator: current.operator.map((o, i) => (i === index ? option : o)),
-        column: column ?? current.column,
-      };
-      onChange(updatedFilter);
-    },
-    [onChange, filter, column],
-  );
+const Filter = <T,>({ filter, column, onClick }: FilterProps<T>) => {
+  const {
+    open,
+    filterRef,
+    filters,
+    onClickFilter,
+    handleFilterChange,
+    handleOptionSelect,
+    handleSubmit,
+    handleClear,
+    handleMethodChange,
+  } = useFilter({ filter, column, onClick });
 
   return (
     <div
@@ -72,38 +41,48 @@ const Filter = <T,>({ filter, column, onChange }: FilterProps<T>) => {
         <div className="dropdown-menu show menu-dropdown filter-dropdown">
           <FilterInput
             index={0}
-            filterText={filter?.text[0] ?? ''}
-            selectedOption={filter?.operator[0] ?? FilterText[0]}
+            filterText={filters?.text[0] ?? ''}
+            selectedOption={filters?.operator[0] ?? FilterText[0]}
             onFilterTextChange={handleFilterChange}
             onOptionSelect={handleOptionSelect}
           />
           <div className="text-container">
-            <p className="text-item selected">AND</p>
-            <p className="text-item">OR</p>
+            <p
+              className={`text-item ${!filters?.method || filters?.method === 'AND' ? 'selected' : ''}`}
+              onClick={() => handleMethodChange('AND')}
+            >
+              AND
+            </p>
+            <p
+              className={`text-item ${filters?.method === 'OR' ? 'selected' : ''}`}
+              onClick={() => handleMethodChange('OR')}
+            >
+              OR
+            </p>
           </div>
           <hr />
           <FilterInput
             index={1}
-            filterText={filter?.text[1] ?? ''}
-            selectedOption={filter?.operator[1] ?? FilterText[0]}
+            filterText={filters?.text[1] ?? ''}
+            selectedOption={filters?.operator[1] ?? FilterText[0]}
             onFilterTextChange={handleFilterChange}
             onOptionSelect={handleOptionSelect}
           />
           <div className="button-container">
-            {/*  <button
+            <button
               type="button"
               className="btn btn-outline-primary btn-sm"
-              // onClick={handleClear}
+              onClick={handleClear}
             >
               Clear
             </button>
             <button
               type="button"
               className="btn btn-primary btn-sm"
-              // onClick={handleSubmit}
+              onClick={handleSubmit}
             >
               Filter
-            </button> */}
+            </button>
           </div>
         </div>
       )}

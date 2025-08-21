@@ -16,20 +16,7 @@ const useDataGrid = <T>({ initialSort }: { initialSort: SortType | null }) => {
   const [sort, setSort] = useState<SortType | null>(initialSort);
   const [filter, setFilter] = useState<FilterType<T> | null>(null);
 
-  const onFilterClear = useCallback((column?: ColumnDef<T> | null) => {
-    setFilter((prev) => {
-      if (!prev) return null;
-      const newFilters = { ...prev };
-      if (column) {
-        delete newFilters[column.key];
-      } else {
-        return null;
-      }
-      return newFilters;
-    });
-  }, []);
-
-  const onFilterChange = useCallback((filter: FilterValue<T> | null) => {
+  const onFilterSubmit = useCallback((filter: FilterValue<T> | null) => {
     setFilter((prev) => {
       if (filter == null) return null;
       return {
@@ -53,30 +40,36 @@ const useDataGrid = <T>({ initialSort }: { initialSort: SortType | null }) => {
     },
     [],
   );
+  const onClearSort = useCallback(() => {
+    setSort(null);
+  }, []);
+
+  const onClearFilter = useCallback(() => {
+    setFilter(null);
+  }, []);
 
   const onClickMenu = useCallback(
     (col: ColumnDef<T>, item: MenuItemType) => {
       if (item.key === MenuKey.SORT_ASCENDING) onSortChange(col, 'asc');
       else if (item.key === MenuKey.SORT_DESCENDING) onSortChange(col, 'desc');
       else if (item.key === MenuKey.CLEAR_SORT) onClearSort();
+      else if (item.key === MenuKey.RESET_COLUMN) {
+        onClearFilter();
+        onClearSort();
+      }
     },
-    [onSortChange],
+    [onSortChange, onClearSort, onFilterSubmit, onClearFilter],
   );
-
-  const onClearSort = useCallback(() => {
-    setSort(null);
-  }, []);
 
   return useMemo(
     () => ({
       sort,
       filter,
-      onFilterClear,
-      onFilterChange,
+      onFilterSubmit,
       onSortChange,
       onClickMenu,
     }),
-    [sort, filter, onFilterClear, onFilterChange, onSortChange, onClickMenu],
+    [sort, filter, onFilterSubmit, onSortChange, onClickMenu],
   );
 };
 

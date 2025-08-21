@@ -13,6 +13,7 @@ import type {
   InternalColumn,
 } from './DataGrid.types';
 import {
+  deepFilterRows,
   defaultGetRowId,
   formatValue,
   getColumnMapper,
@@ -54,14 +55,8 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
     );
   }, [props?.columns, width, checkboxSelection]);
 
-  const {
-    sort,
-    filter,
-    onClickMenu,
-    onSortChange,
-    onFilterClear,
-    onFilterChange,
-  } = useDataGrid<T>({ initialSort });
+  const { sort, filter, onClickMenu, onSortChange, onFilterSubmit } =
+    useDataGrid<T>({ initialSort });
 
   const [page, setPage] = useState(0);
   const [pageSize, setPageSize] = useState(pageSizeProp);
@@ -118,9 +113,10 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
   const processedRows = useMemo(() => {
     let out = internalRows;
     out = quickFilterRows(out, internalColumns, quickFilter);
+    out = deepFilterRows(out, internalColumns, filter);
     out = sortRows(out, sort, internalColumns);
     return out;
-  }, [internalRows, internalColumns, sort, quickFilter]);
+  }, [internalRows, internalColumns, sort, quickFilter, filter]);
 
   const totalPages = Math.max(1, Math.ceil(processedRows.length / pageSize));
   const currentPage = Math.min(page, totalPages - 1);
@@ -307,8 +303,7 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
           setSearch={setSearch}
           onClickMenu={onClickMenu}
           filter={filter}
-          onFilterClear={onFilterClear}
-          onFilterChange={onFilterChange}
+          onFilterSubmit={onFilterSubmit}
         />
         {/* {groupKeys.length === 0 ? filterRow : null} */}
         <div

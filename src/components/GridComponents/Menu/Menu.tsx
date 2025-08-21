@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, useCallback } from 'react';
 import { MenuData, type MenuItemType } from './Menu.utils';
 import MenuItem from './MenuItem';
 import './menu.css';
@@ -25,6 +25,14 @@ const Menu = <T,>({ column, onClickMenu }: MenuProps<T>) => {
     return () => document.removeEventListener('mousedown', handleClick);
   }, [open]);
 
+  const handleMenuClick = useCallback(
+    (item: MenuItemType) => {
+      onClickMenu(item);
+      setOpen(false);
+    },
+    [onClickMenu],
+  );
+
   return (
     <div
       ref={menuRef}
@@ -47,7 +55,7 @@ const Menu = <T,>({ column, onClickMenu }: MenuProps<T>) => {
                 <MenuItem
                   key={index}
                   item={{ ...item, isSubmenu: item.isSubmenu || false }}
-                  onClick={onClickMenu}
+                  onClick={handleMenuClick}
                 />
               );
             return null;

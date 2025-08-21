@@ -30,10 +30,11 @@ interface HeaderProps<T> {
   onColumnResizeStart: (key: string, startX: number) => void;
   setSearch: React.Dispatch<React.SetStateAction<SearchType | null>>;
   onClickMenu: (col: ColumnDef<T>, item: MenuItemType) => void;
-  onFilterChange: (filter: FilterValue<T> | null) => void;
   filter: FilterType<T> | null;
-  onFilterClear?: () => void;
-  onFilterSubmit?: () => void;
+  onFilterSubmit?: (
+    filter: FilterValue<T>,
+    column?: ColumnDef<T> | null | undefined,
+  ) => void;
 }
 
 function Header<T>(props: HeaderProps<T>) {
@@ -58,8 +59,6 @@ function Header<T>(props: HeaderProps<T>) {
     setSearch,
     onClickMenu,
     filter,
-    onFilterChange,
-    onFilterClear,
     onFilterSubmit,
   } = props;
   const [openSearch, setOpenSearch] = useState<string | null>(null);
@@ -174,10 +173,8 @@ function Header<T>(props: HeaderProps<T>) {
                   ) : null}
                   {col.filterable !== false && (
                     <Filter
-                      filter={filter?.[col.key] ?? null}
-                      onChange={onFilterChange}
+                      filter={filter}
                       onClick={onFilterSubmit}
-                      onClear={onFilterClear}
                       column={col}
                     />
                   )}
