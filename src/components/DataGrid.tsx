@@ -30,7 +30,6 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
     getRowId = defaultGetRowId,
     height = 520,
     rowHeight = 44,
-    pageSize: pageSizeProp = 25,
     checkboxSelection = false,
     initialSort = null,
     className,
@@ -51,15 +50,13 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
   const columns = useMemo(() => {
     return getColumnMapper(
       props?.columns ?? [],
-      checkboxSelection ? (width ?? 0) - 44 : width,
+      checkboxSelection ? (width ?? 0) - 50 : width,
     );
   }, [props?.columns, width, checkboxSelection]);
 
   const { sort, filter, onClickMenu, onSortChange, onFilterSubmit } =
     useDataGrid<T>({ initialSort });
 
-  const [page, setPage] = useState(0);
-  const [pageSize, setPageSize] = useState(pageSizeProp);
   const [columnWidths, setColumnWidths] = useState<Record<string, number>>({});
   const [selected, setSelected] = useState<Set<string | number>>(new Set());
   const [columnOrder, setColumnOrder] = useState<string[]>(() =>
@@ -118,15 +115,6 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
     return out;
   }, [internalRows, internalColumns, sort, quickFilter, filter]);
 
-  const totalPages = Math.max(1, Math.ceil(processedRows.length / pageSize));
-  const currentPage = Math.min(page, totalPages - 1);
-
-  const pagedRows = useMemo(() => {
-    if (infiniteScroll) return processedRows;
-    const start = currentPage * pageSize;
-    return processedRows.slice(start, start + pageSize);
-  }, [processedRows, currentPage, pageSize, infiniteScroll]);
-
   useEffect(() => {
     if (!onSelectionChange) return;
     const selectedRows = internalRows.filter((r) => selected.has(getRowId(r)));
@@ -136,17 +124,17 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
   const onToggleAll = useCallback(
     (checked: boolean) => {
       if (checked) {
-        const ids = new Set<string | number>(pagedRows.map(getRowId));
+        const ids = new Set<string | number>(processedRows.map(getRowId));
         setSelected((prev) => new Set([...prev, ...ids]));
       } else {
         setSelected((prev) => {
           const copy = new Set(prev);
-          pagedRows.forEach((r) => copy.delete(getRowId(r)));
+          processedRows.forEach((r) => copy.delete(getRowId(r)));
           return copy;
         });
       }
     },
-    [pagedRows, getRowId],
+    [processedRows, getRowId],
   );
 
   const onColumnResizeStart = (key: string, startX: number) => {
@@ -182,9 +170,7 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
   // Simple virtualization for the current page (disabled when grouped to keep logic straightforward)
   const bodyRef = useRef<HTMLDivElement>(null);
   const [scrollTop, setScrollTop] = useState(0);
-  const visibleRowCount = Math.ceil((height - 110) / rowHeight) + 4; // header + footer approx.
   const startIndex = Math.max(0, Math.floor(scrollTop / rowHeight) - 2);
-  const endIndex = Math.min(pagedRows.length, startIndex + visibleRowCount);
   const offsetY = startIndex * rowHeight;
 
   // Grouping
@@ -281,12 +267,14 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
         </span>
         <span className="group-text">Drag and drop columns here to group…</span>
       </div>
-      <div style={{ overflowX: 'auto' }}>
+      <div
+        style={{ overflowX: 'auto', border: '1px solid var(--color-border)' }}
+      >
         <Header
           internalColumns={internalColumns}
           gridTemplateColumns={gridTemplateColumns}
           checkboxSelection={checkboxSelection}
-          pagedRows={pagedRows}
+          pagedRows={processedRows}
           selected={selected}
           getRowId={getRowId}
           onToggleAll={onToggleAll}
@@ -388,7 +376,6 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
           ) : (
             <div
               style={{
-                height: pagedRows.length * rowHeight,
                 position: 'relative',
               }}
             >
@@ -400,7 +387,7 @@ export default function DataGrid<T>(props: DataGridProps<T>) {
                   right: 0,
                 }}
               >
-                {pagedRows.slice(startIndex, endIndex).map((row, idx) => {
+                {processedRows.map((row, idx) => {
                   const rowId = getRowId(row);
                   const isSelected = selected.has(rowId);
                   return (
