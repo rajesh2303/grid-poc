@@ -1,0 +1,94 @@
+{
+  "broker": {
+    "name" : "Broker",
+    "enable": "true",
+    "metadata": [
+      {
+        "name": "Bkr Cd",
+        "key": "bkrCd",
+        "datatype": "string",
+        "ui": "text",
+        "search": "true",
+        "format": "",
+        "align": "",
+        "viewlink": "/service/name/{BKR_CD}",
+        "comparelink": "Link to call            webservice",
+        "promotelink": "Link to call            webservice",
+        "lookuplink": "Link to call            webservice"
+      },
+      {
+        "name": "Bkr Name",
+        "key": "bkrName",
+        "datatype": "string",
+        "ui": "text"
+      },
+      {
+        "name": "Address1 ",
+        "key": "address1",
+        "datatype": "string",
+        "ui": "text"
+      }
+    ]
+  },
+  "issuerlist": {
+    "name" : "Issuer List",
+    "enable": "true",
+    "metadata": [
+      {
+        "name": "Issuer List Code",
+        "key": "issuerCd",
+        "datatype": "string",
+        "ui": "text",
+        "format": "",
+        "align": "",
+        "viewlink": "/service/name/{BKR_CD}",
+        "comparelink": "Link to call            webservice",
+        "promotelink": "Link to call            webservice",
+        "lookuplink": "Link to call            webservice"
+      },
+      {
+        "name": "Issuer List Name",
+        "key": "issuerName",
+        "datatype": "string",
+        "ui": "text"
+      },
+      {
+        "name": "Description ",
+        "key": "description",
+        "datatype": "string",
+        "ui": "text"
+      }
+    ]
+  },
+  "currencylist": {
+    "name" : "Currency List",
+    "enable": "false",
+    "metadata": [
+      {
+        "name": "Bkr Cd",
+        "key": "BKR_CD",
+        "datatype": "string",
+        "ui": "text",
+        "format": "",
+        "align": "",
+        "viewlink": "/service/name/{BKR_CD}",
+        "comparelink": "Link to call            webservice",
+        "promotelink": "Link to call            webservice",
+        "lookuplink": "Link to call            webservice"
+      },
+      {
+        "name": "Bkr Name",
+        "key": "BKR_NAME",
+        "datatype": "string",
+        "ui": "text"
+      },
+      {
+        "name": "Address1 ",
+        "key": "ADDRESS1",
+        "datatype": "string",
+        "ui": "text"
+      }
+    ]
+  }
+
+}

@@ -1,0 +1,5007 @@
+[
+    {
+        "issuerListCd": "05_BB",
+        "issuerListName": "Alcohol and Gaming Client List - 1489N8 (DA Updates)",
+        "issuerListDesc": "1489N8 - Prohibited List - Received 7/21/2021"
+    },
+    {
+        "issuerListCd": "21STCENTURY_BBUP",
+        "issuerListName": "21ST Century Fox America",
+        "issuerListDesc": "21ST Century Fox America Ultimate Parent Security Resticted List"
+    },
+    {
+        "issuerListCd": "32BJCONN_BB",
+        "issuerListName": "32 BJ Connecticut Pension - ERISA Issuers",
+        "issuerListDesc": "List created on 8/27/2018. Last updated on 8/27/2018."
+    },
+    {
+        "issuerListCd": "3471N4",
+        "issuerListName": "Govt issuers exempt from 10% issuer limit.",
+        "issuerListDesc": "Government issuers which are exempt from guideline limiting any issuer to a 10% maximum limit."
+    },
+    {
+        "issuerListCd": "3508N1ERISA_BB",
+        "issuerListName": "ERISA issuers for 3508N1",
+        "issuerListDesc": "ERISA issuers - Credit L/S must avoid direct investment in issuers greater than 10% and their affiliates.  As of 1/1/12 MLB is over 10%- Prohibit Rogers Communication"
+    },
+    {
+        "issuerListCd": "3565N1_COAL",
+        "issuerListName": "Restricted Global Thermal Coal Issuer List  BBCO",
+        "issuerListDesc": "RH 6/30/21 - Created New List"
+    },
+    {
+        "issuerListCd": "3565N1_TOB",
+        "issuerListName": "Tobacco Restricted Issuer List BBCO",
+        "issuerListDesc": "List received 6/30/21"
+    },
+    {
+        "issuerListCd": "3565N1_WEAP",
+        "issuerListName": "Restricted Weapons Issuer List  BBCO",
+        "issuerListDesc": "List received 6/30/21"
+    },
+    {
+        "issuerListCd": "AA_BB",
+        "issuerListName": "ERISA Employer Securities for American Airlines",
+        "issuerListDesc": "last updated 11/6/15"
+    },
+    {
+        "issuerListCd": "AAPL_BB",
+        "issuerListName": "Apple Issuers",
+        "issuerListDesc": "Used in conjunction with rule ISSR.148 (a)"
+    },
+    {
+        "issuerListCd": "ABBOTTLAB_BB",
+        "issuerListName": "Restricted Issuers",
+        "issuerListDesc": "HYFD account - Abbott Labs Annuity"
+    },
+    {
+        "issuerListCd": "ABBOTTLABS_BB",
+        "issuerListName": "Restricted Issuers",
+        "issuerListDesc": "New HYFD accounts - Abbott Labs Annuity and ABVIE Multiple Employer Pension Plan"
+    },
+    {
+        "issuerListCd": "ABFUNDS_BB",
+        "issuerListName": "Socially Restricted Investments (DA Update)",
+        "issuerListDesc": "Guidestone Accts (1497N8, Z485N7, 763219)\nLast Updated: 6/30/2021"
+    },
+    {
+        "issuerListCd": "ABNAMRO_BB",
+        "issuerListName": "Ultimate Parent List for ABNAMRO Issuers",
+        "issuerListDesc": "Created for acct # 770214 to block purchases of ABNAMRO."
+    },
+    {
+        "issuerListCd": "ABNAMROSRI_BB",
+        "issuerListName": "ABN AMRO SRI List",
+        "issuerListDesc": "ABN AMRO SRI list as of March 2021 per Delegation Agreement (account 770214)"
+    },
+    {
+        "issuerListCd": "ACTIONS_BB",
+        "issuerListName": "Exclusion list for Natixis Actions US Growth Fd (TC Updates)",
+        "issuerListDesc": "Exclusion list for offshore funds regarding Anti Personal Mines and Cluster Bombs.  Updated list recd 8.16.21"
+    },
+    {
+        "issuerListCd": "ADP_BB",
+        "issuerListName": "Automatic Data Processing (BBUP)",
+        "issuerListDesc": "RH - 4/20/20 - Created BBUP list"
+    },
+    {
+        "issuerListCd": "ADVADLT_BB",
+        "issuerListName": "Advocate Health Adult Entertainment List - BB",
+        "issuerListDesc": "Based on client list dated March 2016"
+    },
+    {
+        "issuerListCd": "ADVADLT_GC",
+        "issuerListName": "Advocate Health Adult Entertainment List - GC",
+        "issuerListDesc": "Based on client list dated March 2016"
+    },
+    {
+        "issuerListCd": "ADVALCH_BB",
+        "issuerListName": "Advocate Health Alcohol List - BB",
+        "issuerListDesc": "Based on client list dated March 2016"
+    },
+    {
+        "issuerListCd": "ADVALCH_GC",
+        "issuerListName": "Advocate Health Alcohol List - GC",
+        "issuerListDesc": "Based on client list dated March 2016"
+    },
+    {
+        "issuerListCd": "ADVGAM_BB",
+        "issuerListName": "Advocate Health Gambling List - BB",
+        "issuerListDesc": "Based on client list dated March 2016"
+    },
+    {
+        "issuerListCd": "ADVGAM_GC",
+        "issuerListName": "Advocate Health Gambling List - GC",
+        "issuerListDesc": "Based on client list dated March 2016"
+    },
+    {
+        "issuerListCd": "ADVOCATE_GC",
+        "issuerListName": "Advocate Health SRI Restricted Issuers - Global Company",
+        "issuerListDesc": "Based on client list dated July 2021"
+    },
+    {
+        "issuerListCd": "ADVTOB_BB",
+        "issuerListName": "Advocate Health Tobacco List - BB",
+        "issuerListDesc": "Based on client list dated March 2016"
+    },
+    {
+        "issuerListCd": "ADVTOB_GC",
+        "issuerListName": "Advocate Health Tobacco List - GC",
+        "issuerListDesc": "Based on client list dated March 2016"
+    },
+    {
+        "issuerListCd": "ADVWPNS_BB",
+        "issuerListName": "Advocate Health Weapons List - BB",
+        "issuerListDesc": "Based on client list dated March 2016"
+    },
+    {
+        "issuerListCd": "ADVWPNS_GC",
+        "issuerListName": "Advocate Health Weapons List - GC",
+        "issuerListDesc": "Based on client list dated March 2016"
+    },
+    {
+        "issuerListCd": "AFL-CIO_BB",
+        "issuerListName": "AFL-CIO Boycott List",
+        "issuerListDesc": "AFL-CIO Boycott restricted list (partial list) - updated 5/24/05 based on list provided to IUOE"
+    },
+    {
+        "issuerListCd": "AFORE_BB",
+        "issuerListName": "Afore Prohibited Issuers",
+        "issuerListDesc": "Afore Prohibited Issuers Updated on September 2019."
+    },
+    {
+        "issuerListCd": "AFORE_TK",
+        "issuerListName": "Afore Prohibited Issuers",
+        "issuerListDesc": "Afore Prohibited Issuers"
+    },
+    {
+        "issuerListCd": "AHLSELL_BB",
+        "issuerListName": "Ahlsell",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "ALBERTSONS_BB",
+        "issuerListName": "Albertsons Issuers",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "ALLIANCETRUST_BB",
+        "issuerListName": "Alliance Trust PLC (BBUP)",
+        "issuerListDesc": "Coded at Ultimate Parent level to include subsidiaries and affiliates"
+    },
+    {
+        "issuerListCd": "ALLY_BB_LSIA",
+        "issuerListName": "Securities affiliated with Ally Financial",
+        "issuerListDesc": "Issuer List created for LSIA account KY7566 Motor City Reinsurance Limited to prohibit securities issued by or affiliated with Ally Financial."
+    },
+    {
+        "issuerListCd": "ALPHABET_BB",
+        "issuerListName": "Alphabet Capital US list",
+        "issuerListDesc": "Prohibited corporate issuers"
+    },
+    {
+        "issuerListCd": "ALPHABET_TK",
+        "issuerListName": "Alphabet Capital US list - TK List",
+        "issuerListDesc": "Prohibited corporate issuers (Based on corporate tickers)"
+    },
+    {
+        "issuerListCd": "ALPSBBH",
+        "issuerListName": "ALPS (SS&C) and BBH affiliates for Bridge Builder",
+        "issuerListDesc": "Restriction on ALPS and affiliates (ALPS is now SS&C) and BBH and affiliates"
+    },
+    {
+        "issuerListCd": "ALPSBBH_TK",
+        "issuerListName": "ALPS (SS&C) and BBH affiliates for Bridge Builder - TK List",
+        "issuerListDesc": "Restriction on ALPS and affiliates (ALPS is now SS&C) and BBH and affiliates"
+    },
+    {
+        "issuerListCd": "ALTRIA",
+        "issuerListName": "Prohibited Issuers - Updated 10-29-2020",
+        "issuerListDesc": "Prohibited List of Subsidiary Debt for Altria - October 2020"
+    },
+    {
+        "issuerListCd": "ALTRIA_BBUP",
+        "issuerListName": "Prohibited Issuers",
+        "issuerListDesc": "Prohibited List of Issuers for Altria"
+    },
+    {
+        "issuerListCd": "ALTRIA_TK",
+        "issuerListName": "ALTRIA TK",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "AMERSPORTS_BB",
+        "issuerListName": "Amersports",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "AMG_BBUP",
+        "issuerListName": "AMG Affiliates",
+        "issuerListDesc": "AMG list of affiliates, received 09/25/20"
+    },
+    {
+        "issuerListCd": "AMP_BB",
+        "issuerListName": "ERISA LIst for Ameriprise",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "AMTRAK_BB",
+        "issuerListName": "Amtrak Securities",
+        "issuerListDesc": "Amtrak is a fiduciary for CT00513, which is an investor in E438N2"
+    },
+    {
+        "issuerListCd": "AMUNDI__TK",
+        "issuerListName": "Amundi Restricted Securities- based on corp ticker",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "AMUNDI_BBESP",
+        "issuerListName": "Permitted Companies with ESP Country of Risk",
+        "issuerListDesc": "Amundi client clarification 5.25.18"
+    },
+    {
+        "issuerListCd": "AMUNDI_BBITA",
+        "issuerListName": "Permitted Industrials with Italy as Country of Risk",
+        "issuerListDesc": "Amundi client clarification 5.25.18"
+    },
+    {
+        "issuerListCd": "AMUNDI_BBUP",
+        "issuerListName": "Amundi restricted list",
+        "issuerListDesc": "Last Updated: 4/20/2021 (list as of 4.13.21)"
+    },
+    {
+        "issuerListCd": "AMUNDI_ESR",
+        "issuerListName": "Amundi (\"ESR\") - CAA restricted Securities list",
+        "issuerListDesc": "Based on BBUP\n[ 10/16/2020 - Added below per BBUP dup data project:\nBBG001FDY371\n];"
+    },
+    {
+        "issuerListCd": "AMUNDI_ESR_TK",
+        "issuerListName": "Amundi (\"\"ESR\"\") - CAA Group Restricted Securities list",
+        "issuerListDesc": "List based on Corporate Tickers"
+    },
+    {
+        "issuerListCd": "AMWATER_BB",
+        "issuerListName": "American Water Works, Inc.",
+        "issuerListDesc": "American Water Works, Inc. listed in ERISA Disclosures (Account # NT01477)"
+    },
+    {
+        "issuerListCd": "ANADARKOPETRO_BB",
+        "issuerListName": "Anadarko Petroleum",
+        "issuerListDesc": "Companies the client put on Exhibit F (ERISA Disclosures) of the subscription agreement to the trust"
+    },
+    {
+        "issuerListCd": "ANHEUSER_BB",
+        "issuerListName": "Anheuser-Busch InBev Sa/NA",
+        "issuerListDesc": "Anheuser-Busch InBev Sa/NA codes and subsidiaries - restricted in Altria accounts (1470N9 and H460N6) (Ultimate parents)"
+    },
+    {
+        "issuerListCd": "ANIXTER_BB",
+        "issuerListName": "Anixter International Inc.",
+        "issuerListDesc": "List created 12/18/18."
+    },
+    {
+        "issuerListCd": "APPCDX",
+        "issuerListName": "Approved Indices for FTIF K2 Fund (M489N2)",
+        "issuerListDesc": "List created on 05/09/18."
+    },
+    {
+        "issuerListCd": "APPLE_BB",
+        "issuerListName": "APPLE INC (Parent Issuer)",
+        "issuerListDesc": "Restricted issuer list for Apple INC for ZZ-5490N6\n"
+    },
+    {
+        "issuerListCd": "ARCHDIOFLA_BB",
+        "issuerListName": "Archdiocese of LA SRI List (Client Provided)",
+        "issuerListDesc": "Consultant Confirmed BBCO and will be shared Qtly. NOTE: Also review ID: 2950825269 and KAISERPERM_BB list when making updates (6.17.21 email in the ARCHDI Res List folder)."
+    },
+    {
+        "issuerListCd": "ARKANSAS_BB",
+        "issuerListName": "Arkansas Teacher Retirement System K474N3 (BBUP)",
+        "issuerListDesc": "Arkansas prohibits investing in companies that boycott Israel (works in conjunction with ARKANSASBBCO_BB)\nList created 2/14/2018. Last updated 2/16/2018"
+    },
+    {
+        "issuerListCd": "ARKANSAS_TK",
+        "issuerListName": "Arkansas Teacher Retirement System K474N3 (TK List)",
+        "issuerListDesc": "Arkansas Teacher Retirement System K474N3 (BBUP)"
+    },
+    {
+        "issuerListCd": "ARKANSASBBCO_BB",
+        "issuerListName": "Arkansas Teacher Retirement System K474N3 (BBCO)",
+        "issuerListDesc": "Arkansas prohibits investing in companies that boycott Israel (works in conjunction with ARKANSAS_BB)\nList created 2/14/2018. Last updated 2/16/2018"
+    },
+    {
+        "issuerListCd": "ARMY_NORTHERN",
+        "issuerListName": "Northern Trust Prohibition",
+        "issuerListDesc": "May not invest in Northern Trust or affiliates"
+    },
+    {
+        "issuerListCd": "ASC_ABORT",
+        "issuerListName": "Ascension Good Abortion (DO updates)",
+        "issuerListDesc": "These issuers were rewiewed against MSCI data in May 2016 and deemed compliant with the Ascension SRI guidelines. Also adding additional issuer codes as we go along in order to eliminate false alerts."
+    },
+    {
+        "issuerListCd": "ASC_ADULT",
+        "issuerListName": "Ascension Good Adult (DO updates)",
+        "issuerListDesc": "These issuers were rewiewed against MSCI data in May 2016 and deemed compliant with the Ascension SRI guidelines.  Also adding additional issuer codes as we go along in order to eliminate false alerts."
+    },
+    {
+        "issuerListCd": "ASC_APP_GC",
+        "issuerListName": "Ascension Approved List - DO NOT ADD WITOUT CLIENT APPROVAL",
+        "issuerListDesc": "List for issuers alerting because of BBUP rule but deemed OK for investment (either client approval or backing out names that roll up to Sovs)."
+    },
+    {
+        "issuerListCd": "ASC_WEAP",
+        "issuerListName": "Ascension Good Weapons (DO updates)",
+        "issuerListDesc": "These issuers were rewiewed against MSCI data in May 2016 and deemed compliant with the Ascension SRI guidelines. Also adding additional issuer codes as we go along in order to eliminate false alerts."
+    },
+    {
+        "issuerListCd": "ASCENSION_BB",
+        "issuerListName": "List of Restricted Issuers - July 2021",
+        "issuerListDesc": "Not allowed to purchase securities issued by any of the following issuers per client restricted / NOTE: Saudi added per 4.11.19 email from Todd N that client is adding ARAMCO"
+    },
+    {
+        "issuerListCd": "ASCENSION_BBCO",
+        "issuerListName": "List of Restricted Issuers - July 2021",
+        "issuerListDesc": "Ascension SRI based on Bloomberg Global Company ID."
+    },
+    {
+        "issuerListCd": "ASCENSION_BBUP",
+        "issuerListName": "ASCENSION BBUP List",
+        "issuerListDesc": "RH 2/26/21 - Created List"
+    },
+    {
+        "issuerListCd": "ASCENSION_TK",
+        "issuerListName": "List of Restricted Issuers - February 2021",
+        "issuerListDesc": "Not allowed to purchase securities issued by any of the following issuers per client restricted / NOTE: Saudi added per 4.11.19 email from Todd N that client is adding ARAMCO"
+    },
+    {
+        "issuerListCd": "ASGA_BB",
+        "issuerListName": "Restricted Debt Issuers",
+        "issuerListDesc": "Restricted Debt Issuers per client guidelines"
+    },
+    {
+        "issuerListCd": "ASGA_TK",
+        "issuerListName": "Restricted Debt Issuers based on Corporate Tickers",
+        "issuerListDesc": "Restricted Debt Issuers per client guidelines"
+    },
+    {
+        "issuerListCd": "ASIABOND",
+        "issuerListName": "Exempt Issuers for Asian Bond Fund (B479N8) (PR updates)",
+        "issuerListDesc": "Used to permit IBRD and ASIA Dev Bank in CTRY.512 and back out exempt issuers from issuer.454"
+    },
+    {
+        "issuerListCd": "ATT_BB",
+        "issuerListName": "AT&T",
+        "issuerListDesc": "AT&T"
+    },
+    {
+        "issuerListCd": "AUSALALOOMIS_BB",
+        "issuerListName": "A-USA-La-Loomis Restricted List",
+        "issuerListDesc": "July 2021. Per previous communication with client, private companies without valid identifiers do not need to be restricted for equity account. Only coded to securities with valid ID."
+    },
+    {
+        "issuerListCd": "AVCAPGRP",
+        "issuerListName": "Aviation Capital Group Corporation - Use with ISSR.009(f)",
+        "issuerListDesc": "Issuer Codes to restrict Aviation Capital Group Corporation - Added to Japan Post Forbidden Names List on 1.27.17. Specifically instructed to restrict at company level (not at ultimate parent level). Using Bloomberg Global Company ID"
+    },
+    {
+        "issuerListCd": "AXA_AFFILIATES_BB",
+        "issuerListName": "List of Affiliates provided by AXA",
+        "issuerListDesc": "Last updated 12/1/20\nUpdated on 9/6/2018 per client email blocking XL Group"
+    },
+    {
+        "issuerListCd": "AXISBANK",
+        "issuerListName": "Axis Bank Ltd. - Use with ISSR.009(g)",
+        "issuerListDesc": "Issuer Code to restrict for Axis Bank Ltd.  - Added to Japan Post Forbidden Names List on 8.21.17. Specifically instructed to restrict at company level (not at ultimate parent level). Using Bloomberg Global Company ID"
+    },
+    {
+        "issuerListCd": "B413N7",
+        "issuerListName": "Issuers Exempt from Issuer Limit (PR updates)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "B483N2",
+        "issuerListName": "Issuers Exempt from Issuer Limit (PR updates)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "B502N9_BB",
+        "issuerListName": "Controversial companies",
+        "issuerListDesc": "Received updated list as of July 2020"
+    },
+    {
+        "issuerListCd": "B526N1",
+        "issuerListName": "Issuers exempt from issuer limit (PR updates)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "B539N6_BB",
+        "issuerListName": "List of Prohibited Companies Comcast - As of 5.3.17",
+        "issuerListDesc": "Comcast is an investor in B539N6 and prohibits investment in Comcast and Affilaites. See ISSR.975(s)"
+    },
+    {
+        "issuerListCd": "B542N1_BB",
+        "issuerListName": "Russell Controversial Weapons",
+        "issuerListDesc": "B542N1 -Received email on 6/22/17 of prohibited issuers based on Controversial Weapons. Linked to IND.078(d)."
+    },
+    {
+        "issuerListCd": "B592N3_ESG_BB",
+        "issuerListName": "B592N3 New ESG Restricted List",
+        "issuerListDesc": "List Update August 2021"
+    },
+    {
+        "issuerListCd": "BABCOCKWIL_BB",
+        "issuerListName": "Babcock & Wilcox and Affiliates",
+        "issuerListDesc": "Per Schedule 1 of LS Senior Loan Fund Letter or Instruction"
+    },
+    {
+        "issuerListCd": "BALTIMORE_BB",
+        "issuerListName": "City of Baltimore ISS Sudan List - 249466, F42769",
+        "issuerListDesc": "Fire and Police Employees' Retirement System City of Baltimore (ISS Sudan List provided by client) (Confirmed with ISS Sudan List as of 6/14/13)"
+    },
+    {
+        "issuerListCd": "BANKOFWEST_BB",
+        "issuerListName": "Bank of West Prohibited Issuers",
+        "issuerListDesc": "Bank of West Prohibited Issuer Updated on 5/17/2018"
+    },
+    {
+        "issuerListCd": "BANNED_CPEG",
+        "issuerListName": "CPEG Banned companies (Policy on Controversial Weapons)",
+        "issuerListDesc": "Updated on 6/8/2020"
+    },
+    {
+        "issuerListCd": "BANORTE_BB",
+        "issuerListName": "Afore Banorte ESG Restricted List",
+        "issuerListDesc": "MSCI list BANORTE. Last updated 8.4.21"
+    },
+    {
+        "issuerListCd": "BARCLAYS_BB",
+        "issuerListName": "Barclays Bank PLC Issuer Codes",
+        "issuerListDesc": "This is a restricted list for B502N9. Includes Barclays Bank (and Associates as provided by client)"
+    },
+    {
+        "issuerListCd": "BASF_BB",
+        "issuerListName": "Issuer Codes for BASF",
+        "issuerListDesc": "Use with STYP.3728"
+    },
+    {
+        "issuerListCd": "BBG001FDY3L5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDY7M5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDY898",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDY8F1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDY914",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDYC08",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDYKW5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDYL62",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDYLD4",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDYR69",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDYS58",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDYYT9",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDZ2L6",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDZ478",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDZ4X9",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDZ566",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDZ7C5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDZ9V0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDZFC7",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDZFN5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDZK72",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FDZN12",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FF1283",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FF1QC5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FF2S12",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FF36V6",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FF3R68",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FF3RW9",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FF45Y4",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FF4YJ8",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FF6FM3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FF6TY0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FF6TZ9",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FF78J2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FF8T78",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FF8VZ2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FF9J06",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFB9H7",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFBDW1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFBF83",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFBMT5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFBVM2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFBW68",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFC5P5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFC7X2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFC8C3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFCB90",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFCC43",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFD9Z5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFDD59",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFDDS4",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFDSH3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFF876",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFG1V3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFG3T2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFG704",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFGN63",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFGSV4",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFGYS5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFH7Q5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFHB77",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFHM19",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFHX06",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFJ783",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFJ854",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFJJK3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFKYM6",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFL0L0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFQQW6",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFR846",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFS202",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFT4P0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFV4L1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FFXPK3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FG2W11",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FG35L7",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FG35Y3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FG6NT7",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FG8HZ1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FGB0K0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FGBFD5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FGF9Q1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FGFC39",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FGFKR5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FGKDB2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FGKDL1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FGKF63",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FGP800",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FGP828",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FGRHR9",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FGWN90",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FGWXZ9",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FGYMR0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FGZ239",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FGZ6F7",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FH27W0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FH32L2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FH59D4",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FH7J13",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FH98W1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FH9XQ3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FHC722",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FHTM03",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FHWWY0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FHXPK9",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FHZDF0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FHZDJ6",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FHZM60",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FJ2S69",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FJ4148",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FJ7Y34",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FJ7ZL1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FJCVH9",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FJHTD3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FJW7N3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FK2MS5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FK31H2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FK35T0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FKNM66",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FKQJM2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FKQSK4",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FKVWF5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FL2DG6",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FL2Z22",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FL5785",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FL8V16",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FL99N0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FLMTK4",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FLNVB8",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FLSY45",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FM7KY3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FML2W9",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FMTMY5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FMW113",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FMWBD8",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FMXS59",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FN46V8",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FNR322",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FPSLY1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FQ8RK3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FQF1K2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FQF8H1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FQNR17",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FSNVK3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FVM980",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FYJHT7",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001FYNNG3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G0NFF4",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G0XCR7",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G157Y9",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G1WFX2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G3LCH5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G4NLR0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G5F0B9",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G5KY01",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G5KYZ3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G5RKD0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G60719",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G849Y1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G894Q6",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G8C259",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G9GJ01",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G9M005",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G9MJY7",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G9SHZ4",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001G9Z083",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GB4VP5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GDJ9J1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GF6FY9",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GF8PG5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GFDR02",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GFLZL2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GG9RY8",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GHGDQ8",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GJ1373",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GJ9CR3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GJR6W0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GJXMY6",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GKKGN2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GL0NJ2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GLP0Z7",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GNGHC1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GNTHB8",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GQVRB6",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GRK1X9",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GS89Z2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GVVHX3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GW2KK0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GWKT49",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GX8286",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GXG9P3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GXM3S6",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001GZKBV1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001H03CR9",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001H267Q4",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001H415N2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001H4DBJ1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001H4KJD2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001H534M1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001H5NCX9",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001H5SGQ3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001H615W7",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001H75YL0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001H802D2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001H8N5W9",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001H8VS23",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001H8W0W0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001H9L023",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001H9QT43",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001H9RKQ7",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001HD1WB6",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001HDQ1X3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001LYBW06",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001QVVHP1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG001QXT228",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG002NC3XW2",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG002QQJLT1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG004MWC1N5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG0055DPYP5",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG0064NZP89",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG006BFYZM1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG006FD67H1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG006FZD588",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG0084B2YB4",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG009J3KKF0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG009NMSGF4",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG009XY5FR1",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG00C0NV622",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG00D8LQB49",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG00DP45Y78",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG00FYCPTH3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG00GBVBK06",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG00GGSXW80",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG00H5HHLD0",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG00JPH32Q7",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG00JPR7W21",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBG00NQ6XJF3",
+        "issuerListName": null,
+        "issuerListDesc": "EURO_OIL"
+    },
+    {
+        "issuerListCd": "BBIRD_BB",
+        "issuerListName": "State of Michigan Restricted Issuer- Parent (SS Updates)",
+        "issuerListDesc": "Restrict Blackbird in account 5497N9 (per Joe Hazard 11/14/16 Email based on client instructions)"
+    },
+    {
+        "issuerListCd": "BELLATRIX",
+        "issuerListName": "Bellatrix Issuers",
+        "issuerListDesc": "RH 6/7/19 - Created new list"
+    },
+    {
+        "issuerListCd": "BHOUSE_BB",
+        "issuerListName": "Issuer List for Brighthouse Financial",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "BIMBO_BB",
+        "issuerListName": "Grupo Bimbo SA Securities",
+        "issuerListDesc": "Grupo Bimbo SA de CV is fiduciary for CT00418, which is an investor in E438N2."
+    },
+    {
+        "issuerListCd": "BLACKANDDECKER_BB",
+        "issuerListName": "Black and Decker BBUP",
+        "issuerListDesc": "BLACKANDDECKER_BB"
+    },
+    {
+        "issuerListCd": "BLACKROCK_BB",
+        "issuerListName": "Blackrock (E451N4) -  Restricted List",
+        "issuerListDesc": "Last Reviewed 7.19.21\nKeep Allianz SE on the list due to the relationship with Blackrock\n(Bank of Japan rolls up to BBUP Japan)."
+    },
+    {
+        "issuerListCd": "BLACKROCK_TK",
+        "issuerListName": "BLACKROCK Ticker",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "BLACKROCKAFF_BB",
+        "issuerListName": "Blackrock Affiliates",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "BLACKROCKNOBUY_BB",
+        "issuerListName": "Blackrock (B592N3) -  Restricted List",
+        "issuerListDesc": "Appendix 1 - Investor No-Buy List\nUpdated May 2021"
+    },
+    {
+        "issuerListCd": "BLACKROCKNOBUY_TK",
+        "issuerListName": "Blackrock (B592N3) -  Restricted List",
+        "issuerListDesc": "Appendix 1 - Investor No-Buy List"
+    },
+    {
+        "issuerListCd": "BNKRUPT_BB",
+        "issuerListName": "Bankruptcy Security List - August 2021",
+        "issuerListDesc": "Bankruptcy list based on BBCO"
+    },
+    {
+        "issuerListCd": "BOA_BB",
+        "issuerListName": "Bank of America BB",
+        "issuerListDesc": "Restricted list for Bank of America and affiliates"
+    },
+    {
+        "issuerListCd": "BOLIVIA_BB",
+        "issuerListName": "Bolivia",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "BOMB_BB",
+        "issuerListName": "Bombardier Affiliates (PR updates)",
+        "issuerListDesc": "These issuers are restricted from the Bombadier accounts B419N1, B420N8, B418N2 - Reconfirmed Affilaites in Jluy 2014."
+    },
+    {
+        "issuerListCd": "BONY_BB",
+        "issuerListName": "Restricted BNY list for BONY-LD",
+        "issuerListDesc": "Updated 9-11-2020"
+    },
+    {
+        "issuerListCd": "BOYCOTT_ISRAEL_LIST",
+        "issuerListName": "Illinois Prohibited Companies that boycott Israel",
+        "issuerListDesc": "List of Companies that boycott Israel prohibited bythe State of Illinois.\nhttps://www2.illinois.gov/sites/iipb/Pages/ProhibitedInvestmentList.aspx\n"
+    },
+    {
+        "issuerListCd": "BPCE_BB",
+        "issuerListName": "BPCE SRI LIST (BBCO)",
+        "issuerListDesc": "Created new list on 06/18/18. Updated 8/6/2018"
+    },
+    {
+        "issuerListCd": "BRAEBURN",
+        "issuerListName": "Approved European Financials (TC updates) NO LONGER IN USE",
+        "issuerListDesc": "All European financials are prohibited excepted those on this list."
+    },
+    {
+        "issuerListCd": "BRANDFONAM_BB",
+        "issuerListName": "BrandfonAM client restricted list",
+        "issuerListDesc": "Account shall not purchase individual bonds or individual stocks in the following companies: Amazon, Apple, Disney, Facebook, Google, Kellogg, Keurig, Netflix, Nordstrom, REI, Starbucks, Twitter & Uber."
+    },
+    {
+        "issuerListCd": "BRUBAKER_BB",
+        "issuerListName": "Client restricted list",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "BW_TOBACCO",
+        "issuerListName": "Burroughs Wellcome Tobacco Restriction",
+        "issuerListDesc": "List provided during November 2018 onboarding"
+    },
+    {
+        "issuerListCd": "CABLEVISION_BB",
+        "issuerListName": "Altice USA",
+        "issuerListDesc": "Use for ERISA fiduciary view - Altice USA 401(k) Savings Plan (CT01211) Party-In-Interest List"
+    },
+    {
+        "issuerListCd": "CAESARS_BB",
+        "issuerListName": "Caesars Corp.",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "CANADA_SANC",
+        "issuerListName": "Canadian sanctioned issuers - Russia (PR updates)",
+        "issuerListDesc": "List of companies sanctioned by Canada, Special Economic Measures (Russia) Regulations. Additional purchases of debt or equity of these companies is prohibited. 3 names added 9/17/14"
+    },
+    {
+        "issuerListCd": "CARDINAL_BB",
+        "issuerListName": "Cardinal Health Securities",
+        "issuerListDesc": "Cardinal Health is a fiduciary for CT00519, which is in E440N8."
+    },
+    {
+        "issuerListCd": "CATERPILLAR_BB",
+        "issuerListName": "Caterpillar, Inc.",
+        "issuerListDesc": "Coded at the BBUP level - inclusive of subsidiaries and affiliates."
+    },
+    {
+        "issuerListCd": "CAULEY_BB",
+        "issuerListName": "McAuley Portfolio Management",
+        "issuerListDesc": "Restricted Securities for McAuley Portfolio Management"
+    },
+    {
+        "issuerListCd": "CCTOBAC_BB",
+        "issuerListName": "Tobacco List for Cleveland Clinics",
+        "issuerListDesc": "Last updated 6/29/15"
+    },
+    {
+        "issuerListCd": "CELANESE_BB",
+        "issuerListName": "Celanese Issuers",
+        "issuerListDesc": "Updated 1/21/15"
+    },
+    {
+        "issuerListCd": "CGI_BB",
+        "issuerListName": "ERISA CGI Tech List",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "CHINA_SANCTIONS_BBCO",
+        "issuerListName": "China Sanctioned Issuers",
+        "issuerListDesc": "last updated 5/10/2021"
+    },
+    {
+        "issuerListCd": "CHW_BB",
+        "issuerListName": "Dignity Healthcare West Portfolios (DA Update)",
+        "issuerListDesc": "Accts' Names have changed from Catholic West Healthcare to Dignity Healthcare (Z492N8, Z483N7, Z494N6, Z495N5) updated on 9/8/2020 (List dated 8/5/21)"
+    },
+    {
+        "issuerListCd": "CITIGROUP_BB",
+        "issuerListName": "Citigroup BB",
+        "issuerListDesc": "Restricted list for Citigroup and affiliates"
+    },
+    {
+        "issuerListCd": "CLEVELAND_BB",
+        "issuerListName": "Restricted List - Cleveland Clinic (Z486N6) - PC Updates",
+        "issuerListDesc": "Z486N6 - 1st Quarter Restricted List - 11/2/16"
+    },
+    {
+        "issuerListCd": "CLONING_BB",
+        "issuerListName": "IRRC Cloning List - 5.18.09",
+        "issuerListDesc": "For Account H48051   -  Companies that engages cloning as the IRRC."
+    },
+    {
+        "issuerListCd": "CMIC_BBCO",
+        "issuerListName": "Chinese Miliitary-Industrial Complex Companies Sanctions Lis",
+        "issuerListDesc": "Last updated 6/9/21 based on 59 names in Executive Order Annex on 6/3/21- effective 8/2/21"
+    },
+    {
+        "issuerListCd": "CNOFINL_BB",
+        "issuerListName": "CNO Financial",
+        "issuerListDesc": "CNO Financial Group listed in ERISA Disclosures (Account # CT01445)"
+    },
+    {
+        "issuerListCd": "CNOOC_FIN_BBCO",
+        "issuerListName": "CNOOC Finance BBCO",
+        "issuerListDesc": "All CNOOC Finance BBCOs- restricted due to relation to CNOOC Ltd which is a CMIC."
+    },
+    {
+        "issuerListCd": "CNP_BB",
+        "issuerListName": "CNP Stock Prohibition - CDC089, 102, 166, 216, 233, 248",
+        "issuerListDesc": "CNP stock prohibition regarding antipersonnel mines- updated 3/31/17 (email instructions from Stephen Reid)"
+    },
+    {
+        "issuerListCd": "CNPSRIREST_BB",
+        "issuerListName": "CNP FUNDS-SRI RESTRICTIONS",
+        "issuerListDesc": "CNP FUNDS - SRI RESTRICTIONS (CDC089, CDC102, CDC233) - Email dated 3/31/17 from S. Reid"
+    },
+    {
+        "issuerListCd": "CNX_BB",
+        "issuerListName": "ERISA List for Consol Energy",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "CO_FILING_BB",
+        "issuerListName": "SEC Registered Co or Company Filings  based on BB Flag",
+        "issuerListDesc": "Updated on 8/12/21; \n[10/16/2020 - Added forl BBUP Dup data project:\nBBG00DYPZ4P4\nBBG00R4GLSC2\nBBG001H4CF85\nBBG001GH5BZ4\nBBG001FPLDV9\nBBG001FF18Q0 ];\n"
+    },
+    {
+        "issuerListCd": "COCACOLA_BB",
+        "issuerListName": "Coca Cola Issued Securities",
+        "issuerListDesc": "list setup for Coca-Cola Master Trust (1/22/15)"
+    },
+    {
+        "issuerListCd": "COL_CANNABIS_BB",
+        "issuerListName": "MSCI Cannabis revenue >50%",
+        "issuerListDesc": "MSCI Cannabis revenue >50% (761429, 761310, ZZ-W49924)"
+    },
+    {
+        "issuerListCd": "COL_W49924",
+        "issuerListName": "Bank of America and ML issuers (TC updates)",
+        "issuerListDesc": "Bank of America and ML issuer codes for W49924 (Fund may not buy a BkofAm or ML security w/Bank of America (ML)"
+    },
+    {
+        "issuerListCd": "COL_W49924_BB",
+        "issuerListName": "Bank of America and ML issuers (TC updates)",
+        "issuerListDesc": "Bank of America and ML issuer codes for W49924 (Fund may not buy a BkofAm or ML security w/Bank of America (ML)"
+    },
+    {
+        "issuerListCd": "COL1_BB",
+        "issuerListName": "Restricted list for Columbia Fund - LCG",
+        "issuerListDesc": "List applicable to #761310, 761429, ZZ-W49924\nLast reviewed 4/3/2019"
+    },
+    {
+        "issuerListCd": "COL1_TK",
+        "issuerListName": "Restricted list for Columbia Fund - LCG",
+        "issuerListDesc": "List applicable to #761310, 761429, ZZ-W49924"
+    },
+    {
+        "issuerListCd": "COL2_BB",
+        "issuerListName": "Restricted List for Columbia Fund-LCG (Lu updates)",
+        "issuerListDesc": "Preclearance on purchases required - Funds 761310, 761429, 764514, ZZ-W49924\nLast updated 1/2021"
+    },
+    {
+        "issuerListCd": "COL2_TK",
+        "issuerListName": "Restricted List for Columbia Fund-LCG",
+        "issuerListDesc": "Preclearance on purchases required - Funds 761310, 761429, 764514, ZZ-W49924"
+    },
+    {
+        "issuerListCd": "COL3_BB",
+        "issuerListName": "Restricted list for Columbia Fund -email notification- LCG",
+        "issuerListDesc": "List applies to Funds 761310, 761429, 764514, ZZ-W49924\nLast updated March 2021"
+    },
+    {
+        "issuerListCd": "COL3_TK",
+        "issuerListName": "Restricted list for Columbia Fund -email notification- LCG",
+        "issuerListDesc": "List applies to Funds 761310, 761429, 764514, ZZ-W49924"
+    },
+    {
+        "issuerListCd": "COL4_BB",
+        "issuerListName": "Restricted List for Columbia Fund - LCG (SS updates)",
+        "issuerListDesc": "Preclearance on sells required - Funds 761310, 761429, 764514, ZZ-W49924\nLast updated 11/15/2019"
+    },
+    {
+        "issuerListCd": "COL4_TK",
+        "issuerListName": "Restricted List for Columbia Fund - LCG",
+        "issuerListDesc": "Preclearance on sells required - Funds 761310, 761429, 764514, ZZ-W49924"
+    },
+    {
+        "issuerListCd": "COLGATE_BB",
+        "issuerListName": "Colagate Palmolive Company, Inc.",
+        "issuerListDesc": "Colgate Colagate Palmolive Company, Inc. ultimate parent code"
+    },
+    {
+        "issuerListCd": "COLONIAL_BB",
+        "issuerListName": "Colonial Restricted List",
+        "issuerListDesc": "As of June 2021"
+    },
+    {
+        "issuerListCd": "COLONIAL_TK",
+        "issuerListName": "Colonial Restricted List",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "COLONIALATTACHA_BBUP",
+        "issuerListName": "Colonial Restricted Securities per Attachment A",
+        "issuerListDesc": "May not purchase equity or debt securities (or derivatives that would otherwise provide effective exposure to the excluded securities) issued by the companies listed in Attachment A - March 2021"
+    },
+    {
+        "issuerListCd": "COLONIALATTACHA_TK",
+        "issuerListName": "Colonial Restricted Securities per Attachment A",
+        "issuerListDesc": "May not purchase equity or debt securities (or derivatives that would otherwise provide effective exposure to the excluded securities) issued by the companies listed in Attachment A"
+    },
+    {
+        "issuerListCd": "CONSNUCLEAR_BB",
+        "issuerListName": "Consolidated Nuclear Security, LLC",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "CONSRAIL_BB",
+        "issuerListName": "Consolidated Rail Corporation",
+        "issuerListDesc": "Consolidated Rail Corp SRI List for ERISA affiliated issuers"
+    },
+    {
+        "issuerListCd": "CONTINENTAL_BB",
+        "issuerListName": "Continental Airlines Inc Issuer Codes",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "COUNTERPARTYA3WORST",
+        "issuerListName": "Counterparties rated A3/A- by Moody and S&P",
+        "issuerListDesc": "Counterparty brokers must be rated A3/A- by Moody and S&P (splits to worst). List as of 2/17/16 (Elizabeth Schroeder)"
+    },
+    {
+        "issuerListCd": "COX_BB",
+        "issuerListName": "Cox Commuinications (B482N3)",
+        "issuerListDesc": "Cox Affiliates - As of April 2011"
+    },
+    {
+        "issuerListCd": "CP_INV",
+        "issuerListName": "List of Counterparties Codes Currently being used in CRD",
+        "issuerListDesc": "Used as \"catch-all\" rule for our Counterparty Testing"
+    },
+    {
+        "issuerListCd": "CPEG_BB",
+        "issuerListName": "CPEG_BB Exclusion List",
+        "issuerListDesc": "Updated 5/19/21"
+    },
+    {
+        "issuerListCd": "CPISSUER",
+        "issuerListName": "CP Issuers for GPIF and Exel (PR updates)",
+        "issuerListDesc": "OK to use as collateral to cover TBA's"
+    },
+    {
+        "issuerListCd": "CRANDALLSRI_BB",
+        "issuerListName": "LSIA Account BD0861 Restricted Security List",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "CRC",
+        "issuerListName": "California Resources Corp",
+        "issuerListDesc": "RH 2/19/20 - Created List per N Ranzinger email on 2/19/20"
+    },
+    {
+        "issuerListCd": "CSX_BB",
+        "issuerListName": "CSX Corporation",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "CTBC_INT_CO",
+        "issuerListName": "CTBC Interested Companies (BBCO LIST)",
+        "issuerListDesc": "CTBC Interested Companies - GL B10-5, per latest IMA Amendment 9.17.19;(Andy email 6/1/20)->Client has confirmed this is the requirement based off  of direct issuer level and NOT ultimate parent; List updt by email 2/28/2021 (supersedes)."
+    },
+    {
+        "issuerListCd": "CTBC_SOVALL_BBG",
+        "issuerListName": "List of all sovereign issuers BBG IDs",
+        "issuerListDesc": "List of all BBG IDs of all codable sovereign issuers to be used by CTBC 2026 account to exclude Quasi-Sovereigns from Corp for GL purpose. Excluded: 14 sovereigns/state issuers."
+    },
+    {
+        "issuerListCd": "CVS_BB",
+        "issuerListName": "CVS Prohibit list for ZZ-5529N2",
+        "issuerListDesc": "ERISA employer securities restriction"
+    },
+    {
+        "issuerListCd": "CY_LSIA",
+        "issuerListName": "Block Cypress Semiconductor",
+        "issuerListDesc": "Per 9/7/17 Dinah Wellington email, please block buys/sells of CY."
+    },
+    {
+        "issuerListCd": "DANSKE_BB",
+        "issuerListName": "DANSKE Restricted List",
+        "issuerListDesc": "Restricted List Danske - updated 7-6-2021"
+    },
+    {
+        "issuerListCd": "DEERE_BB",
+        "issuerListName": "Issuer Codes for John Deere",
+        "issuerListDesc": "Used in ISSR.569 (f); ISSR.976(cc)"
+    },
+    {
+        "issuerListCd": "DEFAULT_BB",
+        "issuerListName": "Default Security List - August 2021",
+        "issuerListDesc": "Default security List based on BBCO"
+    },
+    {
+        "issuerListCd": "DELPHI_BB",
+        "issuerListName": "Delphi Issuers",
+        "issuerListDesc": "To be used in rule ISSR.978 and ISSR.975)f)"
+    },
+    {
+        "issuerListCd": "DEUTSCHEAFFL_BB",
+        "issuerListName": "Deutsche Telecom Affiliates (BBUP) - May 2016",
+        "issuerListDesc": "BBG Ultimate Parent List for Deutsche Telekom Affiliates - May 2016"
+    },
+    {
+        "issuerListCd": "DEUTSCHEB_BB",
+        "issuerListName": "Deutsche Bank Issuer Codes",
+        "issuerListDesc": "Using for ISSR.451 on acct B502N9"
+    },
+    {
+        "issuerListCd": "DISCOVER_BB",
+        "issuerListName": "Discover Financial Services",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "DISTRESS_BB",
+        "issuerListName": "Distress Security List - August 2021",
+        "issuerListDesc": "Distress security List based on BBCO"
+    },
+    {
+        "issuerListCd": "DIXIE_BB",
+        "issuerListName": "DIXIE BBUP",
+        "issuerListDesc": "Rule blocks Dixie Pipeline Company and Enterprise; If % ownership <10%, trade can proceed. If % ownership >=10%, contact R. Radford or J. Turo in Legal and ask if exemption available. (PII)"
+    },
+    {
+        "issuerListCd": "DKAPP",
+        "issuerListName": "DKA Private School Pension - Exempt Issuers (NO LONGER USED)",
+        "issuerListDesc": "The following government  issuers are rated at least AA- and therefore are exempt from the 5% limit"
+    },
+    {
+        "issuerListCd": "DOFFSHORE",
+        "issuerListName": "Diamond Offshore Drilling Global Company ID",
+        "issuerListDesc": "Use for ISSR.009(i)"
+    },
+    {
+        "issuerListCd": "DORC_BB",
+        "issuerListName": "Prohibited companies per MSCI for MSFD-Diocese of Rockville",
+        "issuerListDesc": "MSCI- Update Monthly-BBUP  - September 2021"
+    },
+    {
+        "issuerListCd": "DORC_TK",
+        "issuerListName": "DORC TICKER",
+        "issuerListDesc": "9/1/21"
+    },
+    {
+        "issuerListCd": "DORCBACK_BB",
+        "issuerListName": "Back out list for MSFD-Diocese of Rockville",
+        "issuerListDesc": "To be used in Conjunction with IND.001 (a)"
+    },
+    {
+        "issuerListCd": "DSM_BB",
+        "issuerListName": "DSM Defined Benefit Plan Exclusion List - H48572, 5492N4(TC)",
+        "issuerListDesc": "DSM Defined Benefit Plan Exclusion List -  5492N4, H48572 (received 6/21/2021)."
+    },
+    {
+        "issuerListCd": "DSM_SECURITIZED",
+        "issuerListName": "Issuer codes of names on restric list that issue securitized",
+        "issuerListDesc": "Issuer codes of names on restricted list that issues securitized secs\nApplicable to E428N4, H48572 and 5492N4.  Based on Q12018 List"
+    },
+    {
+        "issuerListCd": "E451N4_ESG_BB",
+        "issuerListName": "E451N4 New ESG Restricted List - updated on 4/10/2019",
+        "issuerListDesc": "New list created per email from Stephen Reid 3/29/2019"
+    },
+    {
+        "issuerListCd": "E451N4_ESG_TK",
+        "issuerListName": "E451N4_ESG Ticker",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "E451N4_ISH_BB",
+        "issuerListName": "Allianz ISH Issuer Restricted List - 08/17/21 (DA Updates)",
+        "issuerListDesc": "AllianzGI - Important Shareholding - Restricted List (ISH) - E451N4"
+    },
+    {
+        "issuerListCd": "EATONCORP_BB",
+        "issuerListName": "Eaton Corp PLC - BBUP list to encompass affiliates and subs",
+        "issuerListDesc": "All names listed in the ERISA disclosure (for the Eaton Corp Master trust account) roll up to Eaton Corp PLC"
+    },
+    {
+        "issuerListCd": "EDJONES_BB",
+        "issuerListName": "Edward Jones Affiliated Security List",
+        "issuerListDesc": "Restricted affiliated list for Edward Jones for Bridge Builder Accounts"
+    },
+    {
+        "issuerListCd": "EDJONES_TK",
+        "issuerListName": "Edward Jones Affiliated Security List (TK Version)",
+        "issuerListDesc": "Restricted affiliated list for Edward Jones for Bridge Builder Accounts"
+    },
+    {
+        "issuerListCd": "EIX_BB",
+        "issuerListName": "ERISA List for Edison International",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "EKHN1_BB",
+        "issuerListName": "Negative List for ZZ-1863EK (BBUP IDs Only)",
+        "issuerListDesc": "Negative List for ZZ-1863EK updated effective April 22, 2021.\n(Loaded BBUP IDs.)"
+    },
+    {
+        "issuerListCd": "EKHN1_TK",
+        "issuerListName": "Negative List for ZZ-1863EK",
+        "issuerListDesc": "Negative List for ZZ-1863EK"
+    },
+    {
+        "issuerListCd": "ELEVATOR_BB",
+        "issuerListName": "Elevator Constructors, Local# 1",
+        "issuerListDesc": "Parent Companies of Restricted Issuer List for Elevator Constructors, Local #1 Annuity Fund (LCV)"
+    },
+    {
+        "issuerListCd": "EMERSON_BB",
+        "issuerListName": "EMERSON ELECTRIC ISSUERS",
+        "issuerListDesc": "List of Emerson Electric Issuers"
+    },
+    {
+        "issuerListCd": "EMPARADIGM",
+        "issuerListName": "Paradigm APac Approvd (NO LONGER USED)",
+        "issuerListDesc": "This list is associated with account B537N8- Last updated 6/16/17\nDont update w/o client approval)"
+    },
+    {
+        "issuerListCd": "ENTERGY_BB",
+        "issuerListName": "Entergy Affiliates - BBUP",
+        "issuerListDesc": "Entergy Affiliates BBUP - Last updated 12/15/20 (Joe Hazard Email)."
+    },
+    {
+        "issuerListCd": "ENTERPRISE_BB",
+        "issuerListName": "Enterprise at BBUP",
+        "issuerListDesc": "Rule blocks Enterprise; If % ownership <10%, trade can proceed. If % ownership >=10%, contact R. Radford or J. Turo in Legal and ask if exemption available. (PII)"
+    },
+    {
+        "issuerListCd": "ENUMCLAW_BB",
+        "issuerListName": "List of Enumclaw insurance affiliates (Lu updates)",
+        "issuerListDesc": "Account 763813\nPlease not since Enumclaw is a private company, not ULT_PARENT_CORP_TICKER exists"
+    },
+    {
+        "issuerListCd": "EQUITABLE_BB",
+        "issuerListName": "List of Affiliates provided by Equitable",
+        "issuerListDesc": "last updated 5/28/21"
+    },
+    {
+        "issuerListCd": "ES_BB",
+        "issuerListName": "Eversource Energy (BBUP)",
+        "issuerListDesc": "RH 12/24/18 - New Restricted List created"
+    },
+    {
+        "issuerListCd": "ESG_WEAP_BOL",
+        "issuerListName": "ESG Weapons Back Out List (BBCO)",
+        "issuerListDesc": "LP 3/19/21- Add issuers to the list if the issuer has been confirmed ESG compliant. Extract this list on a quarterly basis and sent to Investment team (Adam Mushaweh) for review and conf"
+    },
+    {
+        "issuerListCd": "ESGBELOWINDAVG",
+        "issuerListName": "Below Industry Average ESG Rating List- BBCO",
+        "issuerListDesc": "List for Loomis Sayles Sustainable Global Corp Bond Fund- to capture issuers with a below average (B or below) ESG Score (1.4 from MSCI)- LP created 4/26/21- add BBCO- list reviewed quarterly to confirm ratings"
+    },
+    {
+        "issuerListCd": "ESS_CW_ALL",
+        "issuerListName": "ESS All Controversial Weapons List",
+        "issuerListDesc": "List of all controversial weapons issuer provided by client in one single list as of July 2021"
+    },
+    {
+        "issuerListCd": "ESTEELAUDER_BB",
+        "issuerListName": "Estee Lauder Securities",
+        "issuerListDesc": "Estee Lauder is a fiduciary for NT00077, which is an investor in E424N8"
+    },
+    {
+        "issuerListCd": "ETHIX_BB",
+        "issuerListName": "Nordea NOK Fund - Ethix Restricted List",
+        "issuerListDesc": "As of 12.15.16\nUSES BLOOMBERG GLOBAL COMPANY ID"
+    },
+    {
+        "issuerListCd": "ETOILEREST",
+        "issuerListName": "Etoile Restricted List (No Longer in USE)",
+        "issuerListDesc": "List of issuers restricted by Etoile. Client snet a 1/3/17 SRI List and then sent a revised list on 1/10/17. The CRD list is now updated to the 1/10/17 revised list. For acct 764217"
+    },
+    {
+        "issuerListCd": "ETOILEREST_BB",
+        "issuerListName": "ETOILE GESTION SRI List",
+        "issuerListDesc": "List of issuers restricted by Etoile. Updated 4/16/2021 for Acct. 764217. Per previous communication with client, private companies without valid identifiers do not need to be restricted for equity account. Only coded to securities with valid ID."
+    },
+    {
+        "issuerListCd": "ETOILEREST_BB_TK",
+        "issuerListName": null,
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "ETOILEREST_TK",
+        "issuerListName": "ETOILE GESTION SRI List (corporate tickers)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "EU_CNTRVERSEY_BOL",
+        "issuerListName": "Controversey Involvement Back Out List (BBCO)",
+        "issuerListDesc": "RH 1/28/21 - Created list"
+    },
+    {
+        "issuerListCd": "EU_CWEAP_BOL",
+        "issuerListName": "Controversial Weapons Involvement Back Out List  (BBCO)",
+        "issuerListDesc": "RH 1/28/21 - Created List"
+    },
+    {
+        "issuerListCd": "EU_NON_EX",
+        "issuerListName": "Bonds that are not exchangable",
+        "issuerListDesc": "RH - 3/23/21"
+    },
+    {
+        "issuerListCd": "EU_NORAT_BOL",
+        "issuerListName": "ESG No Rating Back Out List (BBCO)",
+        "issuerListDesc": "RH 2/3/21 - Backout list capturing all issuers that do not have an ESG rating in CRD and MSCI. If no rating is available with MSCI, then add the BBCO to the EU_NORAT_BOL list"
+    },
+    {
+        "issuerListCd": "EU_RAT_BB_B",
+        "issuerListName": "ESG Rating Back Out List for BB or B  (BBCO)",
+        "issuerListDesc": "RH 5/3/21-Add issuers to the list if the issuer has a rating between B and BB and the Euro Credit Team provide supporting documentation to hold/invest.  Check the list each quarter w/ the Euro Credit Team"
+    },
+    {
+        "issuerListCd": "EU_RATE_BBB",
+        "issuerListName": "ESG RATING AT LEAST BBB",
+        "issuerListDesc": "RH 6/17/21 - Created list.  Add if rated by MSCI and is = or above BBB"
+    },
+    {
+        "issuerListCd": "EU_RATESG_BOL",
+        "issuerListName": "ESG Rating Back Out List (BBCO)",
+        "issuerListDesc": "RH 2/3/21 - Backout list capturing all issuers that do not have an ESG rating in CRD, however, have a rating by MSCI that meets the minimum rating requirement (>=1.4). If issuer is rated >=1.4, per MSCI, then add the BBCO to the  EU_RATESG_BOL list."
+    },
+    {
+        "issuerListCd": "EU_RATING_BOL",
+        "issuerListName": "ESG Rating Back Out List  (BBCO)",
+        "issuerListDesc": "RH 1/28/21-Add issuers to the list if the issuer has a rating below the min requirement, however, the Euro Credit Team has provided backup as to why the issuer is permitted. Extract this list on a qtrly basis & send to the Euro Credit Team for review"
+    },
+    {
+        "issuerListCd": "EU_SUS_EXC",
+        "issuerListName": "Excluded Issuers from Markit iBoxx Euro Corps  EUR (BBCO)",
+        "issuerListDesc": "Excluded Issuers from Markit iBoxx Euro Corps Overall EUR"
+    },
+    {
+        "issuerListCd": "EU_THERMAL_BOL",
+        "issuerListName": "Thermal Coal Back Out List  (BBCO)",
+        "issuerListDesc": "RH 1/28/21 - Created list"
+    },
+    {
+        "issuerListCd": "EU_TOBACCO_BOL",
+        "issuerListName": "Tobacco Back Out List  (BBCO)",
+        "issuerListDesc": "RH 1/28/21 - Created List"
+    },
+    {
+        "issuerListCd": "EU_UNGC_BOL",
+        "issuerListName": "UNGC Back Out List",
+        "issuerListDesc": "RH 1/28/21 - Created List"
+    },
+    {
+        "issuerListCd": "EURO_ALCOHOL",
+        "issuerListName": "European Funds for Alcohol",
+        "issuerListDesc": "Last updated 8.23.21"
+    },
+    {
+        "issuerListCd": "EURO_COAL_5",
+        "issuerListName": "European Funds for Thermal Coal 5%",
+        "issuerListDesc": "Last updated 8.23.21"
+    },
+    {
+        "issuerListCd": "EURO_CONTROVERSY",
+        "issuerListName": "European Funds for Controversial Involvement",
+        "issuerListDesc": "Last updated 8/23/21"
+    },
+    {
+        "issuerListCd": "EURO_OIL",
+        "issuerListName": "European Funds for Oil and Gas",
+        "issuerListDesc": "Last updated 8.24.21"
+    },
+    {
+        "issuerListCd": "EURO_THERMAL",
+        "issuerListName": "European Funds for Thermal Coal",
+        "issuerListDesc": "Last updated 8.24.21"
+    },
+    {
+        "issuerListCd": "EURO_TOBACCO",
+        "issuerListName": "European Funds for Tobacco",
+        "issuerListDesc": "Last updated 8.24.21"
+    },
+    {
+        "issuerListCd": "EURO_UNGC",
+        "issuerListName": "European Funds for UNGC",
+        "issuerListDesc": "Last updated 8.23.21"
+    },
+    {
+        "issuerListCd": "EURO_WEAPCIVFIRE",
+        "issuerListName": "European Funds for Weapons and Civilian Firearms",
+        "issuerListDesc": "Last updated 8.24.21"
+    },
+    {
+        "issuerListCd": "EURO_WEAPONS",
+        "issuerListName": "European Funds for Weapons",
+        "issuerListDesc": "Last updated 8.24.21"
+    },
+    {
+        "issuerListCd": "EUROBANKS",
+        "issuerListName": "Euro Based Banks (DG updates)",
+        "issuerListDesc": "Southwest Carpenters (KY2260, KY2369, KY2468, KY2567)"
+    },
+    {
+        "issuerListCd": "EUSUPRAS",
+        "issuerListName": "Supranationals with at least 1 European Country",
+        "issuerListDesc": "B528N2 -"
+    },
+    {
+        "issuerListCd": "EXEL_BB",
+        "issuerListName": "Excel Pensions Investment Fund Employer Securities",
+        "issuerListDesc": "per email from client on B408N4 dated 07/20/20:  There are two DPDHL entities that have issued corporate debt (Deutsche Post AG and Deutsche Post Finance B.V.).  Blue Dart Express Ltd is a Joint Venture in India, and is unlikely to issue any debt."
+    },
+    {
+        "issuerListCd": "FARGO_BB",
+        "issuerListName": "Diocese of Fargo SRI List",
+        "issuerListDesc": "Diocese of Fargo- LSIA client security restricted list as of 7/30/20"
+    },
+    {
+        "issuerListCd": "FDC_BB",
+        "issuerListName": "FDC Restricted Issuers List",
+        "issuerListDesc": "FDC Restricted Issuers List as of Nov 2020"
+    },
+    {
+        "issuerListCd": "FETALTISSUE_BB",
+        "issuerListName": "IRRC Fetal Tissue Research April 2017",
+        "issuerListDesc": "Includes issuers tied to adult stem cell, embryonic stem cell, fetal stem cell, fetal tissue research, ownership by/of stem cell companies and producer of enabling technology (MSCI)"
+    },
+    {
+        "issuerListCd": "FIBEG_CANNABIS",
+        "issuerListName": "CBL Restrictions",
+        "issuerListDesc": "December 2020 (BBCO)"
+    },
+    {
+        "issuerListCd": "FIBEG_LP_XCLEARSTRM",
+        "issuerListName": "FIBEG Accts - US LP not eligible in Clearstream Banking",
+        "issuerListDesc": "Per Client update 11/9/20 - List provided of US limited partnership shares that are no longer eligible to be held at Cleartream to all their asset managers."
+    },
+    {
+        "issuerListCd": "FIDELITY_BB",
+        "issuerListName": "Fidelity-Strategic Advisors LCG Funds",
+        "issuerListDesc": "Restricted Security List for Accounts 762617 and 762716. Used with Rule ISSU.131(b); List created 12/10/18. Last update July 2021 with Full List."
+    },
+    {
+        "issuerListCd": "FIDELITY_TK",
+        "issuerListName": "Fidelity-Strategic Advisors LCG Funds",
+        "issuerListDesc": "Restricted Security List for Accounts 762617 and 762716."
+    },
+    {
+        "issuerListCd": "FIFTHTHIRDBANK_BB",
+        "issuerListName": "Fifth Third Bank and Affiliates Ultimate Parent List",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "FIRSTHORIZON_BB",
+        "issuerListName": "First Horizon National Corp",
+        "issuerListDesc": "List created 8/6/20"
+    },
+    {
+        "issuerListCd": "FORD_BB",
+        "issuerListName": "Ford Issuers For Rule ISSR.475 9/29/14",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "FOSSILFUEL",
+        "issuerListName": "Fossil Free Index as of January 2015 - For Metzler",
+        "issuerListDesc": "Running a test for Metzler EKHN account November 2016"
+    },
+    {
+        "issuerListCd": "FOSSILFUELTEST_BB",
+        "issuerListName": "TEST ONLY FOR CLIENT CERTs",
+        "issuerListDesc": "As of 4-28-21 Fossil Fuel MSCI Extract - Need to Reimport (full list) if looking to leverage. Does not include any Invalid BBG codes and these were not set up in GPS at the time. BBCO based"
+    },
+    {
+        "issuerListCd": "FOXMASTER_BB",
+        "issuerListName": "Fox Master Trust",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "FPPA_SUDAN_BB",
+        "issuerListName": "Sudan Divestment List for FPPA",
+        "issuerListDesc": "Updated as of 3/19/2021 for FPPA"
+    },
+    {
+        "issuerListCd": "FPPA_SUDAN_TK",
+        "issuerListName": "Sudan Divestment List for FPPA - TK List",
+        "issuerListDesc": "Updated as of 3/19/2021 for FPPA"
+    },
+    {
+        "issuerListCd": "FRANALLIANCE_BBUP",
+        "issuerListName": "SRI Restricted List for Franciscan Alliance, Inc. (S114N8)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "FRANALLIANCE_TK",
+        "issuerListName": "SRI Restricted List for Franciscan Alliance, Inc. (S114N8)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "FRANKLIN_BB",
+        "issuerListName": "Franklin Resources (i.e. Franklin Templeton)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "FRANKTEMPAFF_BB",
+        "issuerListName": "Franklin Templeton Issuers",
+        "issuerListDesc": "Franklin Templeton Issuers"
+    },
+    {
+        "issuerListCd": "FREEPORT_BB",
+        "issuerListName": "Freeport-McMoran Copper & Gold Inc",
+        "issuerListDesc": "Applicable to ISSR.984 (NT000654) & ISSR.735-BBUP (W49429)"
+    },
+    {
+        "issuerListCd": "FUBON_BB",
+        "issuerListName": "Fubon Affiliated Issuers",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "FUBONHY",
+        "issuerListName": "Permissible Issrs - M483N8 (DA updates)",
+        "issuerListDesc": "Permitted Universe applies to Fubon HY (M483N8)\nDon't Update W/O Client Approval"
+    },
+    {
+        "issuerListCd": "G4S_BB",
+        "issuerListName": "G4S Issuers",
+        "issuerListDesc": "B529Q8"
+    },
+    {
+        "issuerListCd": "G7GOVTS",
+        "issuerListName": "G-7 Governments Exempt from ISSR.375 (PR updates)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "G7ISSUERS",
+        "issuerListName": "G-7 Government Issuer Codes",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "GAFUND_BB",
+        "issuerListName": "Prohibited Issuers - List Provided by Client",
+        "issuerListDesc": "As of March 2016"
+    },
+    {
+        "issuerListCd": "GALLAGHERADVISORS_BB",
+        "issuerListName": "Gallagher Fiduciary Advisors, LLC ERISA Issuers",
+        "issuerListDesc": "List created on 8/27/2018. Last updated on 8/27/2018."
+    },
+    {
+        "issuerListCd": "GANNETT_BB",
+        "issuerListName": "Gannett Securities",
+        "issuerListDesc": "Gannett Retirement is an investor in the Strategic Alpha Trust (M473N0)"
+    },
+    {
+        "issuerListCd": "GEPT_BBUP",
+        "issuerListName": "GE Pension Trust Restricted Security List  Ult Parent Assn",
+        "issuerListDesc": "General Electric Pension Trust Restricted Security List (last updated 11/10/20)"
+    },
+    {
+        "issuerListCd": "GEPT_TK",
+        "issuerListName": "GE Pension Trust Restricted Security List - TK List",
+        "issuerListDesc": "General Electric Pension Trust Restricted Security List (last updated 11/10/20)"
+    },
+    {
+        "issuerListCd": "GGGG",
+        "issuerListName": "gggggg",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "GM_BB",
+        "issuerListName": "GM Inv Trustees Ltd Employer Securities",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "GMI_BBUP",
+        "issuerListName": "General Mills Inc (BBUP)",
+        "issuerListDesc": "RH 3/11/19 - Created shell."
+    },
+    {
+        "issuerListCd": "GOLDMAN_BB",
+        "issuerListName": "Affiliate list for Goldman Sachs (formerly ROCKTENN)",
+        "issuerListDesc": "(includes Goldman directly) \nLast updated June 2021"
+    },
+    {
+        "issuerListCd": "GOLDMAN_TK",
+        "issuerListName": "Ultimate Parent Ticker List for Goldman Sachs",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "GOODYEAR_BBUP",
+        "issuerListName": "Goodyear Dunlop Affiliates_ Bloomberg Ultimate Parent",
+        "issuerListDesc": "Goodyear Dunlop Affiliates - As of 12/31/14 - List provided 12/18/15"
+    },
+    {
+        "issuerListCd": "GOOGLE_BB",
+        "issuerListName": "Google",
+        "issuerListDesc": "6/10/16 Dinah Wellington Email: Restrict sell of either GOOGL or GOOG without prior permission."
+    },
+    {
+        "issuerListCd": "GOSI_BB",
+        "issuerListName": "General Org for Social Insurance BBUP",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "GPIF",
+        "issuerListName": "GPIF  Government Issuers (PR updates)",
+        "issuerListDesc": "The following issuers are exempt from the limit imposed in ISSR.450"
+    },
+    {
+        "issuerListCd": "GRLODGE",
+        "issuerListName": "Issuers Headquartered in the U.S. (PC updates)t  NOT USED",
+        "issuerListDesc": "Per the guideline language, these issuers need to be backed out of the 5% foreign test."
+    },
+    {
+        "issuerListCd": "GUIDE_COAL",
+        "issuerListName": "GuideOne Thermal Coal Generation (BBCO)",
+        "issuerListDesc": "RH 8/27/21 - Created List - GENERAT_THERMAL_COAL_PCT 30% or more"
+    },
+    {
+        "issuerListCd": "GUIDEMARK_BB",
+        "issuerListName": "GuideMark (TC updates)",
+        "issuerListDesc": "TC Updated 11/2/16 - Restricted list for GuideMark (M476N7)\n[ 10/16/2020 - Added below per BBUP dup data project:\nBBG007PGHCL3\n];"
+    },
+    {
+        "issuerListCd": "GUN_MNF_NYC",
+        "issuerListName": "Gun Manufacturers list NYC accounts (Z415N2,1445N1,Z500N8)",
+        "issuerListDesc": "Per NYC e-mail 12-12-17"
+    },
+    {
+        "issuerListCd": "GUN_RTL_NYC",
+        "issuerListName": "Gun Retailers list NYC accounts (Z415N2,1445N1,Z500N8)",
+        "issuerListDesc": "As of 12-12-17 e-mail from NYC\n"
+    },
+    {
+        "issuerListCd": "GY_BS_MI_CO_UP",
+        "issuerListName": "Goodyear List for Notification",
+        "issuerListDesc": "Goodyear, Bridgestone, Michelin, or Cooper Tire."
+    },
+    {
+        "issuerListCd": "HALLIBURTON_BB",
+        "issuerListName": "Parties In Interest - Z405N4 - 11.23.11 (SS updates)",
+        "issuerListDesc": "The following issuers are not allowed per client's Parties In Interest List.\n[10/16/2020 - Added per BBUP Dup data project:\nBBG00R4GLSC2\nBBG001H4CF85\nBBG001FPLDV9\nBBG00V7V8CS0\nBBG001FGBRV9\nBBG001FJD219\nBBG001FL0DG8\nBBG00328Q6M7\n];\n"
+    },
+    {
+        "issuerListCd": "HALLIBURTON_TK",
+        "issuerListName": "HALLIBURTON Ticker",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "HALLIBURTON2_BB",
+        "issuerListName": "Halliburton 2 (BBUP)",
+        "issuerListDesc": "Securities issued by Halliburton Company or any of its subsidiaries."
+    },
+    {
+        "issuerListCd": "HALLIBURTON2_TK",
+        "issuerListName": "Halliburton 2 TK",
+        "issuerListDesc": "Halliburton 2 (BBUP)"
+    },
+    {
+        "issuerListCd": "HARLEY-DAVIDSON_BB",
+        "issuerListName": "Harley-Davidson Restricted List",
+        "issuerListDesc": "Account 248567 restricted from purchasing Harley-Davidson"
+    },
+    {
+        "issuerListCd": "HARTFORD_BB",
+        "issuerListName": "The Hartford Financial Services Group, Inc.",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "HBI_BB",
+        "issuerListName": "ERISA List for Hanes Brand",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "HELABA_BB",
+        "issuerListName": "HELABA ISSUERS",
+        "issuerListDesc": "RH - 2/14/19 Created list"
+    },
+    {
+        "issuerListCd": "HELABA_FUT",
+        "issuerListName": "Eligible Futures based on Helaba",
+        "issuerListDesc": "RH 5/27/21 - Created List"
+    },
+    {
+        "issuerListCd": "HENKEL_BB",
+        "issuerListName": "Henkel Restricted List",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "HERC_BB",
+        "issuerListName": "Herc Holdings Inc.",
+        "issuerListDesc": "Herc Holdings Inc affiliates - Herc Rentals Group is an investor in the LD Goc/Credit Trust (NT01050)"
+    },
+    {
+        "issuerListCd": "HESS_BBUP",
+        "issuerListName": "Hess Affiliates 11.27.17",
+        "issuerListDesc": "Securities issued by Hess Corp"
+    },
+    {
+        "issuerListCd": "HIGHGROUND_BB",
+        "issuerListName": "HighGround Advisors Restricted Stock List",
+        "issuerListDesc": "HighGround Advisors Restricted Stock List - BBCO. Client provided list. Updated June 2021."
+    },
+    {
+        "issuerListCd": "HORECA_BB",
+        "issuerListName": "Horeca Ultimate Parent List (DA Updates)",
+        "issuerListDesc": "Last Update - 7/1/2021. List includes public & private companies\n"
+    },
+    {
+        "issuerListCd": "HORECA_TK",
+        "issuerListName": "HORECA Ticker",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "HSBC_BB",
+        "issuerListName": "List of Restricted Issuer Codes for HSBC",
+        "issuerListDesc": "For account B449N5"
+    },
+    {
+        "issuerListCd": "HSBCWEAP_BB",
+        "issuerListName": "Controversial Weapons Companies - Per HSBC (Patty Updates)",
+        "issuerListDesc": "Requirement added to account B449N5 in December 2016"
+    },
+    {
+        "issuerListCd": "HSBCWEAP_TK",
+        "issuerListName": "List of Corporate Ticker Codes for HSBC",
+        "issuerListDesc": "For account B449N5"
+    },
+    {
+        "issuerListCd": "HUMANA_BB",
+        "issuerListName": "Humana, INC (BBUP) code",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "IBM_BB",
+        "issuerListName": "IBM Issuers",
+        "issuerListDesc": "Used in conjunction with rule ISSR.052"
+    },
+    {
+        "issuerListCd": "IFL_BB",
+        "issuerListName": "IOOF Holdgings Ltd. (BBUP List)",
+        "issuerListDesc": "April 2021 - 100% of MLC Wealth business was sold to IOOF Holdings LTD (IFL)."
+    },
+    {
+        "issuerListCd": "IHRT",
+        "issuerListName": "IHRT Lock Up Agreement",
+        "issuerListDesc": "4/3/17 Colin Wilson Murphy email"
+    },
+    {
+        "issuerListCd": "ILL_TOOL_REST_BB",
+        "issuerListName": "Illinois Tool Works Restricted List (DO Updates)",
+        "issuerListDesc": "Perlist provided as part of Illinois Tool Works hiring Northern Trust as OCIO ((H48408 / N253N4 / N253N4T)"
+    },
+    {
+        "issuerListCd": "IND_ANTIISRAEL_BB",
+        "issuerListName": "Anti Israel List for State of Indiana",
+        "issuerListDesc": "List Updated August 2020"
+    },
+    {
+        "issuerListCd": "IND_ANTIISRAEL_TK",
+        "issuerListName": "IND_ANTIISRAEL Ticker",
+        "issuerListDesc": "List Updated July 2018"
+    },
+    {
+        "issuerListCd": "IND_SUDAN_BB",
+        "issuerListName": "Sudan Divestment List for State of Indiana",
+        "issuerListDesc": "List Updated August 2020"
+    },
+    {
+        "issuerListCd": "IND_SUDAN_TK",
+        "issuerListName": "Sudan Divestment List for State of Indiana",
+        "issuerListDesc": "List Updated July 2018"
+    },
+    {
+        "issuerListCd": "IND_TERROR_BB",
+        "issuerListName": "Terror Divestment List for State of Indiana",
+        "issuerListDesc": "List Updated August 2020"
+    },
+    {
+        "issuerListCd": "IND_TERROR_TK",
+        "issuerListName": "Terror Divestment List for State of Indiana",
+        "issuerListDesc": "List Updated July 2018"
+    },
+    {
+        "issuerListCd": "IND078_BB",
+        "issuerListName": "B512N7 Cluster Munitions Issuers",
+        "issuerListDesc": "Received updated list as of 01 July 2021 of prohibited issuers based on Cluster Munitions (effective 01 August 2021). Linked to IND.078. Also, as of Dec 2012, list no longer applies to Z43847."
+    },
+    {
+        "issuerListCd": "IND078_TK",
+        "issuerListName": "B512N7 Cluster Munitions Issuers",
+        "issuerListDesc": "Received updated list as of 01 July 2021 of prohibited issuers based on Cluster Munitions (effective 01 August 2021). Linked to IND.078. Also, as of Dec 2012, list no longer applies to Z43847."
+    },
+    {
+        "issuerListCd": "IND155C_BBUP",
+        "issuerListName": "Issuers Used to Plug Gap - Bloomberg Ultimate Parent Codes",
+        "issuerListDesc": "In analyzing the Barclays High Yield Index, For 6 issuers, Barclays did NOT classify a name as Basic Industry or Energy where Bloomberg did classify the name as Basic Materials or Energy. The issuer codes for these issuers were built into the test."
+    },
+    {
+        "issuerListCd": "INDUSTRIAL_BB",
+        "issuerListName": "Industrial Alliance",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "INTEGRYS_BB",
+        "issuerListName": "INTEGRYS ENERGY ISSUERS",
+        "issuerListDesc": "Issuers to block from investment in Integrys Energy Long Duration Acct"
+    },
+    {
+        "issuerListCd": "INVESCO_BB",
+        "issuerListName": "Invesco",
+        "issuerListDesc": "Invesco"
+    },
+    {
+        "issuerListCd": "IOWA_BB",
+        "issuerListName": "Iowa Peace - Restricted List (Sudan/Iran Issuers)",
+        "issuerListDesc": "May not purchase issuers on this list per client's Sudan/Iran Divestment list. Updated on 8/9/2021"
+    },
+    {
+        "issuerListCd": "IOWA_TK",
+        "issuerListName": "IOWA Ticker",
+        "issuerListDesc": "Updated 8/9/21"
+    },
+    {
+        "issuerListCd": "IRAN-BCBS_BB",
+        "issuerListName": "Companies Doing Business in Iran - 4/23/12",
+        "issuerListDesc": "Prohibited Companies doing business in Iran (M443N7) and (1498N7), based on the California Dept. of Insurance list dated 4/23/2012 (Updated Jan 2013)"
+    },
+    {
+        "issuerListCd": "IRAN_CA_BB",
+        "issuerListName": "Iranian Contracting Act, 2010 of California List Update",
+        "issuerListDesc": "Last updated 2/9/2021 (NOTE: Most recent list update is as of 8/5/2020)."
+    },
+    {
+        "issuerListCd": "IRAN_CT_BB",
+        "issuerListName": "Connecticut - Scrutinized Companies - Iran (9/5/13)",
+        "issuerListDesc": "Client Restricted Issuers List (Iran) per Conn. Gen. Stat. 3-13g (1460N1)"
+    },
+    {
+        "issuerListCd": "IRAN_ILLINOIS_BB",
+        "issuerListName": "Illinois Scrutinized Companies - Iran - 9/1/21",
+        "issuerListDesc": "Per monthly ISS List of Scrutinized Companies - maps to State of Illinois leglislation."
+    },
+    {
+        "issuerListCd": "IRAN_KISS_BB",
+        "issuerListName": "City of Kissimmee, Lakeland, Bradenton, Naples Iran List(TC)",
+        "issuerListDesc": "Scrutinized Companies with Activities in Iran.  List provided by PFIA 6/15/21 Report"
+    },
+    {
+        "issuerListCd": "IRAN_MASS_BB",
+        "issuerListName": "PRIM Iran Restrict List Q3 2021",
+        "issuerListDesc": "Scrutinized Iran Companies List provided by PRIT/PRIM. Applies to Mass. Public Retirement Plans subject to PERAC. Accounts:  K442N2, ZZ-W401N5. Effective 7/1/21"
+    },
+    {
+        "issuerListCd": "IRAN_MPERS_BB",
+        "issuerListName": "Iran Divestment Act of 2015",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "IRAN_MPERS_TK",
+        "issuerListName": "IRAN_MPERS TICKER",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "IRONWORKERS",
+        "issuerListName": "Sovereign Issuers Exempt from Issuer Limit (DG updates)",
+        "issuerListDesc": "The following sovereign issuers are exempt from the 5% issuer limit - Z411N6"
+    },
+    {
+        "issuerListCd": "ISRAEL_MPERS_BB",
+        "issuerListName": "Israel Regulatory List",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "ISSR009ABC",
+        "issuerListName": "Global Company ID's To Use for Japan Post",
+        "issuerListDesc": "Created rule in May 2017 in order to test for cases where we need to test at the Global Company ID (i.e. cases where the ultimate parent of the issuer that is restricted in the unofficial guidelines is not the same as the issuer that is restricted."
+    },
+    {
+        "issuerListCd": "ISSR075D",
+        "issuerListName": "Goldman Ultimate Parent Codes for ISSR.075(d)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "ISSR136C_BB",
+        "issuerListName": "List of Publicly Traded Contributing Employers for 342A96",
+        "issuerListDesc": "Per list of contributing employers received from client May 2013. Looked up contributing employers on Bloomberg to determine public vs private"
+    },
+    {
+        "issuerListCd": "ISSR150",
+        "issuerListName": "Issuer Exempt From ISSR.150 (PR updates)",
+        "issuerListDesc": "Back out additional government issuers as needed"
+    },
+    {
+        "issuerListCd": "ISSR215C",
+        "issuerListName": "Issuers to back out of Issuer 215(c) (PR updates)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "ISSR466",
+        "issuerListName": "Government Issuers Exempt from ISSR.466 (PR updates)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "ISSR511",
+        "issuerListName": "Treasury Issuers Exempt From ISSR.511 (PR updates)",
+        "issuerListDesc": "Direct Treasury issues of governments are exempt from the issuer limits for ISSR.511"
+    },
+    {
+        "issuerListCd": "ISSR561",
+        "issuerListName": "Excludes Government Issuers included in index (PR updates)",
+        "issuerListDesc": "B555SHS - Index is Barclays Global Agg Ex. JPY.....Add issuers to list as needed"
+    },
+    {
+        "issuerListCd": "ISSR701",
+        "issuerListName": "Issuers Exempt from ISSR.701 (PR updates)",
+        "issuerListDesc": "*ISSR.701 - Max 5% MV in any one Issuer  at the time of purchase excluding Government bonds from OECD countries and securities issued or guaranteed by the Gov't, Agencies, GSE's of  U.S., Canada, U.K., Germany, and France."
+    },
+    {
+        "issuerListCd": "ISSR701B",
+        "issuerListName": "Issuers Exempt from ISSR.701 (b) (PR updates)",
+        "issuerListDesc": "*ISSR.701 (b) - Max index weight +3% any one Issuer excluding Gov't bonds from OECD countries and securities issued or guaranteed by the Gov't +Agencies of  U.S., Canada, U.K., Germany, and France and AAA supranationals."
+    },
+    {
+        "issuerListCd": "ISSR705",
+        "issuerListName": "Exempt Issuers for ISSR705 (PR updates)",
+        "issuerListDesc": "Added EIB and ASIA on 2.27.17. Both EIB and ASIA have at least 1 EU country as a member."
+    },
+    {
+        "issuerListCd": "ISSR980_BB",
+        "issuerListName": "ERISA list for ISSR.980",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "ISSU554_BB",
+        "issuerListName": "Ahold USA issuer codes",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "ISSUER_CD",
+        "issuerListName": "ISSUER_NAME",
+        "issuerListDesc": "ISSUER_LIST_CD"
+    },
+    {
+        "issuerListCd": "ITV_BB",
+        "issuerListName": "ITV Pension Scheme/ ITV Plc",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "ITW_BB",
+        "issuerListName": "Illinois Tool Works Issuers",
+        "issuerListDesc": "Issuer codes for Illinois Tool Works- used in conjunction with *ISSR.234(b) - No investments should be made in securities of Illinois Tool Works Inc"
+    },
+    {
+        "issuerListCd": "JACKHENRY_BB",
+        "issuerListName": "Jack Henry & Associates",
+        "issuerListDesc": "Jack Henry & Associates listed in ERISA Disclosures (Account # CT01445)"
+    },
+    {
+        "issuerListCd": "JACKSON_BB",
+        "issuerListName": "Jackson Affiliated Restricted Securities",
+        "issuerListDesc": "Restricted Security List for Account LCH002 . List created 4/16/2018. Last Update made 5/3/21\n"
+    },
+    {
+        "issuerListCd": "JACKSON_TK",
+        "issuerListName": "Jackson Affiliated Restricted Securities",
+        "issuerListDesc": "Restricted Security List for Account LCH002"
+    },
+    {
+        "issuerListCd": "JH_BB",
+        "issuerListName": "ERISA employer securities for John Hancock",
+        "issuerListDesc": "List created on 04/19/18"
+    },
+    {
+        "issuerListCd": "JH_TK",
+        "issuerListName": "JH Ticker",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "JJ_DD",
+        "issuerListName": "Johnson and Johnson",
+        "issuerListDesc": "Johnson and Johnson"
+    },
+    {
+        "issuerListCd": "JNL_BB",
+        "issuerListName": "Restricted Entities/Affiliates",
+        "issuerListDesc": "Per 6/22/20 email - Athene Holding Ltd. & Apollo Global Management, Inc. are restricted"
+    },
+    {
+        "issuerListCd": "JOHNDEERE_BB",
+        "issuerListName": "John Deere",
+        "issuerListDesc": "John Deere"
+    },
+    {
+        "issuerListCd": "JP_APP_GC",
+        "issuerListName": "List of Issuers Reviewed for *JP.FORBIDDEN (47-48)",
+        "issuerListDesc": "Last Review completed July 2021"
+    },
+    {
+        "issuerListCd": "JP_MODEL_BBUP",
+        "issuerListName": "JP Restricted Names for Models/Transition Accounts",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "JP_REST_BBCO",
+        "issuerListName": "Japan post Restricted Securities- based on BB Company ID",
+        "issuerListDesc": "Last Updated 2-20-19"
+    },
+    {
+        "issuerListCd": "JP_REST_BBUP",
+        "issuerListName": "Japan post Restricted Securities- based on BB UP ID",
+        "issuerListDesc": "Last Updated 8-30-21"
+    },
+    {
+        "issuerListCd": "JPM_JPLCG000008",
+        "issuerListName": "Restricted issuers for JPLCG000008",
+        "issuerListDesc": "Mark Salomon 4/21/21 - INTC removed."
+    },
+    {
+        "issuerListCd": "JPM_JPLCG200178",
+        "issuerListName": "Restricted issuers for JPLCG200178",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "JPM_JPLCG293726",
+        "issuerListName": "Restricted issuers for JPLCG293726",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "JPM_TOWERCAPITALLLC",
+        "issuerListName": "Restricted issuers for Tower Capital LLC",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "JPMLOCK_JPLCG174902",
+        "issuerListName": "Restricted issuers for JPLCG174902",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "JPMLOCK_JPLCG380350",
+        "issuerListName": "Restricted issuers for JPLCG380350",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "JPMLOCK_JPLCG391247",
+        "issuerListName": "Restricted issuers for JPLCG391247",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "JPMORGAN_BB",
+        "issuerListName": "JP Morgan affiliated ultimate parent list",
+        "issuerListDesc": "Provided by the client for the JP accounts as of 6/30/21"
+    },
+    {
+        "issuerListCd": "JPMORGAN_TK",
+        "issuerListName": "Ultimate Parent Ticker List for JP Morgan and affiliates",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "JPMPB_JPLC0089",
+        "issuerListName": "Restricted issuers for JPLCG0089",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "JPMPB_JPLCG0094_5",
+        "issuerListName": "Restricted issuers for JPLCG0094 and JPLCG0095",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "JPMPB_JPLCG0096",
+        "issuerListName": "Restricted issuers for JPLC0096",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "JPMSTRAT_JPLCG002266",
+        "issuerListName": "Restricted issuers for JPLCG002266",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "JPMSTRAT_JPLCG016401",
+        "issuerListName": "Restricted issuers for JPMSTRAT_JPLCG016401",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "JPMSTRAT_JPLCG019050",
+        "issuerListName": "Restricted issuers for JPLCG019050",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "JPPRIVISSUERS",
+        "issuerListName": "Privately Rated Issuers List",
+        "issuerListDesc": "In 9.19.16 email Lena provided list of loans that have private ratings, the preference is to avoid thsese in Japan Post. Per 10.18.16 email from Lena, code the rule at the issuer level. Updated per Lena 3.24.17 email"
+    },
+    {
+        "issuerListCd": "JSAINSBURY_BB",
+        "issuerListName": "J Sainsbury Common Inv Fund LTD Employer Securities",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "JV-LEGO_BB",
+        "issuerListName": "J&V - Lego Family Trust Acct# JV0291",
+        "issuerListDesc": "J&V - Lego Family Trust list\n4/2/20 -EN added Cirrus Logic(CRUS) and Guidewire Soft(GWRE);\n2/21/17 -EN added TESLA (TSLA)\n11/20/17 - EN added SANDisk,KLA-Tencor and Cypress Semiconductor per Melanie's request on 11/17/17 - Fw: JV0291;"
+    },
+    {
+        "issuerListCd": "K2_UCIT_BB",
+        "issuerListName": "Prohibited list of debt securities (TC updates)",
+        "issuerListDesc": "Prohibited list of debt securities -  List ucirculated 10/23/20 as of 9/30/20"
+    },
+    {
+        "issuerListCd": "K2_UCIT_EQUITY_BB",
+        "issuerListName": "List of equity securities prohibited (TC updates)",
+        "issuerListDesc": "List of equity securities prohibited -  List updated based on list circulated 10/23/20 as of 9/30/20"
+    },
+    {
+        "issuerListCd": "K2_UCIT_WEAPONS_BB",
+        "issuerListName": "Exclusion list for K2 UCITS - WEAPONS (TC updates)",
+        "issuerListDesc": "Exclusion list for K2 UCITS regarding Controversial Weapons - List circulated 10/23/20 as of 9/30/20 (based on BBCO)"
+    },
+    {
+        "issuerListCd": "KAISER_BB",
+        "issuerListName": "Client list of competitive HMO securities",
+        "issuerListDesc": "Per client letter 11/24/08.  Updated as of January 2015. Rule:  IND.248,  Account:  N41780"
+    },
+    {
+        "issuerListCd": "KAISER2_BB",
+        "issuerListName": "Restricted list for Kaiser Permanente/ Kaiser Foundation",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "KAISERHANDGUN_BB",
+        "issuerListName": "Client list - Kaiser Handguns",
+        "issuerListDesc": "Companies that manufacture firearms and small arms ammo for cvilians. Research does not cover those that cater to military, govt, and law enforcement (Updated 1/17/2019)."
+    },
+    {
+        "issuerListCd": "KAISERHANDGUN_TK",
+        "issuerListName": "KAISERHANDGUN Ticker",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "KAISERPERM_BB",
+        "issuerListName": "Used by Archdi of LA (see 6/17/2021) email in res list folde",
+        "issuerListDesc": "BBUP Code for Kaiser Foundations Health Plan Inc / Kaiser Foundation Hospitals."
+    },
+    {
+        "issuerListCd": "KAISERTOBACCO_BB",
+        "issuerListName": "Client list of major producers of tobacco products",
+        "issuerListDesc": "Per client restriction as of January 2019 IND.248(a),  Account:  N41780"
+    },
+    {
+        "issuerListCd": "KAISERTOBACCO_TK",
+        "issuerListName": "Kaiser Tobacco Parent Ticker List",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "KIAGOV",
+        "issuerListName": "Exempt Govt Issuers for KIA - B488N7 (PR updates)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "KINDER_BB",
+        "issuerListName": "Kinder Morgan",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "KPERSSUDAN_BB",
+        "issuerListName": "KPERS Sudan prohibited list - Nov 2015",
+        "issuerListDesc": "Companies prohibited per client email dated 1/31/17"
+    },
+    {
+        "issuerListCd": "KROGER_BB",
+        "issuerListName": "Kroger Issuers",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "KY0165_BB",
+        "issuerListName": "United Brotherhood of Carpenters- Rest Secs (DG updates)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "KY2765_BB",
+        "issuerListName": "Prohibited Issuer - Comerica Bank - Sept. 2014",
+        "issuerListDesc": "The following issuer is prohibited from KY2765, Carpenter's Labor Management Pension, perJKayser email 9/4/14"
+    },
+    {
+        "issuerListCd": "KZVK_BB",
+        "issuerListName": "KZVK - German Catholic - Prohibited List (SS updates)",
+        "issuerListDesc": "Per Client list in guidelines"
+    },
+    {
+        "issuerListCd": "KZVKNEGLIST_BB",
+        "issuerListName": "KZVK Restricted Issuer List (BBUP)",
+        "issuerListDesc": "As of 7/1/19  - combination of Z46048 and Z46048A client lists... all \"\"\"\"UNACCEPTABLE\"\"\"\" securities. Updated on 3/26/2021"
+    },
+    {
+        "issuerListCd": "LACERA_BB",
+        "issuerListName": "LACERA Sudan SRI List",
+        "issuerListDesc": "Client prohibited Sudan security list updated 11/7/17.  Rule:  ISSU.409.  Account ZZ-W863N6"
+    },
+    {
+        "issuerListCd": "LACERA2_BB",
+        "issuerListName": "LACERA Iran List",
+        "issuerListDesc": "Client prohibited Iran issuer list as of 10/31/17. Rule:  ISSU.409(a).  Accounts:  ZZ-W863N6."
+    },
+    {
+        "issuerListCd": "LANDESKIRCHENAMT_BB",
+        "issuerListName": "Landeskirchenamt der EKM Restricted List",
+        "issuerListDesc": "Landeskirchenamt der EKM Client Restricted List (BBUP) List updated on 5/5/2021"
+    },
+    {
+        "issuerListCd": "LANDESKIRCHENAMT_TK",
+        "issuerListName": "Landeskirchenamt der EKM Restricted List",
+        "issuerListDesc": "List based on corporate tickers"
+    },
+    {
+        "issuerListCd": "LEIDOS_BB",
+        "issuerListName": "Leidos Issuer List",
+        "issuerListDesc": "Leidos Issuer List for 5490N6"
+    },
+    {
+        "issuerListCd": "LINCOLN_BB",
+        "issuerListName": "Lincoln - Prohibited Affiliates",
+        "issuerListDesc": "Lincoln Affiiates"
+    },
+    {
+        "issuerListCd": "LINCON_BB",
+        "issuerListName": "ERISA List for Lincoln National",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "LIONCAP_BB",
+        "issuerListName": "Lion Capital Related Issuers",
+        "issuerListDesc": "The following are related issuers that issue fixed income securities as of 5.14.07"
+    },
+    {
+        "issuerListCd": "LIONE",
+        "issuerListName": "Gaile A Lione Restricted Security List (PC updates)",
+        "issuerListDesc": "Gaile A Lione Restricted Security List, LSIA acct# BD5662"
+    },
+    {
+        "issuerListCd": "LIONE_BB",
+        "issuerListName": "Gaile A Lione Restricted Security List (BBUP list)",
+        "issuerListDesc": "Gaile A Lione Restricted Security List, LSIA acct# BD5662. Per Melanie 6/5/20. Please add LPX, FLIR and CHEOY to the Party List Gail A Lione Restricted Security List (BBUP list)"
+    },
+    {
+        "issuerListCd": "LOCKHEED_BB",
+        "issuerListName": "Lockheed Martin Restricted Issuers",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "LOCKHEED_BBUP",
+        "issuerListName": "Lockheed Martin (BBUP) names",
+        "issuerListDesc": "List is twofold 1) From the 2 names in the ERISA Disclosures agreement (of the adoption form going into MBS001) and 2) From the seperate account IMA (W53420)."
+    },
+    {
+        "issuerListCd": "LOCKHEED_CANNABIS_BB",
+        "issuerListName": "Issuers included in BBG Global Cannabis Comp Peers Index",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "LOCKHEED_TK",
+        "issuerListName": "Lockheed Martin (Parent Tickers)",
+        "issuerListDesc": "List is twofold 1) From the 2 names in the ERISA Disclosures agreement (of the adoption form going into MBS001) and 2) From the seperate account IMA (W53420)."
+    },
+    {
+        "issuerListCd": "LOOMIS",
+        "issuerListName": "Loomis Sayles and Natixis Issuers (TC updates)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "LOUISIANA_GC",
+        "issuerListName": "Louisiana Sudan Restricted Issuers - Updated 9/1/2021",
+        "issuerListDesc": "List sent to CRD Compliance group each month from MSCI - list looks to global company code. Updated per 9/1/2021 List. \n"
+    },
+    {
+        "issuerListCd": "LOWCARBON",
+        "issuerListName": "MSCI Low Carbon Reduction Companies as of July 2015",
+        "issuerListDesc": "Running a test for Metzler EKHN account November 2016"
+    },
+    {
+        "issuerListCd": "LSIA_COMERICA",
+        "issuerListName": "Prohibited Issuer - Comerica",
+        "issuerListDesc": "Per 9/22/17 Melanie Mayo West email."
+    },
+    {
+        "issuerListCd": "LSIA_NEGATIVE",
+        "issuerListName": "LSIA Negative Rating",
+        "issuerListDesc": "Refer to 1/6/20 Joann Kayser email for latest update. Removed CY on 1/7/20 per Joann Kayser."
+    },
+    {
+        "issuerListCd": "LSIA_WISONSIN_ENERGY",
+        "issuerListName": "Prohibit Wisoncsin Energy",
+        "issuerListDesc": "Per 9/22/17 Melanie Mayo West email prohbit Wisoncsin Energy"
+    },
+    {
+        "issuerListCd": "LSIA_WSBF",
+        "issuerListName": "LSIA WSBF",
+        "issuerListDesc": "6/2/16 Melanie Mayo West Email"
+    },
+    {
+        "issuerListCd": "LSIAETF",
+        "issuerListName": "U.S. Broad Market ETF",
+        "issuerListDesc": "9/22/16 Melanie West Email: Permissible ETF list"
+    },
+    {
+        "issuerListCd": "LSIASRI_BB",
+        "issuerListName": "LSIA Sub Advisor Restricted List using BBCO id (LU updates)",
+        "issuerListDesc": "LSIA Sub Advisor Restricted List for LSIA CLA Accounts Last updated per M. West email dtd 1/31/17, 11:26 AM, to CRD Compliance. Remove SHW per Melanie Mayo West email 4/3/20.\n7/22/19-> last update\n11/14/17 -> Convert to be based off BBCO ids.\n"
+    },
+    {
+        "issuerListCd": "LUCENT_BB",
+        "issuerListName": "Restricted List for Lucent Technologies",
+        "issuerListDesc": "Last reviewed: 6/6/19"
+    },
+    {
+        "issuerListCd": "LUTHERAN_BB",
+        "issuerListName": "Restricted List",
+        "issuerListDesc": "List Provided by the client"
+    },
+    {
+        "issuerListCd": "LUTHERAN_TK",
+        "issuerListName": "LUTHERAN Ticker",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "M&TBANK_BB",
+        "issuerListName": "Affiliates of M&T Bank Corp Coded to BBUP identifier",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "M13468A",
+        "issuerListName": "SRI List for M13468A LSIA Acct",
+        "issuerListDesc": "Restrict sells per Laurie Kuchler email dtd 12/13/16"
+    },
+    {
+        "issuerListCd": "MAA_REST_BUY_BB",
+        "issuerListName": "MAA Restricted List- Buys Only",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "MAA_REST_BUY_SELL_BB",
+        "issuerListName": "MAA Restricted List- Buys and Sells",
+        "issuerListDesc": "Last update based on MAA Restriction Status September 3, 2021 - Komal Desai; (BBUP list)"
+    },
+    {
+        "issuerListCd": "MAARESTRICTION_BB",
+        "issuerListName": "MAA Restriction List",
+        "issuerListDesc": "List which relates to cannabis restricted name.(Supplemental MAA Restriction). August 2021"
+    },
+    {
+        "issuerListCd": "MACBRIDE_CT_BB",
+        "issuerListName": "MacBride List - State of Connecticut - 9.5.13",
+        "issuerListDesc": "Per Client revised statute P.A. 12-203, Section 1 3-13h (1460N1)"
+    },
+    {
+        "issuerListCd": "MALONE_BB",
+        "issuerListName": "Client restricted list",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "MARP_BBCO",
+        "issuerListName": "Approved Equity Future  Indices for MARP",
+        "issuerListDesc": "RH 2/19/20 - Created new list"
+    },
+    {
+        "issuerListCd": "MARP_REF",
+        "issuerListName": "Approved Swap Indices for MARP",
+        "issuerListDesc": "RH 2/19/20 - Created new list"
+    },
+    {
+        "issuerListCd": "MARS_BB",
+        "issuerListName": "Mars Inc.",
+        "issuerListDesc": "Mars Inc."
+    },
+    {
+        "issuerListCd": "MARSHANDMCLENNAN_BB",
+        "issuerListName": "Marsh & McLennan and affiliates (BBUP level)",
+        "issuerListDesc": "M&M and Co. Coded at UP to include affiliates"
+    },
+    {
+        "issuerListCd": "MAXIM-RESTRICED_BB",
+        "issuerListName": "Restricted securities, equities only (DA updates)",
+        "issuerListDesc": "List updated by DA (Use with ISSR.505).  List Dated 9/1/2021"
+    },
+    {
+        "issuerListCd": "MAXIM_BB",
+        "issuerListName": "Securties require pre-approval, Equities only (DA updates)",
+        "issuerListDesc": "Securties require pre-clearance from Great West prior to execution Client list dated 9/1/21 (Use with Rule ISSU.262)"
+    },
+    {
+        "issuerListCd": "MAXIM_TK",
+        "issuerListName": "MAXIM",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "MCAULEY_BB",
+        "issuerListName": "McAuley Portfolio Management",
+        "issuerListDesc": "Restricted Securities for McAuley Portfolio Management\nUpdated 7-13-21"
+    },
+    {
+        "issuerListCd": "MCKESSON_BB",
+        "issuerListName": "McKesson Issuers",
+        "issuerListDesc": "McKesson issuers list applied to Core Plus Trust 5495N1"
+    },
+    {
+        "issuerListCd": "MDU_BB",
+        "issuerListName": "MDU Resources Group - Affiliates",
+        "issuerListDesc": "Use with ISSR.975(kk) - ERSIA issuer rule for LS Core Plus Fixed Income CIT (5490N6)"
+    },
+    {
+        "issuerListCd": "MEADWEST_BB",
+        "issuerListName": "Mead Westco BB",
+        "issuerListDesc": "Restricted issuer list for Mead Westco"
+    },
+    {
+        "issuerListCd": "MEDSTARTOB_BB",
+        "issuerListName": "Companies who derive more than 25% of revenue in Tobacco",
+        "issuerListDesc": "Provide by client- last updated 1/31/2106"
+    },
+    {
+        "issuerListCd": "MEIJI_BB",
+        "issuerListName": "Meiji Yasuda prohibited issuer",
+        "issuerListDesc": "Companies which is generally recognized as the company produced (key components for) cluster munitions or explosive submunitions.(client provided list 3/19/2019)"
+    },
+    {
+        "issuerListCd": "MEIJI_TK",
+        "issuerListName": "Meiji Yasuda prohibited issuer",
+        "issuerListDesc": "Companies which is generally recognized as the company produced (key components for) cluster munitions or explosive submunitions.(client provided list 3/19/2019)"
+    },
+    {
+        "issuerListCd": "MERC_BB",
+        "issuerListName": "Mercer",
+        "issuerListDesc": "SMUD 401(k) Savings Plan ERISA Disclosure: MERCER INTL INC"
+    },
+    {
+        "issuerListCd": "MERCER_BB",
+        "issuerListName": "Mercer Prohibited Issuers List - (DA Updates)",
+        "issuerListDesc": "GES exclusion list 12/16/19"
+    },
+    {
+        "issuerListCd": "MERCER_TK",
+        "issuerListName": "Mercer Prohibited Issuers List - (DA Updates). TK Version",
+        "issuerListDesc": "GES exclusion list 12/16/19"
+    },
+    {
+        "issuerListCd": "MERCERREST_BB",
+        "issuerListName": "Mercer Affiliated Restricted List- Parent Company List",
+        "issuerListDesc": "Updated list on 07/11/18."
+    },
+    {
+        "issuerListCd": "METALBOX_BB",
+        "issuerListName": "Metal Box Pension Prohibited Issuers",
+        "issuerListDesc": "Crown Holdings Inc or any of its associates are prohibited"
+    },
+    {
+        "issuerListCd": "METLIFE_BB",
+        "issuerListName": "Metlife List of Affiliates",
+        "issuerListDesc": "Used for Metlife accounts and Brighthouse Funds\nAlso ERISA- Separate Account #804 is an investor in H459N9.\n\nLast updated 9/18/20"
+    },
+    {
+        "issuerListCd": "MI-FONDS_BB",
+        "issuerListName": "Bistum Mainz",
+        "issuerListDesc": "MI-Fonds H06-HBG (X113N1) Negativliste Bistum Mainz effective August 01, 2021."
+    },
+    {
+        "issuerListCd": "MI-FONDS_STATES_BB",
+        "issuerListName": "Bistum Mainz X113N1 STATES ISSUER LIST",
+        "issuerListDesc": "MI-Fonds H06-HBG (X113N1) coded based on States: ESG_CustomB_Masterlist. Updated as of 11/21/2019 per Insite Legal (List not in use. Orignal rule has been deactivated)"
+    },
+    {
+        "issuerListCd": "MI-IRAN_BB",
+        "issuerListName": "Michigan - Iran Scrutinized Ultimate Companies List",
+        "issuerListDesc": "Michigan - Iran Scrutinized Companies List (5497N9); Client last full list received on 10/2/2019. Last updated on 11/132019 per Changes Report (DLG)"
+    },
+    {
+        "issuerListCd": "MI-NORTHKOREAN_BB",
+        "issuerListName": "Michigan - North Korean Scrutinized Ultimate Companies List",
+        "issuerListDesc": "Michigan - North Korean Scrutinized Companies List (5497N9); Client list last received on 10/2/19. Last Updated on 10/4/2019."
+    },
+    {
+        "issuerListCd": "MI-PHARMA_BB",
+        "issuerListName": "State of Michigan Prohibitted Pharmaceutical Distributors",
+        "issuerListDesc": "Email from Patty Banukevich on 3/22/2019, restrict AmerisourceBergen Corp, (ABC), Cardinal Health Inc. (CAH) and McKesson Corporation (MCK)"
+    },
+    {
+        "issuerListCd": "MI-RESTRICT_BB",
+        "issuerListName": "The State of Michigan Retirement System Restricted List",
+        "issuerListDesc": "Per Patty Banukevich email on 9/10/2019 - added CoreCivic (CXW) and The GEO Group (GEO)"
+    },
+    {
+        "issuerListCd": "MI-SUDAN_BB",
+        "issuerListName": "Michigan - Sudan Scrutinized Ultimate Companies List",
+        "issuerListDesc": "Michigan - Sudan Scrutinized Companies List (5497N9); last full list update, 10/2/19 (DLG).  Last updated 10/4/19."
+    },
+    {
+        "issuerListCd": "MI-SYRIA_BB",
+        "issuerListName": "Michigan -  Syria Scrutinized Ultimate Companies List",
+        "issuerListDesc": "Michigan -  Syria Scrutinized Companies List (5497N9). Last full list update 10/4/19 (DLG) Last Updated on 10/4/2019."
+    },
+    {
+        "issuerListCd": "MI_GUNS_BB",
+        "issuerListName": "Michigan Guns and Firearms List",
+        "issuerListDesc": "Received 3/1/18"
+    },
+    {
+        "issuerListCd": "MICHIGANSRI_BB",
+        "issuerListName": "Michigan Catholic Conference SRI List (SS updates)",
+        "issuerListDesc": "Last updated 5/27/2020 per Melanie's e-mail."
+    },
+    {
+        "issuerListCd": "MIM269732UC_BB",
+        "issuerListName": "Restricted Issuers",
+        "issuerListDesc": "Restricted Issuers per Adam Fabry 8/4/21 email"
+    },
+    {
+        "issuerListCd": "MIMBLACKROCK_BB",
+        "issuerListName": "Blackrock",
+        "issuerListDesc": "Blackrock"
+    },
+    {
+        "issuerListCd": "MIMUBBY536A_BB",
+        "issuerListName": "Restricted Issuers",
+        "issuerListDesc": "Restricted Issuers per Adam Fabry 10/16 email"
+    },
+    {
+        "issuerListCd": "MIMWDA60359",
+        "issuerListName": "Restricted issuers for MIMWDA60359",
+        "issuerListDesc": "As of 01/27/21"
+    },
+    {
+        "issuerListCd": "MIRAE_BB",
+        "issuerListName": "MIRAE Security Restriction List (Ultimate Parent)",
+        "issuerListDesc": "MIRAE Security Restriction List (Ultimate Parent) Last updated 12/24/2018 (Rule STYP.2101(g) blocks Global X Uranium ETF)"
+    },
+    {
+        "issuerListCd": "MITSUBISHI_BB",
+        "issuerListName": "MITSUBISHI MOTORS BBUP",
+        "issuerListDesc": "RH 2/26/21 - Created list"
+    },
+    {
+        "issuerListCd": "MIZUHO_BB",
+        "issuerListName": "Mizuho Affiliates",
+        "issuerListDesc": "Mizuho affiliates per client email 9.4.13 - B471NG"
+    },
+    {
+        "issuerListCd": "ML_ANIMAL",
+        "issuerListName": "B    Animal Welfare       ",
+        "issuerListDesc": "PETA, USDA, FACTORY FARM, ANIMAL TESTING"
+    },
+    {
+        "issuerListCd": "ML_LR_DIVERSITY",
+        "issuerListName": null,
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "MLSMA_MLF32210535",
+        "issuerListName": "MLSMA_MLF32210535",
+        "issuerListDesc": "Restricted party list for MLSMA_MLF32210535"
+    },
+    {
+        "issuerListCd": "MLSMA_MLT62874112",
+        "issuerListName": "MLSMA_MLT62874112",
+        "issuerListDesc": "Restricted party list for MLSMA_MLT62874112\n"
+    },
+    {
+        "issuerListCd": "MMLEQUITY_BB",
+        "issuerListName": "Restricted securities prohibited from trading (SS Update)",
+        "issuerListDesc": "Restricted securities prohibited from trading - 763011, 765610 Updated 2/18/21"
+    },
+    {
+        "issuerListCd": "MMLEQUITY_TK",
+        "issuerListName": "Restricted securities prohibited from trading",
+        "issuerListDesc": "Restricted securities prohibited from trading - 763011, 765610"
+    },
+    {
+        "issuerListCd": "MOF_PROHIBITED_BB",
+        "issuerListName": "Ministry of Finance Prohibited Companies (TC updates)",
+        "issuerListDesc": "(Innophos, NTPC, China Ocean Res, Noble Group, China Railway, Tahoe Res added per email dated 1/26/15);ZTE added 1/7/16 per email; Duke Energy added 9/7/16;"
+    },
+    {
+        "issuerListCd": "MOF_PROHIBITED_TK",
+        "issuerListName": "Ministry of Finance Prohibited Companies (TC updates)",
+        "issuerListDesc": "Based on corporate tickers"
+    },
+    {
+        "issuerListCd": "MONTGOMERY_BB",
+        "issuerListName": "Sudan - Restricted List - M427N7",
+        "issuerListDesc": "Client email refers to the County's Sudan Divestment legislation and requests no purchases of these issuers. Updated 1/25/11"
+    },
+    {
+        "issuerListCd": "MONTGOMERY_TK",
+        "issuerListName": "MONTGOMERY Ticker",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "MORGAN_BB",
+        "issuerListName": "Morgan Stanley",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "MORGSTAN_BB",
+        "issuerListName": "Morgan Stanley Issuer Codes",
+        "issuerListDesc": "Using for ISSR.451 on acct B502N9"
+    },
+    {
+        "issuerListCd": "MORNINGSTAR_BB",
+        "issuerListName": "Morningstar List",
+        "issuerListDesc": "List created on 9/13/2018. Updated 11-11-20"
+    },
+    {
+        "issuerListCd": "MSCI_GUNS_BB",
+        "issuerListName": "MSCI Civilian Firearms List",
+        "issuerListDesc": "Received 3/1/18"
+    },
+    {
+        "issuerListCd": "MSCI_NUCLEAR_BB_50%",
+        "issuerListName": null,
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "MTA_BB",
+        "issuerListName": "Metropolitan Transportation Authority BBUP",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "MULTI_ASSET_RR",
+        "issuerListName": "List of NON Loomis or Natixis Funds (TC updates)",
+        "issuerListDesc": "List of NON Loomis or Natixis Funds"
+    },
+    {
+        "issuerListCd": "NAB_BB",
+        "issuerListName": "National Australian Bank",
+        "issuerListDesc": "NAB Ultimate Parent Code"
+    },
+    {
+        "issuerListCd": "NAM_BB",
+        "issuerListName": "NAM - Exclusion Stocks (TC updates)",
+        "issuerListDesc": "Stocks that were flagged for review due to alleged breach of specific sustainability criteria per NAM email 8/30/19 (applicable to 759126)"
+    },
+    {
+        "issuerListCd": "NATELEV_BB",
+        "issuerListName": "National Elevator - Restricted Securities",
+        "issuerListDesc": "List of Restricted Securities received April 2020"
+    },
+    {
+        "issuerListCd": "NATELEV_TK",
+        "issuerListName": "National Elevator - Restricted Securities",
+        "issuerListDesc": "List of Restricted Securities received April 2020"
+    },
+    {
+        "issuerListCd": "NCIRAN_BB",
+        "issuerListName": "North Carolina Dept of State Treasurer SRI List",
+        "issuerListDesc": "Iran Scrutinized Companies List as of 5/25/17. Parent (BBUP) Last update on 8/31/21"
+    },
+    {
+        "issuerListCd": "NCIRAN_TK",
+        "issuerListName": "North Carolina Dept of State Treasurer SRI List",
+        "issuerListDesc": "Iran Scrutinized Companies List"
+    },
+    {
+        "issuerListCd": "NCISRAEL_BB",
+        "issuerListName": "North Carolina Dept of State Treasurer SRI List",
+        "issuerListDesc": "Boycott Israel Divestment Companies List as of 3/15/18. Parent (BBUP) Last update on 8/31/21\n"
+    },
+    {
+        "issuerListCd": "NCISRAEL_TK",
+        "issuerListName": "North Carolina Dept of State Treasurer SRI List",
+        "issuerListDesc": "Boycott Israel Divestment Companies List"
+    },
+    {
+        "issuerListCd": "NETSAS_BB",
+        "issuerListName": "Issuer List for Nets A/S",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "NEWASCENSION_B",
+        "issuerListName": "JK list",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "NEWASCENSION_BB",
+        "issuerListName": null,
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "NEWASCENSION1_BB",
+        "issuerListName": "JK Screen Run 3.2.21",
+        "issuerListDesc": "TEST ONLY"
+    },
+    {
+        "issuerListCd": "NEWFOX_BBUP",
+        "issuerListName": "Fox Corporation",
+        "issuerListDesc": "Fox Corporation Ultimate Parent Security Resticted List"
+    },
+    {
+        "issuerListCd": "NEXTERA_BB",
+        "issuerListName": "Nextera Prohibited Issuers",
+        "issuerListDesc": "Issr.975(dd) Updated on 07/19/19"
+    },
+    {
+        "issuerListCd": "NFRT_BB",
+        "issuerListName": "NFR&T Securities and Affiliated Companies",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "NIPPON_CLUSTER",
+        "issuerListName": "Nippon Cluster Munitions (TC Updates)",
+        "issuerListDesc": "6.22.18 Tatsuro Suzuki (Natixis) Email"
+    },
+    {
+        "issuerListCd": "NIPPON_UNOFF_BBUP",
+        "issuerListName": "Nippon Unofficial GL's - Restricted Names BBUP (TC Updates)",
+        "issuerListDesc": "11/13/18 Tatsuro Suzuki Email\n3/23/21: Updated Unoffical Guidelines received"
+    },
+    {
+        "issuerListCd": "NIPPON_UNOFF_TK",
+        "issuerListName": "Nippon Unofficial GL's based  on Corp Tickers  (TC Updates)",
+        "issuerListDesc": "11/13/18 Tatsuro Suzuki Email\n3/23/21: Updated Unoffical Guidelines received"
+    },
+    {
+        "issuerListCd": "NIPPON_UNOFFICIAL",
+        "issuerListName": "Nippon Unofficial Guidelines - Restricted Names (TC Updates)",
+        "issuerListDesc": "7/10/18 Tatsuro Suzuki Email"
+    },
+    {
+        "issuerListCd": "NISSAN",
+        "issuerListName": "Sovereign Issuers Exempt from Issuer Limits (PR updates)",
+        "issuerListDesc": "The following issuers are exempt from the issuer requirements for B437N9. Back out as alerts generate."
+    },
+    {
+        "issuerListCd": "NOMURA_BB",
+        "issuerListName": "Nomura - Parent and Affiliated Cos.",
+        "issuerListDesc": "As of Dec 2007"
+    },
+    {
+        "issuerListCd": "NORDEA_BB",
+        "issuerListName": "NORDEA_BB",
+        "issuerListDesc": "Updated December 2020"
+    },
+    {
+        "issuerListCd": "NORDEA_TK",
+        "issuerListName": "NORDEA_TK",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "NORDEA_UKRAINE_BB",
+        "issuerListName": "Nordea U.S. and EU Sanctions Targeting Designated Persons",
+        "issuerListDesc": "Received instructions from Nordea (1G0126) to avoid additional purchases of designated issuers. On 10.22.14 setup issuer codes for securities with listed stock"
+    },
+    {
+        "issuerListCd": "NORDEAREST_BB",
+        "issuerListName": "Nordea instruction to restrict securities",
+        "issuerListDesc": "Nordea instruction to restrict Energy Transfer Partners, Sunoco Logistics and Philips 66"
+    },
+    {
+        "issuerListCd": "NORDEAREST_TK",
+        "issuerListName": "Nordea instruction to restrict securities",
+        "issuerListDesc": "Nordea instruction to restrict Energy Transfer Partners, Sunoco Logistics and Philips 66"
+    },
+    {
+        "issuerListCd": "NORDEASRI_BB",
+        "issuerListName": "Nordea SRI list -  Uses Bloomberg Global Company ID",
+        "issuerListDesc": "Nordea SRI list - Updated list August 2021\nUSES BLOOMBERG GLOBAL COMPANY ID"
+    },
+    {
+        "issuerListCd": "NORDSFDR8_BB",
+        "issuerListName": "NORDSFDR8_BB",
+        "issuerListDesc": "Ethical Restricted Companies SFDR Art 8 and 9 - July 2021 without 2 not able to buyin, without 44 securities not found anywhere and without 183 ids not able to be setup/pulled in on CRD."
+    },
+    {
+        "issuerListCd": "NORGES_BB",
+        "issuerListName": "Nordea NOK Fund - Norway Govt Restricted Issuers",
+        "issuerListDesc": "As of 1.04.17\nUSES BLOOMBERG GLOBAL COMPANY ID"
+    },
+    {
+        "issuerListCd": "NORT-HYOPP_BB",
+        "issuerListName": "Securities issued by companies affiliated with the Fund's Tr",
+        "issuerListDesc": "Securities issued by companies affiliated with the Fund's Trustees - BBG List Updated with May 2015 list."
+    },
+    {
+        "issuerListCd": "NORTHWEST_BB",
+        "issuerListName": "Northwestern Ultimate Parent List",
+        "issuerListDesc": "Northwestern Ultimate Parent"
+    },
+    {
+        "issuerListCd": "NOTMARINE",
+        "issuerListName": "List for Issuers deemed to NOT be linked to Marine Industry",
+        "issuerListDesc": "List for Issuers deemed to NOT be linked to Marine Industry"
+    },
+    {
+        "issuerListCd": "NOVATEK",
+        "issuerListName": "Novatek OAO Issuers Codes for B547N6 Rest (PR updates)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "NRUCFC_BB",
+        "issuerListName": "NRUCFC",
+        "issuerListDesc": "BBUP list Blocks: Oglethorpe Power Corporation Retirement Plan, Georgia Transmission Corporation Retirement Plan  and National Rural Utilities Cooperative Finance Corporation"
+    },
+    {
+        "issuerListCd": "NWAVE_BB",
+        "issuerListName": "Issuer List for New Wave Holdings",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "NYC_COAL_BBUP",
+        "issuerListName": "NYC Prohibited Thermal Coal Issuers",
+        "issuerListDesc": "Prohibited list and divestment instructions received in client letter dated 2/8/16 for only 1445N1 (Bloomberg Ultimate Parent List)"
+    },
+    {
+        "issuerListCd": "NYC_GUNS_BB",
+        "issuerListName": "NYC - Gun Manufacturers List - 7/28/16 (PC Updates)",
+        "issuerListDesc": "Client \"gun manufacturers\" restrited list dated 7/28/16"
+    },
+    {
+        "issuerListCd": "NYDEF_IRAN_BB",
+        "issuerListName": "New York Deferred Iran List (BBCO)",
+        "issuerListDesc": "Iran list used for the New York State Deferred Compensation account (written to bloomberg global company). Version as of 7/7/2021."
+    },
+    {
+        "issuerListCd": "OECD",
+        "issuerListName": "List of Soverign Issuer Codes of OECD countries (DO updates)",
+        "issuerListDesc": "created by JB on 1/30/15"
+    },
+    {
+        "issuerListCd": "OFACSDN",
+        "issuerListName": "OFAC SDN Issuers Added to CTRY.469 (DO updates)",
+        "issuerListDesc": "Added Dolgoprundy Research and Kalinin Machinery 9.15.14 due to addition to SDN List"
+    },
+    {
+        "issuerListCd": "OHIO_SERS_BB",
+        "issuerListName": "Restricted List (Sudan/Iran Issuers)",
+        "issuerListDesc": "Restricted BBCO. List (Sudan/Iran Issuers) - M464N1 and S120N4 - Dated 9/8/2021"
+    },
+    {
+        "issuerListCd": "OHIOP&F_BB",
+        "issuerListName": "Restricted List (Sudan/Iran Issuers) - M426N8/ZZ-W50725",
+        "issuerListDesc": "Website-(D.A-Added as of 4/3/2018) Last Updated 7/1/2021"
+    },
+    {
+        "issuerListCd": "OILGAS_BB",
+        "issuerListName": "Restricted List - Oil & Gas",
+        "issuerListDesc": "MIM735118UG - Client Restricted Companies List of Oil and Gas Issuers. Last updated 9/25/20"
+    },
+    {
+        "issuerListCd": "OK_FOR_OFAC",
+        "issuerListName": "Securities not subject to OFAC regulation",
+        "issuerListDesc": "Securities that are issued in an OFAC prohibited country but are OK per the regulation"
+    },
+    {
+        "issuerListCd": "ONCOR_BB",
+        "issuerListName": "Affiliate List for Oncor Delivery",
+        "issuerListDesc": "Updated 6.3.21\n"
+    },
+    {
+        "issuerListCd": "OPERS_BB",
+        "issuerListName": "Restricted List (Sudan/Iran Issuers) - HY10N4 - 7/6/18",
+        "issuerListDesc": "Client Scrutinized Companies List of Iran / Sudan Issuers Last updated 7/6/2018"
+    },
+    {
+        "issuerListCd": "OPPORTUNE_BB",
+        "issuerListName": "Opportune Financial",
+        "issuerListDesc": "Opportune Financial"
+    },
+    {
+        "issuerListCd": "OSF_ABORTFAC",
+        "issuerListName": "OSF Abortifacients  (TC updates)",
+        "issuerListDesc": "SOCIALLY RESPONSIBLE GUIDELINES: RESTRICTED SECURITIES 2016"
+    },
+    {
+        "issuerListCd": "OSF_ABORTION",
+        "issuerListName": "OSF Abortions  (TC updates)",
+        "issuerListDesc": "SOCIALLY RESPONSIBLE GUIDELINES: RESTRICTED SECURITIES 2016"
+    },
+    {
+        "issuerListCd": "OSF_ALCOHOL",
+        "issuerListName": "OSF_ALCOHOL (TC updates)",
+        "issuerListDesc": "SOCIALLY RESPONSIBLE GUIDELINES: RESTRICTED SECURITIES 2016"
+    },
+    {
+        "issuerListCd": "OSF_CIVILIAN",
+        "issuerListName": "OSF Civilian (TC updates)",
+        "issuerListDesc": "SOCIALLY RESPONSIBLE GUIDELINES: RESTRICTED SECURITIES 2016"
+    },
+    {
+        "issuerListCd": "OSF_CLUSTER",
+        "issuerListName": "OSF Cluster  (TC updates)",
+        "issuerListDesc": "SOCIALLY RESPONSIBLE GUIDELINES: RESTRICTED SECURITIES 2016"
+    },
+    {
+        "issuerListCd": "OSF_CONTRACEP",
+        "issuerListName": "OSF Contraceptives  (TC updates)",
+        "issuerListDesc": "SOCIALLY RESPONSIBLE GUIDELINES: RESTRICTED SECURITIES 2016"
+    },
+    {
+        "issuerListCd": "OSF_CONVENTIONAL",
+        "issuerListName": "OSF Conventional (TC updates)",
+        "issuerListDesc": "SOCIALLY RESPONSIBLE GUIDELINES: RESTRICTED SECURITIES 2016"
+    },
+    {
+        "issuerListCd": "OSF_GAMBLING",
+        "issuerListName": "OSF Gambling (TC updates)",
+        "issuerListDesc": "SOCIALLY RESPONSIBLE GUIDELINES: RESTRICTED SECURITIES 2016"
+    },
+    {
+        "issuerListCd": "OSF_LANDMINES",
+        "issuerListName": "OSF Landmines (TC updates)",
+        "issuerListDesc": "SOCIALLY RESPONSIBLE GUIDELINES: RESTRICTED SECURITIES 2016"
+    },
+    {
+        "issuerListCd": "OSF_NUCLEAR",
+        "issuerListName": "OSF Nuclear(TC updates)",
+        "issuerListDesc": "SOCIALLY RESPONSIBLE GUIDELINES: RESTRICTED SECURITIES 2016"
+    },
+    {
+        "issuerListCd": "OSF_PROFITHC",
+        "issuerListName": "OSF For Profit HC (TC updates)",
+        "issuerListDesc": "SOCIALLY RESPONSIBLE GUIDELINES: RESTRICTED SECURITIES 2016"
+    },
+    {
+        "issuerListCd": "OSF_TOBACCO",
+        "issuerListName": "OSF Tobacco (TC updates)",
+        "issuerListDesc": "SOCIALLY RESPONSIBLE GUIDELINES: RESTRICTED SECURITIES 2016"
+    },
+    {
+        "issuerListCd": "OSRAM_BB",
+        "issuerListName": "Osram Sylvania Savings Plan (Parent Issuer)",
+        "issuerListDesc": "Restricted Issuer List for Osram Sylvania Savings Plan (Ultimate Parent)"
+    },
+    {
+        "issuerListCd": "PARADIGM",
+        "issuerListName": "Paradigm Approved (NO LONGER USED)",
+        "issuerListDesc": "Updated 4/6/20 This list is associated with account ZZ-1843N9 (M469N6, X102N5)\n(Do Not update w/o client approval)"
+    },
+    {
+        "issuerListCd": "PENNTMSTR_BB",
+        "issuerListName": "Public Employer List for Central Penn Teamsters",
+        "issuerListDesc": "setup from list provided 1.23.15"
+    },
+    {
+        "issuerListCd": "PEPSI_BB",
+        "issuerListName": "Issuer list for Pepsi and its affiliates",
+        "issuerListDesc": "Update 6/9/20 - no changes, all securities roll up to the same Pepsi code still"
+    },
+    {
+        "issuerListCd": "PFIAFLORIDA_BB",
+        "issuerListName": "Protecting Florida's Investmnet Act Scrutinized List",
+        "issuerListDesc": "Quarterly list of \"\"scrutinized companies\"\" per Florida's PFIA Act. Last updated 3/30/17"
+    },
+    {
+        "issuerListCd": "PNC_BB",
+        "issuerListName": "PNC Financial Services Group and Affiliates",
+        "issuerListDesc": "UPDATED April 2019"
+    },
+    {
+        "issuerListCd": "POLYONE_BB",
+        "issuerListName": "PolyOne ERISA Issuers",
+        "issuerListDesc": "List created on 1/10/2018, last updated 1/10/2018"
+    },
+    {
+        "issuerListCd": "PONTIAC_BB",
+        "issuerListName": "Pontiac Police and Friement Ret. Plan",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "PORTICO_BB",
+        "issuerListName": "Portico Socially Responsible List Jan 2021",
+        "issuerListDesc": "Last Updated 1/2/2021"
+    },
+    {
+        "issuerListCd": "PPL_BB",
+        "issuerListName": "Pacific Life Insurance Issuers",
+        "issuerListDesc": "Updated 6/9/15"
+    },
+    {
+        "issuerListCd": "PREVICOOPER",
+        "issuerListName": "Previcooper plan issue securities (BBCO)",
+        "issuerListDesc": "During 2.8.17 conference call, Natixis stated that none of the employers that contribute to the Previcooper plan issue securities. The contributing investors are trade unions in Italy so there are not any companies that issue securities at this point"
+    },
+    {
+        "issuerListCd": "PRINCIPAL_BB",
+        "issuerListName": "Principal Restricted Issuers - BB Ultimate Parent",
+        "issuerListDesc": "Principal Restricted Issuers - BB Ultimate Parent. List dated 4.8.21"
+    },
+    {
+        "issuerListCd": "PRISON_BBUP",
+        "issuerListName": "for-profit prison companies (PC updates)",
+        "issuerListDesc": "List based on memo from NYC 5/19/17"
+    },
+    {
+        "issuerListCd": "PRISON2",
+        "issuerListName": "PRISON SECURITY LIST",
+        "issuerListDesc": "Privatized Prison Revenue"
+    },
+    {
+        "issuerListCd": "PROTECTIVE_BB",
+        "issuerListName": "Issuer list for Protective Insurance and its affiliates",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "PROV_HEALTH_GC",
+        "issuerListName": "Restricted List for Providence Health (CDA)",
+        "issuerListDesc": "last updated 5-27-21"
+    },
+    {
+        "issuerListCd": "PROVIDENCE_BB",
+        "issuerListName": "City of Providence (4402N6) restricted list (DO updates)",
+        "issuerListDesc": "City of Providence \"Filthy 15\" Coal Burning/Mining companies.  Received from consultant 7/30/15"
+    },
+    {
+        "issuerListCd": "PROVIDENCE_TK",
+        "issuerListName": "City of Provid (4402N6) restricted list (DO updates) - TK",
+        "issuerListDesc": "City of Providence \"Filthy 15\" Coal Burning/Mining companies.  Received from consultant 7/30/15"
+    },
+    {
+        "issuerListCd": "PROVSUDAN_BB",
+        "issuerListName": "Companies Doing Business in Sudan",
+        "issuerListDesc": "Provided to us by City of Prov. Last update April 2020"
+    },
+    {
+        "issuerListCd": "PRUDENTIAL_BB",
+        "issuerListName": "Prudential Restricted Affiliate Issuer List",
+        "issuerListDesc": "Prudential Restricted Affiliate Issuer List AS OF 3/18/2019.  Updated based on email from Colleen Johnes 3/14/2019.  Added Sterling Bancorp based on email from Colleen 5/29/20"
+    },
+    {
+        "issuerListCd": "PRUPRECLR",
+        "issuerListName": "Prudential Insurance Pre-Clear List (LU updates)",
+        "issuerListDesc": "Prudential Insurance Pre-Clear List per client email sent 8/17/17"
+    },
+    {
+        "issuerListCd": "PRUPRECLR_BB",
+        "issuerListName": "Prudential Insurance Pre-Clear List (Lu updates)",
+        "issuerListDesc": "Prudential Insurance Pre-Clear List per client email sent 2/26/2019 None at this time (as of 3/18/2021)"
+    },
+    {
+        "issuerListCd": "PRUPRECLR_TK",
+        "issuerListName": "Prudential Insurance Pre-Clear List",
+        "issuerListDesc": "Prudential Insurance Pre-Clear List per client email sent 2/26/2019 None at this time (as of 3/18/2021)"
+    },
+    {
+        "issuerListCd": "PSEG_BB",
+        "issuerListName": "PSEG - Restricrted Issuers and Affiliates (TC Updates)",
+        "issuerListDesc": "List provided by client on 12/15/16"
+    },
+    {
+        "issuerListCd": "PSEG_NRC_BB",
+        "issuerListName": "NRC restriction for nuclear power plant companies (not used)",
+        "issuerListDesc": "Updated on 12/4/2017"
+    },
+    {
+        "issuerListCd": "PSEG_NRC_BBUP",
+        "issuerListName": "NRC restriction for nuclear power plant companies (BBUP)",
+        "issuerListDesc": "Updated on 12/8/2017."
+    },
+    {
+        "issuerListCd": "PUGET_BB",
+        "issuerListName": "Puget Sound Restricted ERISA Issuers",
+        "issuerListDesc": "Updated 7/31/14"
+    },
+    {
+        "issuerListCd": "QIA_BB",
+        "issuerListName": "QIA Restricted List",
+        "issuerListDesc": "Received 7/26/18"
+    },
+    {
+        "issuerListCd": "QIA_TK",
+        "issuerListName": "QIA Restricted List - TK Version",
+        "issuerListDesc": "QIA Restricted List"
+    },
+    {
+        "issuerListCd": "R16866_R16965_BB",
+        "issuerListName": "Rotheray and Davidson accounts restricted securities",
+        "issuerListDesc": "Restricted securities list by issuer for Rotheray and Davidson accounts (R16866 and R16965) per Joann Kayer request 8/12/17. Updated on 8/14/17."
+    },
+    {
+        "issuerListCd": "RAT1225",
+        "issuerListName": "Exempt Government Issuers for RAT.1225 (PR updates)",
+        "issuerListDesc": "These issuers are bound by the limits of RAT.1223\nAdded issuer code HEDGE in order to eliminate data exceptions for the index currency hedge positions"
+    },
+    {
+        "issuerListCd": "RAT1240",
+        "issuerListName": "Exempt Government Issuers for RAT.1240 (SS updates)",
+        "issuerListDesc": "These issuers are bound by the limits of RAT.1240"
+    },
+    {
+        "issuerListCd": "RAYMONDJAMES_BB",
+        "issuerListName": "Raymond James and affiliates",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "RAYTHEON_BB",
+        "issuerListName": "Raythoen Prohibited Securities (TC updates)",
+        "issuerListDesc": "Client prohibits purchase of Raytheon securities"
+    },
+    {
+        "issuerListCd": "RBS_BB",
+        "issuerListName": "Royal Bank of Scotland Issuer Codes",
+        "issuerListDesc": "Using for ISSR.451(e) on acct B502N9"
+    },
+    {
+        "issuerListCd": "REED_BB",
+        "issuerListName": "Reed Elsevier",
+        "issuerListDesc": "List of Reed Elsevier issuers."
+    },
+    {
+        "issuerListCd": "REITEN",
+        "issuerListName": "Larry Reiten",
+        "issuerListDesc": "EMC shares are being used for a donation (8/16/16 Laurie Kuchlar email) - PC Updated 8/16\n"
+    },
+    {
+        "issuerListCd": "RELX_BB",
+        "issuerListName": "RELX Restricted Issuers - List Provided by Client",
+        "issuerListDesc": "December 2020\nStichting ELM was manually added to the BBUP list because Stichting is the ultimate parent of Elsevier Finance. \n"
+    },
+    {
+        "issuerListCd": "RELX_TK",
+        "issuerListName": "RELX Restricted Issuers - List Provided by Client",
+        "issuerListDesc": "List based on corporate tickers"
+    },
+    {
+        "issuerListCd": "REMAIN_PRIN_AMT_OUT",
+        "issuerListName": "Total Remaining Principal Amount >=$1B",
+        "issuerListDesc": "Updated on 8/12/21\n[10/16/2020 -Added below per BBUP dup data project:\nBBG001H2JNZ5\nBBG00DYPZ4P4\nBBG00R4GLSC2\nBBG001H4CF85\nBBG001G84Y21\nBBG001FPLDV9\nBBG00K96P2D6\nBBG00K96PX39\nBBG001FHQ0L1\nBBG001H7K723\nBBG001G02Y02\n ];\n"
+    },
+    {
+        "issuerListCd": "RENRE_CARBON_BB",
+        "issuerListName": "RenRe Carbon Intensity MSCI list (BBCO)",
+        "issuerListDesc": "July 2021"
+    },
+    {
+        "issuerListCd": "RENRE_COAL_BB",
+        "issuerListName": "List for RenRe Thermal Coal Screen",
+        "issuerListDesc": "Last updated 6-7-21"
+    },
+    {
+        "issuerListCd": "RENREPMRULE",
+        "issuerListName": "RenRe PM List - Do not buy",
+        "issuerListDesc": "RenRe Provided a NO sell list (current Goldman and Credit Suisse names were on it). Given the sell restriction PM asked to restrict future purchases of these names."
+    },
+    {
+        "issuerListCd": "REVLON_BB",
+        "issuerListName": "Revlon Securities",
+        "issuerListDesc": "Revlon Consumer Products Corp, is a  fiduciary for CT00539, which is an investor in E438N2."
+    },
+    {
+        "issuerListCd": "RFF_BB",
+        "issuerListName": "Reporting purposes for 1431N7",
+        "issuerListDesc": "Temp rule for reporting for 1431N7"
+    },
+    {
+        "issuerListCd": "RJSMA_RJA52906970",
+        "issuerListName": "Restricted issuers for RJA52906970",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "RJSMA_RJA56412993",
+        "issuerListName": "Restricted issuers for RJA56412993",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "RJSMA_RJA78586179",
+        "issuerListName": "Restricted issuers for RJA78586179",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "RJSMA_RJA78586495",
+        "issuerListName": "Restricted issuers for RJA78586495",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "RJSMA_RJA78655097",
+        "issuerListName": "Restricted issuers for RJA78655097",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "RJSMA_RJA78692033",
+        "issuerListName": "Restricted issuers for RJA78692033",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "RLFIRM1",
+        "issuerListName": "Firm wide restricted list for all restr issuers (KC updates)",
+        "issuerListDesc": "List 1 of 2 - List of issuers whose securities are restricted from being purchased or sold. This list includes all issuers that are currently listed on the firm wide restricted list as of 9/1/21"
+    },
+    {
+        "issuerListCd": "RLFIRM2",
+        "issuerListName": "Firm wide restricted list. Bankloan Restricted = Yes (KC)",
+        "issuerListDesc": "List 2 of 2 - List of issuers whose securities are restricted from being purchased or sold. This list comprises only those issuers that are restricted from bankloan trading as of 9/1/21"
+    },
+    {
+        "issuerListCd": "ROYAL",
+        "issuerListName": "Sovereign Issuers Exempt from Issr & Ind Limits (TC updates)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "ROYALMAIL_BB",
+        "issuerListName": "List of Restricted Issuer Codes for Royal Mail",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "RRD_BB",
+        "issuerListName": "R.R. Donnelley",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "RSTRCT-PA",
+        "issuerListName": "List of restricted issuers - Prior approval required (KC)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "RUSS_EU_SANC",
+        "issuerListName": "EU - Russian Sanctioned Countries as of 7/31/14 (MEL)",
+        "issuerListDesc": "List of cos sanctioned by the EU 7.31.14. Add'l purch of debt or equity of these cos is prohibited. Added addll companies per 9.12.14 sanct.  11/20/14 - Added Denizbank & VTB per updated list from SEI.4/6/15-Oktritie, SvyazBank 5/29 - Tupolev,Beriev"
+    },
+    {
+        "issuerListCd": "RUSSELL_BB",
+        "issuerListName": "Russell Cluster Munitions List",
+        "issuerListDesc": "Received email on 7.31.15 of prohibited issuers based on Cluster Munitions. Linked to IND.078(d). Updated list a/o 12/21/16"
+    },
+    {
+        "issuerListCd": "RUSSELLPICTET_BB",
+        "issuerListName": "Restricted Issuer List",
+        "issuerListDesc": "Restricted Issuer List June 2019"
+    },
+    {
+        "issuerListCd": "RUSSELLTRDREST_BB",
+        "issuerListName": "Russell Investments Trade Restrictions",
+        "issuerListDesc": "Added per 1/23/17 client email.  Applies to B503N8, B430N6, S108N0, B542N1, B434N2, B529Q8, B431N5, B569N9, B566N3"
+    },
+    {
+        "issuerListCd": "RUSSIA_SANC",
+        "issuerListName": "Russian Sanctions per US Treasury (MEL)",
+        "issuerListDesc": "Prohibited Russian companies based on US Treasury sanctions (Mari email 5/5/12/14)"
+    },
+    {
+        "issuerListCd": "S342851Q_BB",
+        "issuerListName": "Client restricted list",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "SABMILLER_BB",
+        "issuerListName": "SAB Miller",
+        "issuerListDesc": "SAB Miller and affiliates.\nAdded AB as the Ult Parent as part of Corp Ticker project"
+    },
+    {
+        "issuerListCd": "SAFEWAY_BB",
+        "issuerListName": "Safeway Issuers",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "SAINSBURY",
+        "issuerListName": "Sovereign Issuers Exempt from Issr & Ind Limits (PR updates)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "SAN_DIEGO_BB",
+        "issuerListName": "San Diego Gas & Electric Company (TC updates)",
+        "issuerListDesc": "Restricted list for San Diego Gas & Electric Company (TC updates)"
+    },
+    {
+        "issuerListCd": "SAN_DIEGO_TK",
+        "issuerListName": "San Diego Gas & Electric Company (TC updates) - TK Version",
+        "issuerListDesc": "Restricted list for San Diego Gas & Electric Company (TC updates)"
+    },
+    {
+        "issuerListCd": "SANCTIONS_BB",
+        "issuerListName": "Natixis International Sactions Regimes",
+        "issuerListDesc": "Natixis International Sactions Regimes per email dated 1/14/15 from Tracy DiRienzo"
+    },
+    {
+        "issuerListCd": "SBER",
+        "issuerListName": "Sberbank Issuer List (BBCO)",
+        "issuerListDesc": "Sberbank restricted BB CO list"
+    },
+    {
+        "issuerListCd": "SCIRAN_BB",
+        "issuerListName": "South Carolina- Iran Scrutinized Companies List (TC updates)",
+        "issuerListDesc": "South Carolina - Iran Scrutinized Companies List as of 12/22/17 (applicable to IGS001 and H48375) List recd 4/19/18"
+    },
+    {
+        "issuerListCd": "SCRIPPS",
+        "issuerListName": "Lighthouse Investments Restricted List",
+        "issuerListDesc": "As of 6/19/18."
+    },
+    {
+        "issuerListCd": "SCRIPPS_BB",
+        "issuerListName": "Lighthouse Investments Restricted List",
+        "issuerListDesc": "As of 6/19/18."
+    },
+    {
+        "issuerListCd": "SCSUDAN_BB",
+        "issuerListName": "South Carolina Sudan List (TC updates)",
+        "issuerListDesc": "Sudan Divestment List 1/22/2018  (applicable to accounts H48375, IGS001) List recd 4/19/18"
+    },
+    {
+        "issuerListCd": "SDA_BB",
+        "issuerListName": "SDA Account Restricted List (LSIA) - BBCO List",
+        "issuerListDesc": "SDA Account Restricted List. Update monthly. Last update 5/6/2020 per email from Melanie West."
+    },
+    {
+        "issuerListCd": "SEARSHOLDCORP_BB",
+        "issuerListName": "Sears Holdings Corporation (BBUP)",
+        "issuerListDesc": "Sears Holdings Corporation coded to BBUP to include subsidiaries."
+    },
+    {
+        "issuerListCd": "SEC-12D-3",
+        "issuerListName": "12d-3 Issuers Using Parent Codes (N/A)",
+        "issuerListDesc": "restricted list applies to investments in brokers, dealers, entities engaged in the securities business  For V9 UPGRADE"
+    },
+    {
+        "issuerListCd": "SEI_BB",
+        "issuerListName": "SEI Investments",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "SEMI_MERCER_BBCO",
+        "issuerListName": "Semi annual Restricted list For MERCER fund Z506N2",
+        "issuerListDesc": "List will be extracted from the website in a semiannual bases. \nPassword: Mercer&20\nhttps://investment-solutions.mercer.com/content/mercer-sites/investment-solutions/global/all/en/investment-solutions-home/MIF1-MIF2-exclusion-list.html"
+    },
+    {
+        "issuerListCd": "SERVICEMASTER_BB",
+        "issuerListName": "List to Restrict Servicemaster Securities (DG updates)",
+        "issuerListDesc": "List to Restrict Servicemaster Securities"
+    },
+    {
+        "issuerListCd": "SHINHAN_BB",
+        "issuerListName": "Affiliated Companies of Shinan Investment Corp - BBUP",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "SINS_BB",
+        "issuerListName": "Diocese of Columbus Exc. List",
+        "issuerListDesc": "Diocese of Columbus Exclusionary List Updated in July 2021 (Includes international list). J89044 and 5416N7 do not provide their own list. Added ZTS 2.05.13..Per 1.31 email from LCV team."
+    },
+    {
+        "issuerListCd": "SIOUXCITY",
+        "issuerListName": "Diocese of Sioux City SRI List (LSIA)",
+        "issuerListDesc": "Diocese of Sioux City Exclusionary List Updated\n1/3/18 -EN updated based on Melanie/David Jones email update \"Fw: Diocese of Sioux City CRD Restrictions\"; (TO DELETE SINCE WE HAVE SIOUXCITY_BB  BBGCO list)"
+    },
+    {
+        "issuerListCd": "SIOUXCITY_BB",
+        "issuerListName": "Diocese of Sioux City SRI List (LSIA)",
+        "issuerListDesc": "Diocese of Sioux City Exclusionary List (BBCO IDs)\nUpdated per Melanie's email 7/2/2020;"
+    },
+    {
+        "issuerListCd": "SISTERS_FOSSIL",
+        "issuerListName": "Sisters of Charity Fossil Fuel Restricted List (PC Updates)",
+        "issuerListDesc": "Sisters of Charity Fossil Fuel Restricted List"
+    },
+    {
+        "issuerListCd": "SISTERSBVM_BB",
+        "issuerListName": "Sisters of the Blessed Virgin Mary Restricted List",
+        "issuerListDesc": "M405N3 - email dated 10/30/09"
+    },
+    {
+        "issuerListCd": "SKANSKA_BB",
+        "issuerListName": "Skanska USA Building",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "SMUD_BB",
+        "issuerListName": "Sacramento Municipal Utility District",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "SNBAR_BB",
+        "issuerListName": "Southern Nevada Bartenders affiliates",
+        "issuerListDesc": "Rule blocks securities of Southern Nevada Bartenders affiliates"
+    },
+    {
+        "issuerListCd": "SONY_BB",
+        "issuerListName": "Sony Securities",
+        "issuerListDesc": "Sony is a fiduciary for CT00455, which is in E440N8 and NT00472, NT00472, which are in E445N3."
+    },
+    {
+        "issuerListCd": "SOVEURO",
+        "issuerListName": "List of European Sovereign Issuers (PR updates)",
+        "issuerListDesc": "List is not complete, add Sovereign Issuers as needed."
+    },
+    {
+        "issuerListCd": "SOVISS2",
+        "issuerListName": "Sovereign Issuers (PR updates)",
+        "issuerListDesc": "List used for ISSU.292"
+    },
+    {
+        "issuerListCd": "SOVISSALL",
+        "issuerListName": "List of all Sovereign Issuers (N/A)",
+        "issuerListDesc": "List is not complete, add Sovereign Issuers as needed.\nSOVKY(RAK Capital) = One of the seven emirates in the UAE."
+    },
+    {
+        "issuerListCd": "SOVISSALL2",
+        "issuerListName": "List of all Sovereign Issuers 2 (excludes US Treasury) (N/A)",
+        "issuerListDesc": "List is not complete, add Sovereign Issuers as needed."
+    },
+    {
+        "issuerListCd": "SPECTRA_BB",
+        "issuerListName": "Spectra Energy Affiliated Securities",
+        "issuerListDesc": "Sponsoring Fiduciary Security List for Spectra Energy"
+    },
+    {
+        "issuerListCd": "SPECTRUM_BB",
+        "issuerListName": "Spectrum Restricted List (PR updates)",
+        "issuerListDesc": "As of September 2021"
+    },
+    {
+        "issuerListCd": "STATESTREET",
+        "issuerListName": "State Street Issuer Codes",
+        "issuerListDesc": "State Street Issuer Codes (including Ultimate Parent Coding)"
+    },
+    {
+        "issuerListCd": "STELLARINSURANCE_BB",
+        "issuerListName": "Stellar Insurance (Wisayah) - Restricted Issuers list (BBCO)",
+        "issuerListDesc": "Restricted names of MBS003: Per communication with the client on 9/29/2020 the list should be company (BBCO ID) and will be updated quarterly (client will send to Loomis). Updated 7/14/2021"
+    },
+    {
+        "issuerListCd": "STEMCELL_BB",
+        "issuerListName": "IRRC Stemcell Research - April 2017",
+        "issuerListDesc": "Includes human embryonic stem research, human fetal tissue research, cloning, umbilical cord blood and contracts - Does NOT include companies whose ONLY TIE is adult human stemcell research."
+    },
+    {
+        "issuerListCd": "SUDAN_BB",
+        "issuerListName": "Companies Doing Business in Sudan 9/1/21",
+        "issuerListDesc": "Per monthly ISS List - maps to State of Illinois leglislation."
+    },
+    {
+        "issuerListCd": "SUDAN_CT_BB",
+        "issuerListName": "Prohibited Issuers - Sudan (1460N1) (2.7.17)",
+        "issuerListDesc": "List of prohibited compaies list Sudan related issuers per the client's list dated Jan. 2014. Ties to Conn. Gen. Stat.  s. 3-21(a)"
+    },
+    {
+        "issuerListCd": "SUDAN_IRAN_KISS_BB",
+        "issuerListName": "City of Kiss., Lakeland, Bradenton, Naples Sudan List (TC)",
+        "issuerListDesc": "Scrutinized Companies with Activities in Sudan and Iran.  List provided by PFIA 6/15/21 Report"
+    },
+    {
+        "issuerListCd": "SUDAN_MASS_BB",
+        "issuerListName": "PRIM Sudan Restrict List Q3 2021",
+        "issuerListDesc": "Scrutinized Sudan Companies List provided by PRIT/PRIM. Applies to Mass. Public Retirement Plans subject to PERAC. Accounts:  K442N2, ZZ-W401N5. Effective 7/1/2021"
+    },
+    {
+        "issuerListCd": "SUDAN_PA_BBCO",
+        "issuerListName": "Restricted List for PA Sudan Offenders",
+        "issuerListDesc": "provided by MIMCUMRU on 12/18/20"
+    },
+    {
+        "issuerListCd": "SUDANCORE+_BB",
+        "issuerListName": "SUDAN Core Plus Restricted List for NHIT CP Acct 5504N1",
+        "issuerListDesc": "Core Plus SRI Sudan List - LAST Updated per 9/1/2021 List."
+    },
+    {
+        "issuerListCd": "SUNSUPER_BB",
+        "issuerListName": "Sunsuper Restricted List",
+        "issuerListDesc": "Provided by the client in February of 2020"
+    },
+    {
+        "issuerListCd": "SUNSUPER_TK",
+        "issuerListName": "Sunsuper Restricted List (TK Version)",
+        "issuerListDesc": "Sunsuper Restricted List"
+    },
+    {
+        "issuerListCd": "SUPERVALUE_BB",
+        "issuerListName": "Supervalue",
+        "issuerListDesc": "Prohibited from E445N3, based on ERISA fiduciary concerns (NT00103)"
+    },
+    {
+        "issuerListCd": "SUSQNUC_BB",
+        "issuerListName": "Susquehanna Nuclear LLC (BBCO List)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "SVVK_ASIR_BB",
+        "issuerListName": "Restricted Issuer Listed on SVVK_ASIR List (BBUP ID)",
+        "issuerListDesc": "Updated June 2021"
+    },
+    {
+        "issuerListCd": "SVVK_ASIR_TK",
+        "issuerListName": "Restricted Issuer Listed on SVVK_ASIR List (Corp Ticker)",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "SWC_BB",
+        "issuerListName": "Prohibited Issuer - US Bancorp - Sept 2014",
+        "issuerListDesc": "The following issuer affiliated with Southwest Carpenters is prohibited from KY2666, KY2468 & KY2260 per JKayser email 9/4/14"
+    },
+    {
+        "issuerListCd": "SYY_BB",
+        "issuerListName": "ERISA List for SYSCO Corp",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "TAKEDA",
+        "issuerListName": "Sovereign Issuers Exempt from Issuer Limits (PR updates)",
+        "issuerListDesc": "The following issuers are exempt from the issuer requirements for B465TAK. Back out as alerts generate."
+    },
+    {
+        "issuerListCd": "TALEN_BB",
+        "issuerListName": "Talen Energy Corp",
+        "issuerListDesc": "Restricted list for Talen Energy Corp"
+    },
+    {
+        "issuerListCd": "TCOBB_BB",
+        "issuerListName": "Tom Cobb account restricted securities (BBCO)",
+        "issuerListDesc": "CC-DK0364 Restricted securiites"
+    },
+    {
+        "issuerListCd": "TCORPTOBACCO_BB",
+        "issuerListName": "List of Issuers Held At Firm That Tie To Tobacco",
+        "issuerListDesc": "As of 7.27.16 - CRD Help ran query of securities that are classified as tobacco by eiher 80IND or 10IND. Using issuer codes to enhance coding for IND.175(c)"
+    },
+    {
+        "issuerListCd": "TELEDYNE_BBUP",
+        "issuerListName": "Teledyne Technologies (BBUP) -June 2019",
+        "issuerListDesc": "BBG Ultimate Parent List for Teledyne Technologies - June 2019"
+    },
+    {
+        "issuerListCd": "TELEKOM_EXCL_BB",
+        "issuerListName": "Deusche Telekom (BBUP) Exclusionary List",
+        "issuerListDesc": "Deutsche Telekom, List for US HY Account M493N6, Last update on 4/18/17, eff dt is 4/27/17"
+    },
+    {
+        "issuerListCd": "TENCENT_BB",
+        "issuerListName": "Tencent Holdings",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "TENN_VAL_AUTH",
+        "issuerListName": "Tennessee Valley Authority",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "TEST",
+        "issuerListName": "Test",
+        "issuerListDesc": "Test"
+    },
+    {
+        "issuerListCd": "TEST3",
+        "issuerListName": "TEST3",
+        "issuerListDesc": "TEST3"
+    },
+    {
+        "issuerListCd": "TEXASAM_CANNABIS",
+        "issuerListName": "Texas A&M Cannabis restricted securities",
+        "issuerListDesc": "Cannabis Related Business (Based on BBCO)List rec'd from BNY Mellon 12/11/19"
+    },
+    {
+        "issuerListCd": "THALES_BB",
+        "issuerListName": "Thales",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "THERMAL_COAL",
+        "issuerListName": "Thermal coal list for NYC accounts (Z415N2,1445N1,Z500N8)",
+        "issuerListDesc": "As of 12-12-17 e-mail from NYC"
+    },
+    {
+        "issuerListCd": "THOMSON_BB",
+        "issuerListName": "Thomson Reuters Corp",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "TILGHMAN",
+        "issuerListName": "Tilghman Donated Shares",
+        "issuerListDesc": "LSIA ONLY (Reference 12/27/16 Laurie Kuchler Email)"
+    },
+    {
+        "issuerListCd": "TKP_BB",
+        "issuerListName": "TKP Investments B.V.",
+        "issuerListDesc": "Restricted list of securities provided by client. Last updated  Dec2020. Llist is provided yearly. Only update secs with valid identifiers. Those without identifiers and unlisted companies are not relevant for equity managers, only for bond managers."
+    },
+    {
+        "issuerListCd": "TOBACCO_LSIA_BB",
+        "issuerListName": "LSIA Tobacco List - BBG Ultimate Parent - 7/18/16",
+        "issuerListDesc": "Bloomberg Ultimate Parent Version - 7/18/16 Melanie Mayo West Email: LSIA list of prohibited tobacco companies. Applies to KY1460, KY1569, ZZ-KY1460 and ZZ-KY1569 (created 7/18/16)."
+    },
+    {
+        "issuerListCd": "TOBACINTL_BB",
+        "issuerListName": "International Tobacco List (PERAC) Effective - Q3 2021",
+        "issuerListDesc": "PERAC began combining both lists in Q12011; Issuer list TOBACINTL incorporates all names. List provided by PERAC. Effective 7/1/21"
+    },
+    {
+        "issuerListCd": "TOWERWATSON_BB",
+        "issuerListName": "Tower Watson",
+        "issuerListDesc": "Issuer codes for Tower Watson.  Security prohibited for the Core Plus Trust (5490N6)"
+    },
+    {
+        "issuerListCd": "TOYOTA_BB",
+        "issuerListName": "Toyota issuers blocked in LS Core Plus Full Discrtn Tr",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "TRANSREST_BB",
+        "issuerListName": "Transamerica Restricted Securities",
+        "issuerListDesc": "Restricted Security List for Account K469N0. Used with Rule ISSU.505(f); List created 1/10/2018. Last update \n1/10/2018.\n[ 10/16/2020 - Added below per BBUP dup data project:\nBBG00DYPZ4P4\nBBG00R4GLSC2\nBBG001H4CF85\nBBG001G84Y21\nBBG001GH5BZ4 ];"
+    },
+    {
+        "issuerListCd": "TSLA_BB",
+        "issuerListName": "Tesla Motors Issuer Codes",
+        "issuerListDesc": "Using for ISSR.057(cc), Account 5497N9"
+    },
+    {
+        "issuerListCd": "TSMC_CC",
+        "issuerListName": "Approved Credit Card Issuers by TSMC",
+        "issuerListDesc": "Approved Credit Card Issuers by TSMC"
+    },
+    {
+        "issuerListCd": "TSMC_CMBS_CONDUIT",
+        "issuerListName": "Approved CMBS Conduit Issuers by TSMC",
+        "issuerListDesc": "Approved CMBS Conduit Issuers by TSMC"
+    },
+    {
+        "issuerListCd": "TVARRESTRICTED_BB",
+        "issuerListName": "Tennessee Valley Authority BBCO",
+        "issuerListDesc": "List created 1/16/2019 for Tennessee Valley Authority Retirement System"
+    },
+    {
+        "issuerListCd": "UBROTHERHOOD",
+        "issuerListName": "Prohibited Issuer - Amalgated Bank of Chicago (DG upates)",
+        "issuerListDesc": "The following issuer is prohibited from KY2567, KY0165 & KY2666 per JKayser email 9/4/14"
+    },
+    {
+        "issuerListCd": "UBROTHERHOOD_BB",
+        "issuerListName": "Prohibited Issuer - Amalgated Bank of Chicago (DG upates)",
+        "issuerListDesc": "The following issuer is prohibited from KY2567, KY0165 & KY2666 per JKayser email 9/4/14"
+    },
+    {
+        "issuerListCd": "UBS_BB",
+        "issuerListName": "UBS and Affiliates List",
+        "issuerListDesc": "H482N3 January 2020 Insite Posting (also see clarification from the client regarding which sheet to key off of)."
+    },
+    {
+        "issuerListCd": "UBSSMA_NE33963NE3396",
+        "issuerListName": "Restricted issuers for NE33963 and NE33969",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBS3F56784",
+        "issuerListName": "Restricted issuers for UBS3F56784",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBS4K01944C",
+        "issuerListName": "Restricted issuers for UBS4K01944C",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBS4K95077C",
+        "issuerListName": "Restricted issuers for UBS4K95077C",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBS8B09399",
+        "issuerListName": "Restricted issuers for UBS8B09399",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSAP05083",
+        "issuerListName": "Restricted issuers for UBSAP05083",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSAX00895",
+        "issuerListName": "Restricted issuers for UBSAX00895",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSBA58758",
+        "issuerListName": "Restricted issuers for UBSBA58758",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSDE24476",
+        "issuerListName": "Restricted issuers for UBSDE24476",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSDS14777",
+        "issuerListName": "Restricted issuers for UBSDS14777",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSDS29728",
+        "issuerListName": "Restricted issuers for UBSDS29728",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSDS29782",
+        "issuerListName": "Restricted issuers for UBSDS29782",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSDS31052",
+        "issuerListName": "Restricted issuers for UBSDS31052",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSGO14583",
+        "issuerListName": "Restricted issuers for UBSGO14583",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSJ964608",
+        "issuerListName": "Restricted issuers for UBSJ964608",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSJW23863B",
+        "issuerListName": "Restricted issuers for UBSJW23863B",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSKF16852",
+        "issuerListName": "Restricted issuers for UBSKF16852",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSM300473",
+        "issuerListName": "Restricted issuers forUBSM300473",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSNE25169",
+        "issuerListName": "Restricted issuers for UBSNE25169",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSNE39785",
+        "issuerListName": "Restricted issuers for UBSNE39785",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSRU17482E",
+        "issuerListName": "Restricted issuers for UBSRU17482E",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSSP12059",
+        "issuerListName": "Resticted issuers for UBSSP12059",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSTZ37674",
+        "issuerListName": "Restricted issuers for UBSTZ37674",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSV612987",
+        "issuerListName": "Restricted issuers for UBSV612987",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSWP43517A",
+        "issuerListName": "Restricted issuers for UBSWP43517A",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSWPD3642B",
+        "issuerListName": "Restricted issuers for UBSWPD3642B",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSWPD4186",
+        "issuerListName": "Restricted issuers for UBSWPD4186",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSWPD8882F",
+        "issuerListName": "Restricted issuers for UBSWPD8882F",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSWPE2810D",
+        "issuerListName": "Restricted issuers for UBSWPE2810D",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSWPE3127C",
+        "issuerListName": "Restricted issuers for UBSWPE3127C",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSWPE5878B",
+        "issuerListName": "Restricted issuers for UBSWPE5878B",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSWPF2923",
+        "issuerListName": "Restricted issuers for UBSWPF2923",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSY131005",
+        "issuerListName": "Restricted issuers for UBSY131005",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSY131010",
+        "issuerListName": "Restricted issuers for UBSY131010",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSY131117B",
+        "issuerListName": "Restricted issuers for UBSY131117B",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSY131341B",
+        "issuerListName": "Restricted issuers for UBSY131341B",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSY131343B",
+        "issuerListName": "Restricted issuers for UBSY131343B",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSY133534B",
+        "issuerListName": "Restricted issuers for UBSY133534B",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSY134198B",
+        "issuerListName": "Restricted issuers for UBSY134198B",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSY138241",
+        "issuerListName": "Restricted issuers for UBSY138241",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSY160246B",
+        "issuerListName": "Restricted issuers for UBSY160246B",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UBSSMA_UBSY309318C",
+        "issuerListName": "Restricted issuers for UBSY309318C",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "UHG_BB",
+        "issuerListName": "UHG",
+        "issuerListDesc": "UHG"
+    },
+    {
+        "issuerListCd": "UKR_AUSTRALIA",
+        "issuerListName": "Australia Government UK Sancrions  (PR updates)",
+        "issuerListDesc": "As of 9.01.14 there are 32 entities on the restricted list published by the Australian Government. This relates to Russia's actions in the Ukraine. Reviewed the 32 entities"
+    },
+    {
+        "issuerListCd": "UKRAINE_SANC",
+        "issuerListName": "Ukraine - OFAC SSI Sanctioned Companies (PR updates)",
+        "issuerListDesc": "List of cos sanctioned by OFAC 7.30.14. Add'l purchases of debt or equity of these companies is prohibited. Added  3/6/16 added Russ Govt as a conservative measure. Removed SOVRU on 4.17.19 since captured in CTRY.469(hh)"
+    },
+    {
+        "issuerListCd": "UMWA_BB",
+        "issuerListName": "UMWA - Party In Interest - 7/1/2020-12/31/2020",
+        "issuerListDesc": "Parties In Interest List - received 12-5-19\n[ 10/16/2020 - Added below per BBUP dup data project:\nBBG007PGHCL3\nBBG00B6VLG29\nBBG001FGBRV9\nBBG001FJD219\nBBG001FL0DG8\nBBG00328Q6M7\n];"
+    },
+    {
+        "issuerListCd": "UNITEDTECH_BBUP",
+        "issuerListName": "United Tech its Affiliates and Subsidiaries",
+        "issuerListDesc": "United Tech its Affiliates and Subsidiaries \nList created on 5-14-20 (Deutsche Bank on list due to takeover of Banker's Trust)"
+    },
+    {
+        "issuerListCd": "UOB_3558N9",
+        "issuerListName": "UOB Approved Issuers for Account 3558N9 (TC updates)",
+        "issuerListDesc": "UOB Approved Issuers for Account 3558N9"
+    },
+    {
+        "issuerListCd": "UOB_3558N9_BBCO",
+        "issuerListName": "UOB Approved Obligors for Account 3558N9 (TC updates)",
+        "issuerListDesc": "UOB Approved Obligors for Account 3558N9"
+    },
+    {
+        "issuerListCd": "UOB_3558N9_OBLIGOR",
+        "issuerListName": "UOB Approved Obligors for Account 3558N9 (TC updates)",
+        "issuerListDesc": "UOB Approved Obligors for Account 3558N9"
+    },
+    {
+        "issuerListCd": "UOB_NO_ADDS",
+        "issuerListName": "UOB - No additional shares of Issuers (TC updates)",
+        "issuerListDesc": "UOB - No additional shares of issuers without prior client approval. LS must notify UOB of interest in the name and UOB will confirm if there are limits left internally. - Last updated 7/17/18 by PC (Reference 7/17/18 Shao Chieh Lim Email)"
+    },
+    {
+        "issuerListCd": "UOB_NO_ADDS_BBCO",
+        "issuerListName": "UOB - No additional shares of BBCO (TC updates)",
+        "issuerListDesc": "UOB - No additional shares of BBCO without prior client approval. LS must notify UOB of interest in the name and UOB will confirm if there are limits left internally. - Last updated 7/17/18 by PC (Reference 7/17/18 Shao Chieh Lim Email)"
+    },
+    {
+        "issuerListCd": "UOB_NO_ADDS_OBLIGOR",
+        "issuerListName": "UOB - No additional shares of Obligor (TC updates)",
+        "issuerListDesc": "UOB - No additional shares of Obligor without prior client approval. LS must notify UOB of interest in the name and UOB will confirm if there are limits left internally. - Last updated 7/17/18 by PC (Reference 7/17/18 Shao Chieh Lim Email)"
+    },
+    {
+        "issuerListCd": "UOB_PUBLIC_FIN",
+        "issuerListName": "UOB Issuers with Public Financials (TC updates)",
+        "issuerListDesc": "7.1.18 UOB amendment - All companies must issue Public Financials. Reference BBG Field = CF."
+    },
+    {
+        "issuerListCd": "UPMC_BB",
+        "issuerListName": "Blackout/ No Trade List for UPMC - DO NOT USE NO LONGER IN U",
+        "issuerListDesc": "DO NOT USE LIST NO RULES WRITTEN TO IT. CHANGED TO BBCO"
+    },
+    {
+        "issuerListCd": "UPMC_GC",
+        "issuerListName": "Blackout/ No Trade List for UPMC",
+        "issuerListDesc": "Most recent list July 2021 - updated in March 2018 per review with MGR that list should be at global company NOT ultimate parent level."
+    },
+    {
+        "issuerListCd": "UPSLIST_BB",
+        "issuerListName": "UPS Affiliated Securities",
+        "issuerListDesc": "Restricted security list related to ERISA. This UPS ERISA account is investing in the LS Senior Loan Fund."
+    },
+    {
+        "issuerListCd": "USA",
+        "issuerListName": "United States of America",
+        "issuerListDesc": "Created list on 12/15/17."
+    },
+    {
+        "issuerListCd": "USAA_BB",
+        "issuerListName": "USAA Affiliated Persons List - December 2020",
+        "issuerListDesc": "Restricted security list related to the change in control at USAA, which is being acquired by Victory Capital Management - Dec 2020"
+    },
+    {
+        "issuerListCd": "USBANCORP_BB",
+        "issuerListName": "Prohibited Issuers-US Bancorp & Subsidiaries - (PC Updates)",
+        "issuerListDesc": "Prohibited Issuers - US Bancorp & Subsidiaries - May 2019"
+    },
+    {
+        "issuerListCd": "USSTEEL_BB",
+        "issuerListName": "United States Steel (BBUP - includes affiliates)",
+        "issuerListDesc": "United States Steel (BBUP - includes affiliates)"
+    },
+    {
+        "issuerListCd": "USTBOND",
+        "issuerListName": "List of US Treasury Bond Futures (BBUP)",
+        "issuerListDesc": "RH 09/29/18 - Created US Treasy Bond Futures List"
+    },
+    {
+        "issuerListCd": "VALE_BB",
+        "issuerListName": "Vale",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "VALLEYNATIONAL_BBUP",
+        "issuerListName": "Valley National Bancorp",
+        "issuerListDesc": "Parent Issuer codes for Valley National Bancorp.  Security is prohibited in the CP CIT if the client, Valley National Bancorp owns > 10% of the Core Plus Trust (5490N6)"
+    },
+    {
+        "issuerListCd": "VERIZON_BB",
+        "issuerListName": "Restricted List - Verizon Subsidiaries",
+        "issuerListDesc": "Client Prohibited List - September 2021 (K488N7, Z476N8, H457N1,BB4402)"
+    },
+    {
+        "issuerListCd": "VERIZON_TK",
+        "issuerListName": "Ultimate Parent Ticker List for Verizon",
+        "issuerListDesc": "Client Prohibited List - September 2021 (K488N7, Z476N8, H457N1,BB4402)"
+    },
+    {
+        "issuerListCd": "VOLKSWAGEN_BB",
+        "issuerListName": "Volkswagen AG.",
+        "issuerListDesc": "Volkswagen AG."
+    },
+    {
+        "issuerListCd": "VOLVO_BB",
+        "issuerListName": "Securities issued by AB Volvo and its affiliates",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "WAITTCORP_BB",
+        "issuerListName": "Waittcorp Restricted List",
+        "issuerListDesc": "List blocks Sinclair Broadcast Group (SGBI) per email dated 8/24/17."
+    },
+    {
+        "issuerListCd": "WALMART_BB",
+        "issuerListName": "Walmart Restricted List",
+        "issuerListDesc": " Account may not purchase Walmart due to client request"
+    },
+    {
+        "issuerListCd": "WAREHOUSE_BB",
+        "issuerListName": "WAREHOUSE BBUP- Prohibited Affiliates",
+        "issuerListDesc": "WAREHOUSE EMPLOYEES LOCAL UNION NO. 730 PENSION TRUST FUND list for E440N8"
+    },
+    {
+        "issuerListCd": "WAREHOUSE_TK",
+        "issuerListName": "WAREHOUSE TICKER- Prohibited Affiliates",
+        "issuerListDesc": "WAREHOUSE EMPLOYEES LOCAL UNION NO. 730 PENSION TRUST FUND list for E440N8"
+    },
+    {
+        "issuerListCd": "WBC_BB",
+        "issuerListName": "WBC ERISA Issuers",
+        "issuerListDesc": "List created on 1/22/2018. Last updated on 1/22/2018."
+    },
+    {
+        "issuerListCd": "WELLSFARGO_BB",
+        "issuerListName": "Wells Fargo Bank NA Issuer Codes",
+        "issuerListDesc": "As of 9/13/17 (ZEBWFC added 4/16/21)"
+    },
+    {
+        "issuerListCd": "WESTROCK_BB",
+        "issuerListName": "Issuer List for Westrock/ Rock-Tenn",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "WESTWOOD_BB",
+        "issuerListName": "Westwood Holdings Group",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "WF_BB",
+        "issuerListName": "Wells Fargo",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "WHIRLPOOL",
+        "issuerListName": "Whirlpool issuers (affiliates and subs)",
+        "issuerListDesc": "RH 6/10/19 - Created shell"
+    },
+    {
+        "issuerListCd": "WHIRLPOOL_BBUP",
+        "issuerListName": "List contains the Whirlpool BBUP code",
+        "issuerListDesc": "Since Whirlpool is restricted (but not on the client list) this list reference was added to ensure it remains restricted if the client file is updated"
+    },
+    {
+        "issuerListCd": "WHIRLPOOL_TK",
+        "issuerListName": "Whirlpool issuers (affiliates and subs) - TK List",
+        "issuerListDesc": "Whirlpool issuers (affiliates and subs)"
+    },
+    {
+        "issuerListCd": "WILLISTOWERS_BB",
+        "issuerListName": "Willis Towers Watson PLC (BBUP)",
+        "issuerListDesc": "Coded at the UP level (Willis Towers Watson PLC) to include extensive list of affiliates\n"
+    },
+    {
+        "issuerListCd": "WILMINGTON_BB",
+        "issuerListName": "Wilmington Trust, N.A.",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "WILMINGTONAUTHORJ_BB",
+        "issuerListName": "Wilmington Trust, N.A. and Arthur J. Gallagher & Co",
+        "issuerListDesc": null
+    },
+    {
+        "issuerListCd": "WILSHIRE_BBUP",
+        "issuerListName": "Wilshire Ultimate Parent List",
+        "issuerListDesc": "Wilshire Ultimate Parent"
+    },
+    {
+        "issuerListCd": "WINDSTREAM_BB",
+        "issuerListName": "Windstream - Prohibited Affiliates",
+        "issuerListDesc": "E443N5 - Use with ISSR.763(a), per client request dated 11/18/13"
+    },
+    {
+        "issuerListCd": "WNR",
+        "issuerListName": "WNR_LSIA (copy)",
+        "issuerListDesc": "Per 4/21/17 David Jones email, apply do not sell rule on Western Refinancing (WMR) due to cap action / tender. Rule will be removed upon LSIA request."
+    },
+    {
+        "issuerListCd": "WUESTHOFF",
+        "issuerListName": "WUESTHOFF Restricted Sales",
+        "issuerListDesc": "9/20/16 Laurie Kuchler Email: Restrict sales of CVS, DHR, RE, FTV, HD and GE"
+    },
+    {
+        "issuerListCd": "X113N1TEST",
+        "issuerListName": "X113N1 TEST",
+        "issuerListDesc": null
+    }
+]
